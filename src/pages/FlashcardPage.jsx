@@ -168,7 +168,7 @@ function FlashcardPage() {
         onClick={toggleFlip}
         style={{
           perspective: '1000px',
-          height: '300px',
+          height: '400px',
           cursor: 'pointer'
         }}
       >
@@ -219,9 +219,9 @@ function FlashcardPage() {
             <Card.Body className="d-flex flex-column justify-content-center">
               <Card.Title className="text-center mb-4">Đáp án:</Card.Title>
               <div className="text-center">
-                <Badge bg="success" className="p-2 mb-2">
+                <div className="bg-success text-white p-3 rounded mb-2">
                   {currentCard.A[currentCard.C]}
-                </Badge>
+                </div>
                 
                 {currentCard.R && (
                   <div className="explanation mt-3 text-muted">

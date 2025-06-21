@@ -54,7 +54,7 @@ function DocumentView() {
         if (fileExtension === 'pdf') {
           console.log("Đã phát hiện file PDF:", filePath);
           setIsPdf(true);
-          setPdfUrl(`/data/${courseId}/${filePath}`);
+          setPdfUrl(`./data/${courseId}/${filePath}`);
           setLoading(false);
           return;
         } else if (fileExtension === 'md') {
@@ -68,7 +68,7 @@ function DocumentView() {
         // Xử lý Markdown và các loại file khác
         const lastSlashIndex = filePath.lastIndexOf('/');
         const basePath = lastSlashIndex !== -1 ? filePath.substring(0, lastSlashIndex + 1) : '';
-        setBaseImagePath(`/data/${courseId}/${basePath}`);
+        setBaseImagePath(`./data/${courseId}/${basePath}`);
         
         try {
           const docContent = await loadDocumentContent(courseId, foundDoc.file);
@@ -186,7 +186,7 @@ function DocumentView() {
               >
                 Mở PDF trong tab mới
               </Button>
-              <div>
+              <div> 
                 <Button 
                   variant="secondary" 
                   as="a" 
