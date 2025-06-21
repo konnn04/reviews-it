@@ -37,6 +37,12 @@
                     "title": "Trắc nghiệm kiểm thử phần mềm 1 (AI)",
                     "description": "Bài trắc nghiệm này có sử dụng AI để đánh giá kiến thức về kiểm thử phần mềm.",
                     "file": "tn1-ai.json"
+                },
+                {
+                    "id": "tn2-ai",
+                    "title": "Trắc nghiệm kiểm thử phần mềm 2 (AI)",
+                    "description": "Bài trắc nghiệm này có sử dụng AI để đánh giá kiến thức về kiểm thử phần mềm.",
+                    "file": "tn2-ai.json"
                 }
             ]
         },
