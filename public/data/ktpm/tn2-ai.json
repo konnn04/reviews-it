@@ -1,0 +1,376 @@
+[
+  {
+    "Q": "Câu hỏi 102: Trong quy trình phát triển phần mềm Thác nước (Waterfall), giai đoạn nào thường diễn ra ngay sau giai đoạn \"Phân tích (Analysis)\"?",
+    "A": [
+      "Xác định yêu cầu (Requirement)",
+      "Thiết kế (Design)",
+      "Cài đặt (Implementation)",
+      "Kiểm thử (Testing)"
+    ],
+    "C": 1,
+    "R": "Theo mô hình Thác nước, sau khi hoàn thành Phân tích yêu cầu, giai đoạn tiếp theo là Thiết kế hệ thống. (Tổng quan kiểm thử phần mềm, trang 6)."
+  },
+  {
+    "Q": "Câu hỏi 103: Thuộc tính chất lượng phần mềm nào đề cập đến khả năng phần mềm thực hiện đúng các chức năng được yêu cầu trong một khoảng thời gian xác định và dưới các điều kiện nhất định?",
+    "A": [
+      "Tính chính xác (Correctness)",
+      "Tính tin cậy (Reliability)",
+      "Tính khả dụng (Usability)",
+      "Tính toàn vẹn (Integrity)"
+    ],
+    "C": 1,
+    "R": "Tính tin cậy (Reliability) là khả năng của phần mềm duy trì một mức độ hiệu năng nhất định dưới các điều kiện đã nêu trong một khoảng thời gian đã định. (Tổng quan kiểm thử phần mềm, trang 17)."
+  },
+  {
+    "Q": "Câu hỏi 104: \"Một biến cố xảy ra trong quá trình thực thi phần mềm, cho thấy một hành vi đáng ngờ hoặc không mong muốn, nhưng chưa chắc đã là lỗi của chính phần mềm đang kiểm thử\" được gọi là gì?",
+    "A": [
+      "Error",
+      "Fault",
+      "Failure",
+      "Incident (Biến cố)"
+    ],
+    "C": 3,
+    "R": "Incident (biến cố) là những trường hợp mà phần mềm có những thực thi đáng nghi ngờ, nguyên nhân có thể do môi trường, dữ liệu sai, hoặc lỗi của tester, chứ chưa chắc là do lỗi của phần mềm. (Tổng quan kiểm thử phần mềm, trang 29)."
+  },
+  {
+    "Q": "Câu hỏi 105: Chiến lược tích hợp nào mà tất cả các đơn vị, thành phần được tích hợp cùng một lúc để tạo thành hệ thống đầy đủ trước khi bắt đầu kiểm thử tích hợp?",
+    "A": [
+      "Top-down incremental",
+      "Bottom-up incremental",
+      "Big-bang",
+      "Sandwich"
+    ],
+    "C": 2,
+    "R": "Chiến lược Big-bang tích hợp tất cả các đơn vị, thành phần cùng một lúc để có hệ thống đầy đủ rồi mới tiến hành kiểm thử. (Tổng quan kiểm thử phần mềm, trang 43)."
+  },
+  {
+    "Q": "Câu hỏi 106: Mục đích của việc tạo Test Scenario (Kịch bản kiểm thử) là gì?",
+    "A": [
+      "Liệt kê chi tiết các bước thực hiện và kết quả mong đợi cho một chức năng nhỏ.",
+      "Đảm bảo các luồng xử lý nghiệp vụ từ đầu đến cuối của hệ thống được kiểm tra.",
+      "Theo dõi các lỗi được tìm thấy và trạng thái sửa lỗi.",
+      "Lập kế hoạch tài nguyên và thời gian cho hoạt động kiểm thử."
+    ],
+    "C": 1,
+    "R": "Test scenario đảm bảo các luồng xử lý từ đầu đến cuối của một quy trình nghiệp vụ hoặc một chức năng lớn được kiểm tra. Một test scenario có thể bao gồm nhiều test case. (Tổng quan kiểm thử phần mềm, trang 95)."
+  },
+  {
+    "Q": "Câu hỏi 107: Kỹ thuật kiểm thử tĩnh nào KHÔNG yêu cầu việc đọc và đánh giá tài liệu một cách thủ công bởi con người?",
+    "A": [
+      "Walkthrough",
+      "Inspection",
+      "Static Analysis (Phân tích tĩnh bằng công cụ)",
+      "Technical Review"
+    ],
+    "C": 2,
+    "R": "Static Analysis thường được thực hiện tự động bằng các công cụ để phân tích mã nguồn hoặc mô hình mà không cần thực thi, trong khi các hình thức review khác (Walkthrough, Inspection, Technical Review) là các hoạt động đánh giá thủ công. (Tổng quan kiểm thử phần mềm, trang 63)."
+  },
+  {
+    "Q": "Câu hỏi 108: Một trường nhập liệu ngày tháng chỉ chấp nhận định dạng YYYY-MM-DD. Giá trị nào sau đây thuộc phân vùng tương đương KHÔNG HỢP LỆ về định dạng?",
+    "A": [
+      "\"2023-12-25\"",
+      "\"2024-02-29\"",
+      "\"23-10-2023\"",
+      "\"2023-00-01\""
+    ],
+    "C": 2,
+    "R": "Giá trị \"23-10-2023\" không theo định dạng YYYY-MM-DD. Các giá trị khác có thể sai về logic ngày tháng (ví dụ tháng 00) nhưng đúng về cấu trúc định dạng cơ bản được yêu cầu. Câu hỏi tập trung vào \"định dạng\". (Kiểm thử hộp đen - Phân vùng tương đương)."
+  },
+  {
+    "Q": "Câu hỏi 109: Cho chức năng tính điểm thưởng: Nếu điểm >= 90 thì thưởng 100; nếu điểm >= 80 và < 90 thì thưởng 50; nếu điểm < 80 thì không thưởng. Sử dụng BVA 2 giá trị, các điểm nào cần được kiểm thử cho biên 90?",
+    "A": [
+      "89, 90",
+      "90, 91",
+      "89, 90, 91",
+      "80, 89, 90"
+    ],
+    "C": 0,
+    "R": "Biên là 90. BVA 2 giá trị sẽ kiểm tra ngay tại biên và giá trị ngay sát bên ngoài/bên trong. Đối với điểm >= 90, các giá trị biên liên quan là 89 (ngay dưới ngưỡng để không được 100) và 90 (ngưỡng để được 100). (Kiểm thử hộp đen, trang 23)."
+  },
+  {
+    "Q": "Câu hỏi 110: Trong một bảng quyết định, nếu có 3 điều kiện, mỗi điều kiện có 2 giá trị (True/False), thì số lượng quy tắc (rules) tối đa ban đầu là bao nhiêu trước khi rút gọn?",
+    "A": [
+      "3",
+      "6",
+      "8",
+      "9"
+    ],
+    "C": 2,
+    "R": "Số lượng quy tắc tối đa ban đầu là tích số lượng giá trị của mỗi điều kiện. Với 3 điều kiện, mỗi điều kiện 2 giá trị, số quy tắc là 2 * 2 * 2 = 2^3 = 8. (Kiểm thử hộp đen, trang 36)."
+  },
+  {
+    "Q": "Câu hỏi 111: Một máy bán nước tự động có các trạng thái: Sẵn sàng, Nhận tiền, Chọn sản phẩm, Trả sản phẩm, Trả tiền thừa. Sự kiện \"Hết sản phẩm được chọn\" sau khi người dùng \"Chọn sản phẩm\" sẽ dẫn đến trạng thái nào tiếp theo?",
+    "A": [
+      "Trả sản phẩm",
+      "Trả tiền thừa (và thông báo hết hàng)",
+      "Sẵn sàng",
+      "Nhận tiền"
+    ],
+    "C": 1,
+    "R": "Nếu sản phẩm đã chọn hết, máy nên thông báo cho người dùng và trả lại tiền đã nhận hoặc cho phép chọn sản phẩm khác. Trả tiền thừa là một hành động hợp lý. (Kiểm thử hộp đen - State Transition)."
+  },
+  {
+    "Q": "Câu hỏi 112: Kiểm thử khả năng hệ thống xử lý một lượng lớn dữ liệu đầu vào (ví dụ: import 1 triệu bản ghi) thuộc loại kiểm thử phi chức năng nào?",
+    "A": [
+      "Load Testing",
+      "Stress Testing",
+      "Volume Testing",
+      "Endurance Testing"
+    ],
+    "C": 2,
+    "R": "Volume Testing kiểm thử hệ thống với một lượng lớn dữ liệu để đánh giá khả năng xử lý và lưu trữ. (Tổng quan kiểm thử phần mềm, trang 52)."
+  },
+  {
+    "Q": "Câu hỏi 113: Đặc tả Use Case thường KHÔNG bao gồm mục nào sau đây?",
+    "A": [
+      "Use case ID",
+      "Actor chính, Actor phụ",
+      "Mô tả chi tiết các thuật toán sử dụng",
+      "Tiền điều kiện (Pre-conditions), Hậu điều kiện (Post-conditions)"
+    ],
+    "C": 2,
+    "R": "Đặc tả Use Case tập trung vào hành vi tương tác của người dùng với hệ thống (WHAT), không đi sâu vào chi tiết cách thức thực hiện bên trong (HOW) như thuật toán cụ thể. (Kiểm thử hộp đen, trang 65, 66)."
+  },
+  {
+    "Q": "Câu hỏi 114: Cho đoạn mã:\n```cpp\nint score = 75;\nstring grade;\nif (score >= 90) { grade = \"A\"; }\nelse if (score >= 80) { grade = \"B\"; }\nelse if (score >= 70) { grade = \"C\"; }\nelse { grade = \"D\"; }\n```\nGiá trị của `grade` sau khi đoạn mã thực thi là gì?",
+    "A": [
+      "\"A\"",
+      "\"B\"",
+      "\"C\"",
+      "\"D\""
+    ],
+    "C": 2,
+    "R": "score = 75. Điều kiện `score >= 90` (75>=90) là FALSE. Điều kiện `score >= 80` (75>=80) là FALSE. Điều kiện `score >= 70` (75>=70) là TRUE. Vậy `grade` sẽ là \"C\". (Bài tập logic if-else if-else)."
+  },
+  {
+    "Q": "Câu hỏi 115: Kỹ thuật kiểm thử nào phù hợp để kiểm tra một hệ thống có nhiều trạng thái và các sự kiện làm thay đổi những trạng thái đó, ví dụ như quy trình xử lý đơn hàng?",
+    "A": [
+      "Phân tích giá trị biên",
+      "Bảng quyết định",
+      "Chuyển đổi trạng thái (State Transition Testing)",
+      "Phân vùng tương đương"
+    ],
+    "C": 2,
+    "R": "Kiểm thử chuyển đổi trạng thái rất phù hợp để mô hình hóa và kiểm thử các hệ thống có hành vi phụ thuộc vào trạng thái hiện tại và các sự kiện xảy ra. (Kiểm thử hộp đen, trang 47)."
+  },
+  {
+    "Q": "Câu hỏi 116: Một ô nhập liệu cho phép nhập số lượng sản phẩm từ 1 đến 99. Sử dụng BVA 3 giá trị (min, nom, max), các giá trị nào nên được chọn?",
+    "A": [
+      "0, 1, 50, 99, 100",
+      "1, 50, 99",
+      "1, 2, 98, 99",
+      "0, 50, 100"
+    ],
+    "C": 1,
+    "R": "BVA 3 giá trị cho một khoảng [min, max] thường là: min, một giá trị nominal (điển hình) ở giữa, và max. Vậy là 1, 50 (ví dụ), 99. (Kiểm thử hộp đen, trang 23)."
+  },
+  {
+    "Q": "Câu hỏi 117: Cho đồ thị luồng có 6 nút (N=6) và 7 cạnh (E=7). Độ phức tạp Cyclomatic V(G) là bao nhiêu?",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 2,
+    "R": "V(G) = E - N + 2 = 7 - 6 + 2 = 1 + 2 = 3. (Kiểm thử hộp trắng, trang 18)."
+  },
+  {
+    "Q": "Câu hỏi 118: Nếu V(G) của một hàm là 5, điều này ngụ ý rằng cần tối thiểu bao nhiêu test case để đạt được Branch Coverage (phủ nhánh)?",
+    "A": [
+      "4",
+      "5",
+      "6",
+      "Không đủ thông tin để xác định."
+    ],
+    "C": 1,
+    "R": "V(G) chính là số lượng đường đi độc lập cơ sở. Mỗi đường đi độc lập cơ sở thường sẽ đi qua một tập hợp các nhánh khác nhau. Để phủ tất cả các nhánh, số lượng test case thường xấp xỉ V(G), hoặc trong nhiều trường hợp đơn giản, bằng V(G). (Kiểm thử hộp trắng, trang 17). Tuy nhiên, đây là một suy luận, không phải công thức trực tiếp. Thông thường V(G) là chặn trên cho số test case cần thiết để phủ đường dẫn cơ sở, và phủ đường dẫn cơ sở sẽ bao gồm phủ nhánh."
+  },
+  {
+    "Q": "Câu hỏi 119: Cho đoạn mã:\n```cpp\nint x = 10;\nif (x > 5) {\n  x = x - 2;\n}\nif (x > 8) {\n  x = x - 3;\n}\n// Nút cuối\n```\nCó bao nhiêu nút vị từ (predicate node) trong đồ thị luồng của đoạn mã này?",
+    "A": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "C": 2,
+    "R": "Có hai câu lệnh `if`, mỗi `if` là một nút vị từ. Vậy P = 2. (Kiểm thử hộp trắng, trang 9)."
+  },
+  {
+    "Q": "Câu hỏi 120: Loại bao phủ nào yêu cầu mỗi điều kiện logic đơn (atomic condition) trong một biểu thức quyết định phải nhận cả giá trị TRUE và FALSE ít nhất một lần, nhưng không yêu cầu tất cả các tổ hợp của chúng?",
+    "A": [
+      "Statement Coverage",
+      "Branch Coverage",
+      "Condition Coverage",
+      "Multi-condition Coverage"
+    ],
+    "C": 2,
+    "R": "Condition Coverage (Phủ điều kiện) yêu cầu mỗi điều kiện con trong một biểu thức quyết định phải được đánh giá là TRUE và FALSE ít nhất một lần. (Kiểm thử hộp trắng, trang 44)."
+  },
+  {
+    "Q": "Câu hỏi 121: Trong kiểm thử vòng lặp lồng nhau (nested loops), chiến lược tiếp cận thường là:",
+    "A": [
+      "Kiểm thử vòng lặp ngoài cùng trước, giữ vòng trong ở giá trị tối thiểu.",
+      "Kiểm thử tất cả các vòng lặp đồng thời với các giá trị biên.",
+      "Kiểm thử vòng lặp trong cùng trước, giữ các vòng ngoài ở giá trị tối thiểu, sau đó tiến dần ra ngoài.",
+      "Chỉ kiểm thử vòng lặp trong cùng với tất cả các trường hợp."
+    ],
+    "C": 2,
+    "R": "Chiến lược kiểm thử vòng lặp lồng nhau thường bắt đầu từ vòng lặp trong cùng (innermost), kiểm thử nó kỹ lưỡng (như vòng lặp đơn giản) trong khi giữ các vòng lặp bên ngoài ở giá trị tối thiểu. Sau đó, tiến dần ra các vòng lặp bên ngoài. (Kiểm thử hộp trắng, trang 74)."
+  },
+  {
+    "Q": "Câu hỏi 122: Cho đoạn mã:\n```cpp\nint result = 0;\nfor (int i = 1; i <= 3; i++) {\n  if (i % 2 == 0) {\n    result += i;\n  }\n}\n// Nút cuối\n```\nCần bao nhiêu test case để đạt được Statement Coverage?",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 0,
+    "R": "Một test case (ví dụ, chương trình chạy bình thường) sẽ khiến vòng lặp chạy từ i=1 đến 3. Khi i=2, điều kiện `i % 2 == 0` sẽ TRUE, và `result += i;` sẽ được thực thi. Các câu lệnh khởi tạo, điều kiện vòng lặp, tăng `i`, và điều kiện `if` cũng sẽ được thực thi. Do đó, 1 test case là đủ. (Kiểm thử hộp trắng)."
+  },
+  {
+    "Q": "Câu hỏi 123: Với đoạn mã ở câu 122, Độ phức tạp Cyclomatic V(G) là bao nhiêu? (Coi `for` và `if` mỗi cái là 1 nút vị từ)",
+    "A": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "C": 1,
+    "R": "Nút vị từ 1: `for (int i = 1; i <= 3; i++)` (điều kiện lặp `i <= 3`). Nút vị từ 2: `if (i % 2 == 0)`. Vậy P = 2. V(G) = P + 1 = 2 + 1 = 3. (Kiểm thử hộp trắng, trang 18)."
+  },
+  {
+    "Q": "Câu hỏi 124: Kỹ thuật nào sau đây là một phần của Kiểm thử tĩnh (Static Testing)?",
+    "A": [
+      "Unit testing",
+      "Code review (Đánh giá mã nguồn)",
+      "Performance testing",
+      "Usability testing"
+    ],
+    "C": 1,
+    "R": "Code review là một hình thức của Review, thuộc về Kiểm thử tĩnh vì nó không yêu cầu thực thi mã nguồn. (Tổng quan kiểm thử phần mềm, trang 63, 75)."
+  },
+  {
+    "Q": "Câu hỏi 125: Selenium RC (Remote Control) hoạt động bằng cách nào?",
+    "A": [
+      "Tương tác trực tiếp với API gốc của trình duyệt.",
+      "Chạy như một proxy server, chặn và sửa đổi các yêu cầu/phản hồi HTTP.",
+      "Là một plugin trình duyệt ghi và phát lại hành động.",
+      "Chỉ hỗ trợ ngôn ngữ JavaScript để điều khiển trình duyệt."
+    ],
+    "C": 1,
+    "R": "Selenium RC hoạt động như một HTTP proxy server. Nó nhận các lệnh Selenium từ test script, chuyển đổi chúng thành các lệnh JavaScript (Selenium Core) và tiêm vào trình duyệt để thực thi. (Kiểm thử tự động, trang 8)."
+  },
+  {
+    "Q": "Câu hỏi 126: Trong Selenium Python, để lấy nội dung text hiển thị của một phần tử web (ví dụ: text của một thẻ `<p>`), bạn dùng thuộc tính nào của WebElement?",
+    "A": [
+      "element.value",
+      "element.inner_html",
+      "element.text",
+      "element.get_content()"
+    ],
+    "C": 2,
+    "R": "Thuộc tính `.text` của một WebElement trong Selenium Python trả về nội dung text hiển thị của phần tử đó và các phần tử con của nó. (Kiến thức Selenium)."
+  },
+  {
+    "Q": "Câu hỏi 127: `NoSuchElementException` trong Selenium thường xảy ra khi nào?",
+    "A": [
+      "Phần tử được tìm thấy nhưng không hiển thị.",
+      "WebDriver không thể tìm thấy phần tử nào khớp với locator được cung cấp trong thời gian chờ.",
+      "Có nhiều hơn một phần tử khớp với locator khi dùng `find_element`.",
+      "Trang web load quá chậm."
+    ],
+    "C": 1,
+    "R": "`NoSuchElementException` được ném ra khi WebDriver không tìm thấy bất kỳ phần tử nào trên trang khớp với chiến lược định vị (locator) đã cho, sau khi đã hết thời gian chờ (implicit hoặc explicit). (Kiểm thử tự động, trang 23)."
+  },
+  {
+    "Q": "Câu hỏi 128: Bộ chọn CSS nào sau đây sẽ chọn một thẻ `input` có thuộc tính `type` là `submit` VÀ thuộc tính `value` là `Login`?",
+    "A": [
+      "input[type='submit'][value='Login']",
+      "input.submit.login",
+      "input#submit#login",
+      "input[type='submit'] input[value='Login']"
+    ],
+    "C": 0,
+    "R": "Trong CSS selector, các bộ chọn thuộc tính có thể được nối tiếp nhau. `input[type='submit'][value='Login']` sẽ chọn thẻ `input` đáp ứng cả hai điều kiện thuộc tính. (Kiến thức CSS Selectors)."
+  },
+  {
+    "Q": "Câu hỏi 129: Mục đích của việc sử dụng \"ExpectedConditions\" cùng với \"WebDriverWait\" trong Selenium là gì?",
+    "A": [
+      "Để tạo ra các điều kiện lỗi tùy chỉnh.",
+      "Để cung cấp một tập hợp các điều kiện chờ phổ biến đã được định nghĩa sẵn (ví dụ: phần tử hiển thị, phần tử có thể click).",
+      "Để định nghĩa thời gian chờ tối đa cho mỗi điều kiện.",
+      "Để bỏ qua việc chờ đợi nếu điều kiện không được đáp ứng."
+    ],
+    "C": 1,
+    "R": "`selenium.webdriver.support.expected_conditions` (thường được import là `EC`) cung cấp một loạt các điều kiện chờ đã được xây dựng sẵn mà bạn có thể truyền vào phương thức `until()` của `WebDriverWait`. (Kiểm thử tự động, trang 33)."
+  },
+  {
+    "Q": "Câu hỏi 130: Nếu bạn muốn kiểm tra xem một nút bấm (button) có bị vô hiệu hóa (disabled) hay không, bạn có thể sử dụng phương thức nào của WebElement?",
+    "A": [
+      "element.is_displayed()",
+      "element.is_enabled()",
+      "element.is_clickable()",
+      "element.get_attribute('disabled')"
+    ],
+    "C": 1,
+    "R": "Phương thức `element.is_enabled()` trả về `True` nếu phần tử đó được kích hoạt (enabled) và `False` nếu nó bị vô hiệu hóa (disabled). (Kiểm thử tự động, trang 30)."
+  },
+  {
+    "Q": "Câu hỏi 131: Phát biểu nào sau đây là ĐÚNG về kiểm thử hiệu năng (Performance Testing)?",
+    "A": [
+      "Chỉ kiểm tra tốc độ tải trang của ứng dụng.",
+      "Nhằm xác định các vấn đề về thắt cổ chai (bottleneck) hoặc hiệu năng chung của hệ thống dưới các điều kiện tải khác nhau.",
+      "Luôn được thực hiện thủ công.",
+      "Chỉ tập trung vào việc kiểm tra giao diện người dùng."
+    ],
+    "C": 1,
+    "R": "Kiểm thử hiệu năng nhằm xác định và đánh giá các khía cạnh về hiệu suất của hệ thống như tốc độ, khả năng mở rộng, sự ổn định, và các điểm thắt cổ chai dưới các điều kiện tải khác nhau. (Tổng quan kiểm thử phần mềm, trang 50)."
+  },
+  {
+    "Q": "Câu hỏi 132: Trong quy trình Scrum, \"Sprint Retrospective\" (Họp cải tiến Sprint) có mục đích chính là gì?",
+    "A": [
+      "Lập kế hoạch cho Sprint tiếp theo.",
+      "Demo sản phẩm đã hoàn thành trong Sprint cho Product Owner.",
+      "Nhóm Scrum tự nhìn lại quá trình làm việc trong Sprint vừa qua để tìm cách cải tiến.",
+      "Cập nhật Product Backlog."
+    ],
+    "C": 2,
+    "R": "Sprint Retrospective là cuộc họp cuối cùng của Sprint, nơi nhóm Scrum (Scrum Master, Product Owner, Development Team) nhìn lại những gì đã diễn ra tốt, những gì chưa tốt và cách để cải thiện quy trình làm việc trong Sprint tiếp theo. (Tổng quan kiểm thử phần mềm, sơ đồ trang 13 ngầm chỉ các sự kiện)."
+  },
+  {
+    "Q": "Câu hỏi 133: Một đặc tả yêu cầu nói rằng: \"Hệ thống phải phản hồi yêu cầu tìm kiếm trong vòng 2 giây với 100 người dùng đồng thời\". Đây là một yêu cầu thuộc loại nào?",
+    "A": [
+      "Yêu cầu chức năng",
+      "Yêu cầu phi chức năng (về hiệu năng)",
+      "Yêu cầu về giao diện người dùng",
+      "Yêu cầu về bảo mật"
+    ],
+    "C": 1,
+    "R": "Yêu cầu này mô tả một đặc tính chất lượng của hệ thống (thời gian phản hồi dưới tải), không phải là một chức năng cụ thể mà hệ thống làm gì. Do đó, đây là một yêu cầu phi chức năng. (Tổng quan kiểm thử phần mềm, trang 49)."
+  },
+  {
+    "Q": "Câu hỏi 134: Kỹ thuật kiểm thử hộp đen nào thường được sử dụng để kiểm tra các tình huống có đầu vào cụ thể và ít có quan hệ ràng buộc nhau, tập trung vào các giá trị biên?",
+    "A": [
+      "Bảng quyết định",
+      "Phân tích giá trị biên",
+      "Chuyển đổi trạng thái",
+      "Kiểm thử dựa trên use case"
+    ],
+    "C": 1,
+    "R": "Kỹ thuật phân tích giá trị biên thường được áp dụng cho các tình huống các đầu vào cụ thể và ít có quan hệ ràng buộc nhau. (Kiểm thử hộp đen, trang 10)."
+  },
+  {
+    "Q": "Câu hỏi 135: Cho đoạn mã sau:\n```cpp\nvoid checkNumber(int num) {\n  if (num > 0) {\n    cout << \"Positive\";\n  } else if (num < 0) {\n    cout << \"Negative\";\n  } else {\n    cout << \"Zero\";\n  }\n}\n```\nCần bao nhiêu test case để đạt được Branch Coverage?",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 2,
+    "R": "Có 2 điểm quyết định: `if (num > 0)` và `else if (num < 0)`. Các nhánh: num > 0 (Positive), num <= 0 VÀ num < 0 (Negative), num <= 0 VÀ num >= 0 (Zero). TC1: num=5 (Positive). TC2: num=-5 (Negative). TC3: num=0 (Zero). Cần 3 test case. (Kiểm thử hộp trắng)."
+  }
+]
