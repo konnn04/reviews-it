@@ -47,10 +47,8 @@ function DocumentView() {
         }
 
         const filePath = foundDoc.file;
-        // Chuyển đổi thành chữ thường và kiểm tra phần mở rộng
         const fileExtension = filePath.toLowerCase().split('.').pop();
         
-        // Kiểm tra nếu là file PDF
         if (fileExtension === 'pdf') {
           console.log("Đã phát hiện file PDF:", filePath);
           setIsPdf(true);
