@@ -1,0 +1,83 @@
+{
+    "name": "Ôn tập Lập trình",
+    "description": "Ôn tập các kiến thức cơ bản về lập trình, các môn học liên quan và các kỹ năng cần thiết để trở thành một lập trình viên.",
+    "courses": [
+        {
+            "id": "ktpm",
+            "title": "Kiểm thử phần mềm",
+            "description": "Khóa học này cung cấp kiến thức về kiểm thử phần mềm, bao gồm các phương pháp, kỹ thuật và công cụ kiểm thử.",
+            "thumbnail": "https://scrumpass.com/wp-content/uploads/2024/05/nghe-kiem-thu-phan-mem.jpg",
+            "doc": [{
+                "id": "ktpm0",
+                "title": "Tổng quan về kiểm thử phần mềm",
+                "description": "Tổng quan về kiểm thử phần mềm, các loại kiểm thử và quy trình kiểm thử.",
+                "file": "01-Tong-quan-kiem-thu.pdf"
+            },
+            {
+                "id": "ktpm1",
+                "title": "Kiểm thử hộp đen",
+                "description": "Phương pháp kiểm thử hộp đen, bao gồm các kỹ thuật và chiến lược kiểm thử.",
+                "file": "02-Kiem-thu-hop-den.pdf"
+            },
+            {
+                "id": "ktpm2",
+                "title": "Kiểm thử hộp trắng",
+                "description": "Phương pháp kiểm thử hộp trắng, bao gồm các kỹ thuật và chiến lược kiểm thử.",
+                "file": "03-Kiem-thu-hop-trang.pdf"
+            },
+            {
+                "id": "ktpm3",
+                "title": "Selenium - Công cụ kiểm thử tự động",
+                "description": "Hướng dẫn sử dụng Selenium để tự động hóa kiểm thử phần mềm.",
+                "file": "04-Selenium.pdf"
+            }],
+            "choices-test": [
+                {
+                    "id": "tn1-ai",
+                    "title": "Trắc nghiệm kiểm thử phần mềm 1 (AI)",
+                    "description": "Bài trắc nghiệm này có sử dụng AI để đánh giá kiến thức về kiểm thử phần mềm.",
+                    "file": "tn1-ai.json"
+                }
+            ]
+        },
+        {
+            "id": "ai",
+            "title": "Trí tuệ nhân tạo",
+            "description": "Khóa học này cung cấp kiến thức về trí tuệ nhân tạo, bao gồm các thuật toán, mô hình và ứng dụng trong thực tế.",
+            "thumbnail": "https://som.edu.vn/wp-content/uploads/2023/12/hoc-lap-trinh-tri-tue-nhan-tao-ai.webp",
+            "doc": [
+                {
+                    "id": "ai0",
+                    "title": "Giới thiệu về Trí tuệ nhân tạo",
+                    "description": "Tổng quan về trí tuệ nhân tạo, các lĩnh vực và ứng dụng của nó trong cuộc sống.",
+                    "file": "AI0.MD"
+                },
+                {
+                    "id": "ai1",
+                    "title": "Các thuật toán trong Trí tuệ nhân tạo",
+                    "description": "Khám phá các thuật toán phổ biến trong trí tuệ nhân tạo, bao gồm học máy và học sâu.",
+                    "file": "AI1.MD"
+                },
+                {
+                    "id": "ai2",
+                    "title": "Mô hình và ứng dụng Trí tuệ nhân tạo",
+                    "description": "Tìm hiểu về các mô hình AI và cách chúng được áp dụng trong các lĩnh vực khác nhau.",
+                    "file": "AI2.MD"
+                },
+                {
+                    "id": "ai3_dl1",
+                    "title": "Học sâu (Deep Learning)",
+                    "description": "Khám phá học sâu, một nhánh quan trọng của trí tuệ nhân tạo, và các ứng dụng của nó.",
+                    "file": "AI3_DL1.MD"
+                },
+                {
+                    "id": "ai4_dl2",
+                    "title": "Học sâu nâng cao (Deep Learning Advanced)",
+                    "description": "Nâng cao kiến thức về học sâu, bao gồm các kỹ thuật và mô hình phức tạp hơn.",
+                    "file": "AI4_DL2.MD"
+                }
+            ],
+            "choices-test": []
+        }
+    ]
+}

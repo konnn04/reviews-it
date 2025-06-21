@@ -1,0 +1,240 @@
+:root {
+  --bs-primary: #149de7;
+  --bs-primary-rgb: 52, 161, 235;
+  --bs-primary-bg-subtle: #f3ebff;
+  --bs-secondary: #7d726c;
+  --bs-link-color: #225abb;
+  --bs-link-hover-color: #1760a8;
+
+  --bs-info-rgb: 0, 184, 217;
+  --bs-secondary-rgb:214, 214, 214;
+  --bs-btn-bg: #2247bf;
+
+}
+
+[data-bs-theme=dark] {
+  --bs-primary: #149de7;
+  --bs-primary-rgb: 35, 143, 217;
+  --bs-primary-bg-subtle: #0e7ece;
+  --bs-body-bg: #1a1a1a;
+  --bs-body-color: #e0e0e0;
+  --bs-link-color: #8ec8f7;
+  --bs-link-hover-color: #a6cff8;
+
+  --bs-info-rgb: 0, 184, 217;
+  --bs-secondary-rgb: 36, 36, 36;
+  --bs-btn-bg: #2247bf;
+
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  background-color: #2d77b0;
+  border-color: #257aa8;
+}
+
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--bs-primary);
+}
+
+.navbar-dark {
+  background-color: #096fc2 !important;
+}
+
+[data-bs-theme=dark] .navbar-dark {
+  background-color: #053d7d !important;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 .5rem 1rem rgba(var(--bs-primary-rgb), .15) !important;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+.flashcard {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Styles cho markdown */
+.markdown-body {
+  padding: 20px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: unset!important;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.markdown-body pre code {
+  padding: 0;
+  font-size: 100%;
+  background-color: transparent;
+}
+
+.markdown-body table {
+  width: 100%;
+  overflow: auto;
+  display: block;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+[data-bs-theme=dark] .markdown-body table th,
+[data-bs-theme=dark] .markdown-body table td {
+  border-color: #444;
+}
+
+[data-bs-theme=dark] .markdown-body table tr {
+  background-color: #1a1a1a;
+  border-top: 1px solid #444;
+}
+
+[data-bs-theme=dark] .markdown-body table tr:nth-child(2n) {
+  background-color: #242424;
+}
+
+/* Styles cho công thức toán học */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 0;
+}
+
+/* Styles cho hình ảnh trong dark mode */
+[data-bs-theme=dark] .markdown-body img {
+  filter: brightness(0.8) contrast(1.2);
+}
+
+/* Styles cho blockquote */
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+  margin: 0 0 16px 0;
+}
+
+[data-bs-theme=dark] .markdown-body blockquote {
+  color: #9ba1a6;
+  border-left-color: #444;
+}
+
+/* Back to Top button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--bs-primary);
+  color: white;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.back-to-top i {
+  font-size: 1.5rem;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--bs-primary-rgb), 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--bs-primary-rgb), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--bs-primary-rgb), 0);
+  }
+}
+
+.back-to-top:focus {
+  outline: none;
+  animation: pulse 1.5s infinite;
+}
+
+/* Dark mode styling */
+[data-bs-theme=dark] .back-to-top {
+  background-color: var(--bs-primary);
+  color: #fff;
+}

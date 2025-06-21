@@ -1,0 +1,1115 @@
+[
+  {
+    "Q": "Câu hỏi 1: Quy trình phát triển phần mềm nào chia dự án thành nhiều vòng lặp phát triển, mỗi sprint thường kéo dài 2-4 tuần?",
+    "A": [
+      "Thác nước (Waterfall)",
+      "Scrum",
+      "Tăng trưởng (Incremental)",
+      "Chữ V (V-Model)"
+    ],
+    "C": 1,
+    "R": "Scrum là một quy trình phát triển phần mềm linh hoạt (agile) chia dự án thành các sprint, mỗi sprint thường kéo dài 2-4 tuần. (Tổng quan kiểm thử phần mềm, trang 11)."
+  },
+  {
+    "Q": "Câu hỏi 2: \"Đảm bảo rằng sản phẩm phần mềm được xây dựng đúng cách, tuân theo các đặc tả và tiêu chuẩn đã định nghĩa\" là mục tiêu của hoạt động nào?",
+    "A": [
+      "Validation (Kiểm định)",
+      "Verification (Xác minh)",
+      "Quality Control (Kiểm soát chất lượng)",
+      "Quality Assurance (Đảm bảo chất lượng)"
+    ],
+    "C": 1,
+    "R": "Verification (Xác minh) là quá trình đánh giá để đảm bảo rằng sản phẩm phần mềm được phát triển đúng cách, tuân thủ các đặc tả và tiêu chuẩn. (Tổng quan kiểm thử phần mềm, trang 78, 79)."
+  },
+  {
+    "Q": "Câu hỏi 3: Lỗi (Error) trong kiểm thử phần mềm thường được hiểu là:",
+    "A": [
+      "Hành vi không mong muốn của phần mềm khi thực thi.",
+      "Sai sót trong mã nguồn hoặc thiết kế do con người gây ra.",
+      "Sự khác biệt giữa kết quả thực tế và kết quả mong đợi.",
+      "Một biến cố đáng ngờ trong quá trình thực thi phần mềm."
+    ],
+    "C": 1,
+    "R": "Error (lỗi) là sai sót do con người gây ra trong quá trình phát triển phần mềm (ví dụ: lỗi logic khi viết code, hiểu sai yêu cầu). (Tổng quan kiểm thử phần mềm, trang 27)."
+  },
+  {
+    "Q": "Câu hỏi 4: Nguyên tắc nào của kiểm thử phần mềm cho rằng \"Kiểm thử chỉ ra sự hiện diện của lỗi, không phải sự vắng mặt của lỗi\"?",
+    "A": [
+      "Kiểm thử sớm (Early testing)",
+      "Kiểm thử phụ thuộc vào ngữ cảnh (Testing is context dependent)",
+      "Testing shows presence of defects",
+      "Exhaustive testing is impossible"
+    ],
+    "C": 2,
+    "R": "Đây là một trong 7 nguyên tắc cơ bản của kiểm thử phần mềm, có nghĩa là kiểm thử chỉ có thể chứng minh sự tồn tại của lỗi chứ không thể chứng minh rằng phần mềm hoàn toàn không có lỗi. (Tổng quan kiểm thử phần mềm, trang 25)."
+  },
+  {
+    "Q": "Câu hỏi 5: Trong mô hình Scrum, ai là người chịu trách nhiệm chính trong việc xác định và ưu tiên các hạng mục trong Product Backlog?",
+    "A": [
+      "Scrum Master",
+      "Development Team (Nhóm phát triển)",
+      "Product Owner",
+      "Stakeholder (Các bên liên quan)"
+    ],
+    "C": 2,
+    "R": "Product Owner là người chịu trách nhiệm quản lý Product Backlog, bao gồm việc xác định, mô tả và ưu tiên các hạng mục. (Tổng quan kiểm thử phần mềm, trang 12)."
+  },
+  {
+    "Q": "Câu hỏi 6: Hoạt động nào sau đây KHÔNG thuộc về Kiểm thử tĩnh (Static Testing)?",
+    "A": [
+      "Review đặc tả yêu cầu",
+      "Phân tích mã nguồn bằng công cụ tự động",
+      "Thực thi các test case trên môi trường thử nghiệm",
+      "Walkthrough thiết kế hệ thống"
+    ],
+    "C": 2,
+    "R": "Thực thi các test case trên môi trường thử nghiệm là một hoạt động của Kiểm thử động (Dynamic Testing), vì nó đòi hỏi phải chạy chương trình. Kiểm thử tĩnh không cần thực thi mã nguồn. (Tổng quan kiểm thử phần mềm, trang 63, 75)."
+  },
+  {
+    "Q": "Câu hỏi 7: Mục đích chính của tài liệu Test Plan là gì?",
+    "A": [
+      "Mô tả chi tiết các bước thực hiện từng test case.",
+      "Liệt kê tất cả các lỗi tìm thấy trong quá trình kiểm thử.",
+      "Phác thảo chiến lược, phạm vi, tài nguyên và lịch trình kiểm thử.",
+      "Theo dõi mối quan hệ giữa yêu cầu và các test case."
+    ],
+    "C": 2,
+    "R": "Test Plan (Kế hoạch kiểm thử) là tài liệu phác thảo chiến lược tổng thể, phạm vi, tài nguyên cần thiết và lịch trình cho các hoạt động kiểm thử. (Tổng quan kiểm thử phần mềm, trang 90, 91)."
+  },
+  {
+    "Q": "Câu hỏi 8: \"Một thành phần phần mềm nhỏ nhất có thể kiểm thử độc lập\" được gọi là gì trong Unit Test?",
+    "A": [
+      "Module",
+      "Function",
+      "Unit (Đơn vị)",
+      "Component"
+    ],
+    "C": 2,
+    "R": "Trong Unit Test, một \"unit\" (đơn vị) là thành phần phần mềm nhỏ nhất có thể được kiểm thử một cách độc lập, ví dụ như một hàm, một phương thức hoặc một lớp. (Tổng quan kiểm thử phần mềm, trang 40)."
+  },
+  {
+    "Q": "Câu hỏi 9: Loại kiểm thử nào được thực hiện bởi người dùng cuối (end-user) tại môi trường thực tế của họ trước khi sản phẩm được phát hành rộng rãi?",
+    "A": [
+      "Alpha Testing",
+      "Beta Testing",
+      "System Testing",
+      "Integration Testing"
+    ],
+    "C": 1,
+    "R": "Beta Testing là loại kiểm thử chấp nhận được thực hiện bởi một nhóm người dùng cuối thực tế tại môi trường làm việc của họ (môi trường thực) trước khi sản phẩm được phát hành chính thức. (Tổng quan kiểm thử phần mềm, trang 59, 61)."
+  },
+  {
+    "Q": "Câu hỏi 10: Trong mô hình V-Model, hoạt động kiểm thử nào thường tương ứng với giai đoạn \"Requirement Analysis\" (Phân tích yêu cầu)?",
+    "A": [
+      "Unit Testing",
+      "Integration Testing",
+      "System Testing",
+      "Acceptance Testing"
+    ],
+    "C": 3,
+    "R": "Trong V-Model, Acceptance Testing (Kiểm thử chấp nhận) được thực hiện dựa trên các yêu cầu người dùng đã được xác định trong giai đoạn Requirement Analysis. (Tổng quan kiểm thử phần mềm, trang 81)."
+  },
+  {
+    "Q": "Câu hỏi 11: Sự khác biệt cơ bản giữa QA (Quality Assurance) và QC (Quality Control) là gì?",
+    "A": [
+      "QA tập trung vào sản phẩm, QC tập trung vào quy trình.",
+      "QA là một hoạt động ngăn ngừa lỗi, QC là một hoạt động phát hiện lỗi.",
+      "QA được thực hiện bởi tester, QC được thực hiện bởi developer.",
+      "QA tốn nhiều chi phí hơn QC."
+    ],
+    "C": 1,
+    "R": "QA (Đảm bảo chất lượng) là các hoạt động mang tính hệ thống, tập trung vào quy trình để NGĂN NGỪA lỗi. QC (Kiểm soát chất lượng) là các hoạt động tập trung vào sản phẩm để TÌM RA lỗi. (Tổng quan kiểm thử phần mềm, trang 34)."
+  },
+  {
+    "Q": "Câu hỏi 12: Khi một developer cần kiểm thử một module mà module đó lại phụ thuộc vào một module khác chưa được hoàn thiện, developer có thể tạo ra một \"mẫu code giả lập\" cho module chưa hoàn thiện đó. Mẫu code này được gọi là gì?",
+    "A": [
+      "Driver",
+      "Stub",
+      "Mock Object",
+      "Test Harness"
+    ],
+    "C": 1,
+    "R": "Stub là một đoạn mã giả lập (dummy code) được tạo ra để mô phỏng hành vi của một module (thường là module cấp thấp hơn hoặc module phụ thuộc) chưa được phát triển hoặc chưa sẵn sàng để tích hợp. (Tổng quan kiểm thử phần mềm, trang 32)."
+  },
+  {
+    "Q": "Câu hỏi 13: Theo IEEE, chất lượng phần mềm được định nghĩa là:",
+    "A": [
+      "Mức độ phần mềm không có lỗi.",
+      "Mức độ phần mềm đáp ứng các yêu cầu chỉ định.",
+      "Mức độ phần mềm dễ sử dụng và bảo trì.",
+      "Mức độ phần mềm được khách hàng hài lòng."
+    ],
+    "C": 1,
+    "R": "Theo định nghĩa của IEEE (được đề cập trong tài liệu), chất lượng phần mềm là \"mức độ để phần mềm, một thành phần của phần mềm hoặc một quy trình đáp ứng được các yêu cầu chỉ định\". (Tổng quan kiểm thử phần mềm, trang 16)."
+  },
+  {
+    "Q": "Câu hỏi 14: \"Nguyên tắc Pareto (80/20)\" trong kiểm thử phần mềm thường ám chỉ điều gì? (Defect clustering)",
+    "A": [
+      "80% lỗi được tìm thấy bởi 20% tester.",
+      "80% thời gian kiểm thử dành cho 20% chức năng.",
+      "Phần lớn các lỗi (khoảng 80%) thường tập trung ở một số ít module (khoảng 20%).",
+      "Cần 80% nỗ lực để sửa 20% lỗi."
+    ],
+    "C": 2,
+    "R": "Nguyên tắc \"Defect clustering\" (còn gọi là nguyên tắc Pareto trong kiểm thử) cho rằng một số ít module thường chứa phần lớn các lỗi được tìm thấy. (Tổng quan kiểm thử phần mềm, trang 25)."
+  },
+  {
+    "Q": "Câu hỏi 15: Phát biểu nào sau đây là ĐÚNG về W-Model trong phát triển phần mềm?",
+    "A": [
+      "Chỉ tập trung vào kiểm thử động.",
+      "Cho phép thực hiện kiểm thử song song với quá trình phát triển.",
+      "Là một biến thể của mô hình thác nước.",
+      "Không bao gồm các hoạt động kiểm thử tĩnh."
+    ],
+    "C": 1,
+    "R": "W-Model khắc phục nhược điểm của V-Model bằng cách cho phép thực hiện quá trình kiểm thử song song với quá trình phát triển phần mềm, và nhấn mạnh việc áp dụng kiểm thử tĩnh sớm. (Tổng quan kiểm thử phần mềm, trang 83, 84)."
+  },
+  {
+    "Q": "Câu hỏi 16: Nếu kết quả mong muốn không được chỉ định trong test case thì:",
+    "A": [
+      "Không thể chạy các test case.",
+      "Khó lặp lại việc kiểm thử.",
+      "Khó quyết định test case là pass hay failed.",
+      "Không thể tự động nhập liệu cho kiểm thử được."
+    ],
+    "C": 2,
+    "R": "Nếu không có kết quả mong muốn (expected result), tester sẽ không có cơ sở để so sánh với kết quả thực tế (actual result) và do đó không thể quyết định test case đó là pass (thành công) hay failed (thất bại). (Tổng quan kiểm thử phần mềm, trang 86, 87)."
+  },
+  {
+    "Q": "Câu hỏi 17: Tài liệu nào dùng để theo dõi mối liên kết giữa các yêu cầu và các test case tương ứng?",
+    "A": [
+      "Test Plan",
+      "Test Report",
+      "Traceability Matrix (Ma trận truy vết)",
+      "Test Scenario"
+    ],
+    "C": 2,
+    "R": "Traceability Matrix (Ma trận truy vết yêu cầu) là một bảng dùng để theo dõi và ánh xạ các yêu cầu của phần mềm với các test case tương ứng (và các thành phần khác của vòng đời phát triển). (Tổng quan kiểm thử phần mềm, trang 96, 97)."
+  },
+  {
+    "Q": "Câu hỏi 18: Mục tiêu chính của Regression Testing (Kiểm thử hồi quy) là gì?",
+    "A": [
+      "Kiểm tra các chức năng mới được thêm vào.",
+      "Đảm bảo các thay đổi hoặc sửa lỗi không gây ra lỗi mới ở những phần không thay đổi.",
+      "Kiểm tra hiệu năng của hệ thống sau khi cập nhật.",
+      "Kiểm tra tính tương thích của hệ thống với các môi trường khác nhau."
+    ],
+    "C": 1,
+    "R": "Regression Testing (Kiểm thử hồi quy) được thực hiện sau khi có sự thay đổi (sửa lỗi, thêm chức năng) để đảm bảo rằng những thay đổi đó không vô tình gây ra lỗi mới ở những phần không liên quan của hệ thống vốn đang hoạt động tốt. (Kiểm thử hộp đen, trang 8)."
+  },
+  {
+    "Q": "Câu hỏi 19: Ai là người thường chịu trách nhiệm thực hiện Unit Test?",
+    "A": [
+      "End-user",
+      "Tester độc lập",
+      "Developer (Người phát triển)",
+      "Project Manager"
+    ],
+    "C": 2,
+    "R": "Unit Test (Kiểm thử đơn vị) thường được thực hiện bởi chính developer đã viết mã cho đơn vị đó. (Tổng quan kiểm thử phần mềm, trang 40)."
+  },
+  {
+    "Q": "Câu hỏi 20: \"Đến deadline\", \"Thực thi hết test case\", \"Tỷ lệ lỗi ở một mức cho phép\" là các yếu tố để quyết định điều gì trong quy trình kiểm thử?",
+    "A": [
+      "Khi nào bắt đầu kiểm thử.",
+      "Khi nào kết thúc kiểm thử.",
+      "Ai sẽ thực hiện kiểm thử.",
+      "Loại lỗi nào cần được ưu tiên sửa."
+    ],
+    "C": 1,
+    "R": "Các yếu tố như đến hạn chót, thực thi hết các test case đã định, hoặc tỷ lệ lỗi giảm xuống một mức chấp nhận được là những tiêu chí thường được sử dụng để quyết định khi nào nên kết thúc một giai đoạn kiểm thử hoặc toàn bộ quá trình kiểm thử. (Tổng quan kiểm thử phần mềm, trang 22)."
+  },
+  {
+    "Q": "Câu hỏi 21: Một trong 7 nguyên tắc của kiểm thử là \"Exhaustive testing is impossible\". Điều này có nghĩa là gì?",
+    "A": [
+      "Không thể kiểm thử tất cả các module của phần mềm.",
+      "Không thể kiểm thử tất cả các kết hợp của đầu vào và điều kiện.",
+      "Không thể tìm thấy tất cả các lỗi trong phần mềm.",
+      "Không thể kiểm thử phần mềm nếu không có đủ thời gian."
+    ],
+    "C": 1,
+    "R": "\"Exhaustive testing is impossible\" có nghĩa là không thể kiểm thử tất cả các tổ hợp đầu vào và tất cả các điều kiện, kịch bản có thể xảy ra trong một phần mềm phức tạp do giới hạn về thời gian và tài nguyên. (Tổng quan kiểm thử phần mềm, trang 25)."
+  },
+  {
+    "Q": "Câu hỏi 22: Phương pháp review nào được thực hiện theo quy trình chính thức và có kế hoạch cụ thể?",
+    "A": [
+      "Informal review",
+      "Walkthrough",
+      "Formal review (ví dụ: Inspection)",
+      "Peer review"
+    ],
+    "C": 2,
+    "R": "Formal review (ví dụ: Inspection) là loại review được thực hiện theo một quy trình chính thức, có kế hoạch, vai trò rõ ràng và tài liệu cụ thể. (Tổng quan kiểm thử phần mềm, trang 64, 65)."
+  },
+  {
+    "Q": "Câu hỏi 23: Mục đích của việc sử dụng \"Driver\" trong Integration Testing là gì?",
+    "A": [
+      "Mô phỏng hoạt động của module cấp thấp chưa được phát triển.",
+      "Gọi và truyền dữ liệu cho module đang được kiểm thử (thường là module cấp thấp).",
+      "Ghi lại kết quả kiểm thử tự động.",
+      "Phân tích tĩnh mã nguồn của module."
+    ],
+    "C": 1,
+    "R": "Driver trong kiểm thử tích hợp là một đoạn mã được viết để gọi và truyền dữ liệu (test case) đến module đang được kiểm thử (thường là module cấp thấp hơn, được kiểm thử từ dưới lên - bottom-up). (Tổng quan kiểm thử phần mềm, trang 32)."
+  },
+  {
+    "Q": "Câu hỏi 24: Khi người dùng cuối phát hiện sự khác biệt giữa kết quả mong muốn và kết quả thực thi của hệ thống, điều này được gọi là gì?",
+    "A": [
+      "Error",
+      "Fault",
+      "Failure",
+      "Defect"
+    ],
+    "C": 2,
+    "R": "Failure (hỏng) là sự kiện xảy ra khi phần mềm không hoạt động như mong đợi từ phía người dùng, tức là có sự khác biệt giữa kết quả thực tế và kết quả mong muốn khi người dùng tương tác với hệ thống. (Tổng quan kiểm thử phần mềm, trang 27, 30)."
+  },
+  {
+    "Q": "Câu hỏi 25: Thuật ngữ \"Bug\" trong kiểm thử phần mềm thường được dùng để chỉ chung cho:",
+    "A": [
+      "Chỉ Error",
+      "Chỉ Fault",
+      "Cả Error và Fault",
+      "Chỉ Failure"
+    ],
+    "C": 2,
+    "R": "Trong thực tế, thuật ngữ \"Bug\" thường được dùng để chỉ chung cho cả Error (lỗi do con người) và Fault (sai sót trong sản phẩm). (Tổng quan kiểm thử phần mềm, trang 27)."
+  },
+  {
+    "Q": "Câu hỏi 26: Kỹ thuật kiểm thử hộp đen nào tập trung vào việc chia miền giá trị đầu vào thành các nhóm mà hệ thống xử lý tương tự nhau?",
+    "A": [
+      "Phân tích giá trị biên (Boundary Value Analysis)",
+      "Bảng quyết định (Decision Tables)",
+      "Phân vùng tương đương (Equivalence Partitioning)",
+      "Kiểm thử dựa trên trạng thái (State Transition Testing)"
+    ],
+    "C": 2,
+    "R": "Phân vùng tương đương (Equivalence Partitioning - EP) là kỹ thuật chia tập hợp các điều kiện đầu vào thành các nhóm (phân vùng) mà hệ thống được cho là sẽ xử lý các giá trị trong cùng một nhóm một cách tương tự. (Kiểm thử hộp đen, trang 13)."
+  },
+  {
+    "Q": "Câu hỏi 27: Một trường nhập liệu tuổi chấp nhận giá trị từ 18 đến 60. Sử dụng kỹ thuật phân tích giá trị biên (BVA) 2 giá trị, các giá trị nào sau đây nên được chọn để kiểm thử?",
+    "A": [
+      "17, 18, 60, 61",
+      "18, 30, 60",
+      "17, 19, 59, 61",
+      "0, 18, 60, 100"
+    ],
+    "C": 0,
+    "R": "Sử dụng BVA 2 giá trị (Min, Max) cho mỗi biên: Biên dưới là 18 (Min-1 = 17, Min = 18). Biên trên là 60 (Max = 60, Max+1 = 61). Vậy các giá trị là 17, 18, 60, 61. (Kiểm thử hộp đen, trang 23, 24)."
+  },
+  {
+    "Q": "Câu hỏi 28: Cho một chức năng đăng nhập với điều kiện: Username (U) và Password (P). Mỗi trường có thể là: Rỗng (B), Hợp lệ (V), Không hợp lệ (I). Nếu U=B và P=V, hành động mong muốn là \"Thông báo lỗi: Vui lòng nhập username\". Đây là một quy tắc trong kỹ thuật kiểm thử nào?",
+    "A": [
+      "Phân vùng tương đương",
+      "Bảng quyết định",
+      "Phân tích giá trị biên",
+      "Kiểm thử dựa trên use case"
+    ],
+    "C": 1,
+    "R": "Đây là một quy tắc điển hình trong một Bảng quyết định (Decision Table), nơi các tổ hợp điều kiện đầu vào (Username, Password) dẫn đến các hành động cụ thể (Thông báo lỗi). (Kiểm thử hộp đen, trang 33-37)."
+  },
+  {
+    "Q": "Câu hỏi 29: Một hệ thống ATM có các trạng thái: Idle, CardInserted, PINEntered, TransactionProcessing, CardEjected. Sự kiện \"Nhập PIN sai 3 lần\" có thể dẫn đến chuyển từ trạng thái PINEntered sang trạng thái nào?",
+    "A": [
+      "TransactionProcessing",
+      "CardEjected (và có thể nuốt thẻ)",
+      "Idle",
+      "PINEntered (cho phép nhập lại)"
+    ],
+    "C": 1,
+    "R": "Trong một hệ thống ATM, nếu người dùng nhập PIN sai quá số lần cho phép (ví dụ 3 lần), hệ thống thường sẽ chuyển sang trạng thái trả thẻ (CardEjected) và có thể giữ lại thẻ để bảo mật. (Kiểm thử hộp đen, ví dụ về State Transition, trang 49-55)."
+  },
+  {
+    "Q": "Câu hỏi 30: Kỹ thuật kiểm thử nào tập trung vào việc kiểm tra các khía cạnh hành vi của hệ thống như tính tiện dụng, tính khả chuyển, hiệu năng?",
+    "A": [
+      "Kiểm thử chức năng (Functional testing)",
+      "Kiểm thử phi chức năng (Non-functional testing)",
+      "Retesting",
+      "Regression testing"
+    ],
+    "C": 1,
+    "R": "Kiểm thử phi chức năng (Non-functional testing) tập trung vào các khía cạnh \"cách hệ thống hoạt động\" như hiệu năng, tính tiện dụng, độ tin cậy, tính bảo mật, khả năng bảo trì, khả năng mở rộng, v.v. (Kiểm thử hộp đen, trang 7)."
+  },
+  {
+    "Q": "Câu hỏi 31: Một ô nhập liệu chỉ chấp nhận các số nguyên từ 1 đến 100. Giá trị nào sau đây thuộc phân vùng tương đương KHÔNG HỢP LỆ?",
+    "A": [
+      "0",
+      "1",
+      "50",
+      "100"
+    ],
+    "C": 0,
+    "R": "Phân vùng hợp lệ là [1, 100]. Các phân vùng không hợp lệ là < 1 và > 100. Giá trị 0 thuộc phân vùng không hợp lệ (< 1). (Kiểm thử hộp đen, trang 16)."
+  },
+  {
+    "Q": "Câu hỏi 32: Khi một lỗi đã được sửa và tester kiểm tra lại để xác nhận lỗi đó thực sự đã được giải quyết, kỹ thuật này gọi là gì?",
+    "A": [
+      "Regression Testing",
+      "Retesting (Confirmation Testing)",
+      "Sanity Testing",
+      "Smoke Testing"
+    ],
+    "C": 1,
+    "R": "Retesting (hay Confirmation Testing) là việc thực thi lại các test case đã từng phát hiện lỗi (failed) để xác nhận rằng các lỗi đó đã được sửa chữa một cách chính xác. (Kiểm thử hộp đen, trang 8)."
+  },
+  {
+    "Q": "Câu hỏi 33: Cho chức năng xếp loại học sinh dựa trên điểm trung bình (ĐTB) từ 0.0 đến 10.0, làm tròn 1 chữ số thập phân:\n0.0 <= ĐTB < 5.0: Yếu\n5.0 <= ĐTB < 7.0: Trung bình\n7.0 <= ĐTB < 8.0: Khá\n8.0 <= ĐTB < 9.0: Giỏi\n9.0 <= ĐTB <= 10.0: Xuất sắc\nSử dụng BVA 3 giá trị (Min, Min+, Max-, Max, Nom), giá trị nào KHÔNG cần thiết cho phân vùng \"Khá\" [7.0, 8.0)?",
+    "A": [
+      "6.9",
+      "7.0",
+      "7.5",
+      "7.9"
+    ],
+    "C": 0,
+    "R": "Phân vùng \"Khá\" là [7.0, 8.0). Sử dụng BVA 3 giá trị (Min, Min+, Nom, Max-, Max): Min = 7.0, Min+ = 7.1, Nominal = 7.5, Max- = 7.9. Giá trị 6.9 thuộc phân vùng \"Trung bình\", không phải giá trị biên của \"Khá\". (Kiểm thử hộp đen, trang 24)."
+  },
+  {
+    "Q": "Câu hỏi 34: Kỹ thuật nào phù hợp nhất để kiểm thử một quy trình nghiệp vụ phức tạp có nhiều điều kiện và hành động phụ thuộc lẫn nhau, ví dụ như quy trình tính phí bảo hiểm?",
+    "A": [
+      "Phân vùng tương đương",
+      "Phân tích giá trị biên",
+      "Bảng quyết định",
+      "Đoán lỗi (Error Guessing)"
+    ],
+    "C": 2,
+    "R": "Bảng quyết định (Decision Tables) rất hiệu quả để kiểm thử các tình huống có logic nghiệp vụ phức tạp, nhiều điều kiện và hành động phụ thuộc lẫn nhau, giúp đảm bảo các tổ hợp kịch bản được xem xét. (Kiểm thử hộp đen, trang 33)."
+  },
+  {
+    "Q": "Câu hỏi 35: Trong kiểm thử dựa trên trạng thái, \"Sự kiện (Event)\" là gì?",
+    "A": [
+      "Một điều kiện mà phần mềm có thể ở tại một thời điểm.",
+      "Một kích thích từ bên ngoài hoặc bên trong làm thay đổi trạng thái của hệ thống.",
+      "Hành động mà hệ thống thực hiện khi chuyển trạng thái.",
+      "Kết quả của việc chuyển đổi trạng thái."
+    ],
+    "C": 1,
+    "R": "Trong State Transition Testing, \"Sự kiện (Event)\" là một kích thích (input, điều kiện thời gian,...) làm cho hệ thống chuyển từ trạng thái này sang trạng thái khác. (Kiểm thử hộp đen, trang 48)."
+  },
+  {
+    "Q": "Câu hỏi 36: Một trường nhập liệu mã PIN yêu cầu đúng 6 chữ số. Giá trị nào sau đây thuộc phân vùng tương đương hợp lệ?",
+    "A": [
+      "\"12345\"",
+      "\"1234567\"",
+      "\"abcdef\"",
+      "\"654321\""
+    ],
+    "C": 3,
+    "R": "Yêu cầu là đúng 6 chữ số. \"654321\" là một chuỗi gồm 6 ký tự và tất cả đều là chữ số. (Bài tập áp dụng Phân vùng tương đương)."
+  },
+  {
+    "Q": "Câu hỏi 37: Cho chức năng đăng ký tài khoản yêu cầu mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường và số. Mật khẩu \"Test1234\" có hợp lệ không?",
+    "A": [
+      "Hợp lệ",
+      "Không hợp lệ, thiếu chữ hoa",
+      "Không hợp lệ, thiếu chữ thường",
+      "Không hợp lệ, thiếu số"
+    ],
+    "C": 0,
+    "R": "Mật khẩu \"Test1234\" có 8 ký tự, có chữ hoa (T), chữ thường (est), và số (1234). Vậy nó hợp lệ. (Bài tập áp dụng Phân vùng tương đương/Kiểm tra điều kiện)."
+  },
+  {
+    "Q": "Câu hỏi 38: Trong kiểm thử dựa trên Use Case, \"Actor\" là gì?",
+    "A": [
+      "Một chức năng cụ thể của hệ thống.",
+      "Một người dùng hoặc một hệ thống khác tương tác với hệ thống đang kiểm thử.",
+      "Một kịch bản kiểm thử chi tiết.",
+      "Một điều kiện tiên quyết để thực hiện use case."
+    ],
+    "C": 1,
+    "R": "Actor trong Use Case Testing là một thực thể bên ngoài hệ thống (có thể là người dùng hoặc một hệ thống khác) tương tác trực tiếp với hệ thống đang được kiểm thử. (Kiểm thử hộp đen, trang 63)."
+  },
+  {
+    "Q": "Câu hỏi 39: Kỹ thuật \"Đoán lỗi (Error Guessing)\" dựa chủ yếu vào yếu tố nào?",
+    "A": [
+      "Đặc tả yêu cầu chi tiết.",
+      "Kinh nghiệm và trực giác của tester.",
+      "Mã nguồn của chương trình.",
+      "Kết quả của các kỹ thuật kiểm thử chính thức khác."
+    ],
+    "C": 1,
+    "R": "Đoán lỗi (Error Guessing) là một kỹ thuật kiểm thử dựa trên kinh nghiệm, kiến thức và trực giác của tester về những loại lỗi thường xảy ra hoặc những khu vực dễ phát sinh lỗi trong các ứng dụng tương tự. (Kiểm thử hộp đen, trang 68)."
+  },
+  {
+    "Q": "Câu hỏi 40: \"Kiểm thử thăm dò (Exploratory Testing)\" có đặc điểm nổi bật nào?",
+    "A": [
+      "Thiết kế test case và thực thi test case được thực hiện song song.",
+      "Yêu cầu tài liệu test plan rất chi tiết.",
+      "Chỉ được thực hiện ở giai đoạn cuối của dự án.",
+      "Không cần kiến thức về hệ thống đang kiểm thử."
+    ],
+    "C": 0,
+    "R": "Kiểm thử thăm dò (Exploratory Testing) là một kỹ thuật mà việc học hỏi về hệ thống, thiết kế test case và thực thi test case được thực hiện đồng thời, song song. (Kiểm thử hộp đen, trang 69, 70)."
+  },
+  {
+    "Q": "Câu hỏi 41: Một hệ thống quản lý thư viện cho phép mượn sách. Điều kiện: người dùng phải có thẻ hợp lệ (THV) VÀ không có sách quá hạn (SQH). Hành động: Cho mượn (CM) hoặc Từ chối (TC).\nNếu THV=TRUE và SQH=FALSE thì Action=CM.\nNếu THV=TRUE và SQH=TRUE thì Action=TC.\nNếu THV=FALSE thì Action=TC (không quan tâm SQH).\nCần bao nhiêu test case để kiểm tra tất cả các quy tắc trong bảng quyết định rút gọn?",
+    "A": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "C": 1,
+    "R": "Điều kiện: THV, SQH. Hành động: Action (CM, TC).\nR1: THV=T, SQH=F -> CM\nR2: THV=T, SQH=T -> TC\nR3: THV=F, SQH=T -> TC\nR4: THV=F, SQH=F -> TC\nRút gọn: Rule 1: THV=T, SQH=F -> CM. Rule 2: THV=T, SQH=T -> TC. Rule 3: THV=F, SQH=(-) -> TC. Vậy cần 3 test case. (Kiểm thử hộp đen, trang 38-39)."
+  },
+  {
+    "Q": "Câu hỏi 42: Cho một ứng dụng web có chức năng upload file. Kích thước file tối đa là 5MB. Các loại file cho phép là .jpg, .png, .pdf.\nTest case nào sau đây thuộc phân vùng KHÔNG HỢP LỆ cho loại file?",
+    "A": [
+      "Upload file \"image.jpg\" kích thước 3MB.",
+      "Upload file \"document.pdf\" kích thước 4MB.",
+      "Upload file \"archive.zip\" kích thước 2MB.",
+      "Upload file \"photo.png\" kích thước 5MB."
+    ],
+    "C": 2,
+    "R": "\"archive.zip\" có phần mở rộng là .zip, không nằm trong danh sách các loại file cho phép (.jpg, .png, .pdf). Đây là một giá trị không hợp lệ cho thuộc tính loại file. (Bài tập áp dụng Phân vùng tương đương)."
+  },
+  {
+    "Q": "Câu hỏi 43: Hệ thống đăng nhập yêu cầu username và password.\nTrạng thái S1: Màn hình đăng nhập.\nSự kiện E1: Nhập username và password đúng -> Chuyển đến S2 (Trang chủ).\nSự kiện E2: Nhập username hoặc password sai -> Vẫn ở S1, hiển thị thông báo lỗi.\nSự kiện E3: Click link \"Quên mật khẩu\" -> Chuyển đến S3 (Trang lấy lại mật khẩu).\nTừ trạng thái S1, có bao nhiêu sự kiện có thể xảy ra?",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 2,
+    "R": "Từ trạng thái S1 (Màn hình đăng nhập), có 3 sự kiện được mô tả có thể xảy ra: E1 (Nhập đúng), E2 (Nhập sai), E3 (Click \"Quên mật khẩu\"). (Kiểm thử hộp đen, State Transition)."
+  },
+  {
+    "Q": "Câu hỏi 44: Một chương trình yêu cầu nhập vào một tháng (1-12) và một năm.\nĐầu vào: Tháng = 13, Năm = 2023. Đây là loại kiểm thử gì nếu tester cố tình nhập giá trị này?",
+    "A": [
+      "Phân vùng tương đương (giá trị không hợp lệ).",
+      "Phân tích giá trị biên.",
+      "Đoán lỗi.",
+      "Cả A và C đều có thể đúng."
+    ],
+    "C": 3,
+    "R": "Tháng 13 là một giá trị nằm ngoài phân vùng hợp lệ (1-12), do đó nó thuộc kiểm thử Phân vùng tương đương. Đồng thời, việc tester cố tình nhập một giá trị rõ ràng là sai cũng có thể coi là một hình thức Đoán lỗi. (Kiểm thử hộp đen)."
+  },
+  {
+    "Q": "Câu hỏi 45: Một ô tìm kiếm chấp nhận tối đa 255 ký tự. Theo BVA, giá trị nào sau đây KHÔNG phải là một giá trị biên điển hình cần kiểm thử?",
+    "A": [
+      "0 ký tự (chuỗi rỗng)",
+      "1 ký tự",
+      "128 ký tự",
+      "255 ký tự",
+      "256 ký tự"
+    ],
+    "C": 2,
+    "R": "Với giới hạn tối đa 255 ký tự, các giá trị biên điển hình theo BVA: 0, 1, 254, 255, 256. Giá trị 128 ký tự là một giá trị \"nominal\" (bên trong), không phải giá trị biên. (Kiểm thử hộp đen, trang 23)."
+  },
+  {
+    "Q": "Câu hỏi 46: Đặc tả yêu cầu: \"Nếu khách hàng là VIP VÀ tổng hóa đơn > 1.000.000 VNĐ THÌ giảm giá 10%\".\nTest case: Khách hàng không phải VIP, tổng hóa đơn 1.500.000 VNĐ, không giảm giá.\nTest case này kiểm tra điều gì?",
+    "A": [
+      "Nhánh TRUE của điều kiện \"khách hàng là VIP\".",
+      "Nhánh FALSE của điều kiện \"khách hàng là VIP\".",
+      "Nhánh TRUE của điều kiện \"tổng hóa đơn > 1.000.000 VNĐ\".",
+      "Cả A và C."
+    ],
+    "C": 1,
+    "R": "Test case \"Khách hàng không phải VIP...\" làm cho điều kiện \"khách hàng là VIP\" nhận giá trị FALSE. Hệ thống hoạt động đúng (không giảm giá). Test case này đang kiểm tra nhánh FALSE của điều kiện \"khách hàng là VIP\". (Kiểm thử hộp đen, Decision Coverage)."
+  },
+  {
+    "Q": "Câu hỏi 47: Trong kiểm thử hệ thống thanh toán trực tuyến, việc kiểm tra xem hệ thống có xử lý đúng khi người dùng hủy giao dịch giữa chừng thuộc loại kiểm thử nào?",
+    "A": [
+      "Kiểm thử chức năng (luồng ngoại lệ).",
+      "Kiểm thử hiệu năng.",
+      "Kiểm thử tính tiện dụng.",
+      "Kiểm thử bảo mật."
+    ],
+    "C": 0,
+    "R": "Việc hủy giao dịch là một luồng xử lý nghiệp vụ, mặc dù là luồng không thành công (luồng ngoại lệ), nhưng nó vẫn thuộc về kiểm tra chức năng của hệ thống. (Kiểm thử hộp đen)."
+  },
+  {
+    "Q": "Câu hỏi 48: Cho đoạn mã kiểm tra năm nhuận: `if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))`. \nGiá trị `year = 1900` (không nhuận) sẽ làm cho nhánh nào của điều kiện `year % 4 == 0 && year % 100 != 0` được đánh giá là FALSE?",
+    "A": [
+      "`year % 4 == 0`",
+      "`year % 100 != 0`",
+      "Cả hai đều FALSE.",
+      "`year % 4 == 0` là TRUE, nhưng `year % 100 != 0` là FALSE."
+    ],
+    "C": 1,
+    "R": "`year = 1900`. `year % 4 == 0` (1900 % 4 == 0) là TRUE. `year % 100 != 0` (1900 % 100 != 0) là `0 != 0` là FALSE. Do đó, biểu thức `(TRUE && FALSE)` sẽ là FALSE. Nhánh làm cho nó FALSE là do `year % 100 != 0` là FALSE. (Bài tập logic điều kiện)."
+  },
+  {
+    "Q": "Câu hỏi 49: Loại kiểm thử nào tập trung vào việc đảm bảo hệ thống hoạt động đúng theo các quy tắc nghiệp vụ được định nghĩa trong use case?",
+    "A": [
+      "Kiểm thử dựa trên trạng thái",
+      "Kiểm thử dựa trên use case",
+      "Bảng quyết định",
+      "Phân vùng tương đương"
+    ],
+    "C": 1,
+    "R": "Kiểm thử dựa trên use case (Use Case Testing) tập trung vào việc thực hiện các kịch bản người dùng để đảm bảo hệ thống hoạt động đúng theo các quy tắc nghiệp vụ và luồng xử lý. (Kiểm thử hộp đen, trang 62)."
+  },
+  {
+    "Q": "Câu hỏi 50: Khi kiểm thử chức năng tìm kiếm, việc nhập một chuỗi rất dài, hoặc chuỗi có ký tự đặc biệt, hoặc chuỗi rỗng là ví dụ của kỹ thuật nào?",
+    "A": [
+      "Chỉ phân vùng tương đương.",
+      "Chỉ phân tích giá trị biên.",
+      "Đoán lỗi và có thể kết hợp với EP/BVA.",
+      "Chỉ kiểm thử dựa trên use case."
+    ],
+    "C": 2,
+    "R": "Việc nhập các giá trị \"bất thường\" hoặc \"cực đoan\" thường là kết quả của kỹ thuật Đoán lỗi (Error Guessing), và các giá trị này cũng có thể được xác định thông qua Phân vùng tương đương (EP) hoặc Phân tích giá trị biên (BVA). (Kiểm thử hộp đen)."
+  },
+  {
+    "Q": "Câu hỏi 51: Kỹ thuật kiểm thử hộp trắng KHÔNG yêu cầu điều gì?",
+    "A": [
+      "Kiến thức về mã nguồn chương trình.",
+      "Kiến thức về cấu trúc dữ liệu và giải thuật.",
+      "Đặc tả yêu cầu chi tiết của người dùng.",
+      "Khả năng vẽ đồ thị luồng điều khiển."
+    ],
+    "C": 2,
+    "R": "Kiểm thử hộp trắng tập trung vào cấu trúc bên trong của phần mềm. Mặc dù hiểu yêu cầu người dùng là quan trọng cho mọi loại kiểm thử, nhưng nó không phải là YÊU CẦU CỐT LÕI để thực hiện các kỹ thuật hộp trắng cụ thể như phân tích mã nguồn. (Kiểm thử hộp trắng, trang 3)."
+  },
+  {
+    "Q": "Câu hỏi 52: Độ phức tạp Cyclomatic (V(G)) của một chương trình KHÔNG thể được tính bằng công thức nào sau đây?",
+    "A": [
+      "V(G) = Số vùng (regions)",
+      "V(G) = Số cạnh (E) - Số nút (N) + 2",
+      "V(G) = Số nút vị từ (P) + 1",
+      "V(G) = Số nút (N) - Số cạnh (E) + 2"
+    ],
+    "C": 3,
+    "R": "Công thức đúng là V(G) = E - N + 2. Công thức V(G) = N - E + 2 là sai. (Kiểm thử hộp trắng, trang 18)."
+  },
+  {
+    "Q": "Câu hỏi 53: Cho đoạn mã: `if (A > B) { X = 1; } else { Y = 2; } Z = 3;`. Đoạn mã này có bao nhiêu nút và bao nhiêu cạnh trên đồ thị luồng (flow graph) nếu mỗi lệnh gán và điều kiện là một nút?",
+    "A": [
+      "Nút: 4, Cạnh: 4",
+      "Nút: 3, Cạnh: 3",
+      "Nút: 5, Cạnh: 5",
+      "Nút: 4, Cạnh: 3"
+    ],
+    "C": 0,
+    "R": "Nút 1: `if (A > B)`. Nút 2: `X = 1;`. Nút 3: `Y = 2;`. Nút 4: `Z = 3;`. Cạnh: (1->2), (1->3), (2->4), (3->4). Tổng: 4 nút, 4 cạnh. (Kiểm thử hộp trắng, trang 6-10)."
+  },
+  {
+    "Q": "Câu hỏi 54: Loại bao phủ (coverage) nào đảm bảo rằng mỗi câu lệnh trong mã nguồn được thực thi ít nhất một lần?",
+    "A": [
+      "Branch Coverage (Phủ nhánh)",
+      "Path Coverage (Phủ đường)",
+      "Statement Coverage (Phủ câu lệnh)",
+      "Condition Coverage (Phủ điều kiện)"
+    ],
+    "C": 2,
+    "R": "Statement Coverage (Phủ câu lệnh) đảm bảo rằng mỗi dòng lệnh thực thi trong mã nguồn được chạy ít nhất một lần. (Kiểm thử hộp trắng, trang 35, 36)."
+  },
+  {
+    "Q": "Câu hỏi 55: Cho đoạn mã: `if (X && Y) { Z = 1; }`. Để đạt được Condition Coverage, cần tối thiểu bao nhiêu test case?",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 1,
+    "R": "Condition Coverage yêu cầu mỗi điều kiện con (X, Y) phải nhận cả giá trị True và False. TC1: X=True, Y=True. TC2: X=False, Y=False. (Kiểm thử hộp trắng, trang 44). Với 2 test cases, X đã nhận T/F, Y đã nhận T/F."
+  },
+  {
+    "Q": "Câu hỏi 56: Trong Data Flow Testing, \"DEF(v, n)\" có nghĩa là gì?",
+    "A": [
+      "Biến v được sử dụng (USE) tại nút n.",
+      "Biến v được định nghĩa (DEFINE) tại nút n.",
+      "Biến v bị xóa (DELETE) tại nút n.",
+      "Biến v không được sử dụng sau khi định nghĩa tại nút n."
+    ],
+    "C": 1,
+    "R": "DEF(v, n) có nghĩa là biến 'v' được định nghĩa (DEFINE - gán giá trị mới) tại câu lệnh thuộc nút 'n' của đồ thị luồng. (Kiểm thử hộp trắng, trang 57)."
+  },
+  {
+    "Q": "Câu hỏi 57: Kỹ thuật kiểm thử vòng lặp (Loop Testing) KHÔNG bao gồm việc kiểm tra trường hợp nào sau đây cho một vòng lặp đơn giản (simple loop) với số lần lặp tối đa là N?",
+    "A": [
+      "Bỏ qua vòng lặp (không lặp lần nào).",
+      "Thực hiện 1 lần lặp.",
+      "Thực hiện N/2 lần lặp.",
+      "Thực hiện N+1 lần lặp."
+    ],
+    "C": 2,
+    "R": "Các trường hợp điển hình là: 0 lần lặp, 1 lần, 2 lần, m lần (m < N), N-1, N, N+1 lần. N/2 không phải là một trường hợp biên hoặc trường hợp đặc biệt tiêu chuẩn. (Kiểm thử hộp trắng, trang 72)."
+  },
+  {
+    "Q": "Câu hỏi 58: Cho đoạn mã: `int i = 0; while (i < 5) { cout << i; i++; }`. Độ phức tạp Cyclomatic của đoạn mã này là bao nhiêu?",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 1,
+    "R": "Vòng lặp `while` có một điều kiện (`i < 5`), do đó nó là một nút vị từ (P=1). Độ phức tạp Cyclomatic V(G) = P + 1 = 1 + 1 = 2. (Kiểm thử hộp trắng, trang 18)."
+  },
+  {
+    "Q": "Câu hỏi 59: Loại bao phủ nào được coi là mạnh nhất trong số các loại sau (đòi hỏi nhiều test case nhất để đạt được)?",
+    "A": [
+      "Statement Coverage",
+      "Branch Coverage",
+      "Path Coverage",
+      "Condition Coverage"
+    ],
+    "C": 2,
+    "R": "Path Coverage (Phủ đường) yêu cầu kiểm thử tất cả các đường đi có thể có. Đây thường là loại bao phủ mạnh nhất và đòi hỏi nhiều test case nhất, có thể là vô hạn với vòng lặp. (Kiểm thử hộp trắng, trang 42)."
+  },
+  {
+    "Q": "Câu hỏi 60: Nếu một chương trình có `V(G) = 4`, điều này có nghĩa là có bao nhiêu đường đi độc lập cơ sở (basis independent paths)?",
+    "A": [
+      "3",
+      "4",
+      "5",
+      "Không xác định được."
+    ],
+    "C": 1,
+    "R": "Độ phức tạp Cyclomatic V(G) chính là số lượng đường đi độc lập cơ sở trong chương trình. (Kiểm thử hộp trắng, trang 17)."
+  },
+  {
+    "Q": "Câu hỏi 61: Cho đoạn mã:\n```cpp\nint max(int a, int b) {\n  if (a > b) // P1\n    return a;\n  else\n    return b;\n}\n```\nSố nút vị từ (P) là bao nhiêu?",
+    "A": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "C": 1,
+    "R": "Câu lệnh `if (a > b)` là một điểm quyết định, do đó là 1 nút vị từ. P = 1. (Kiểm thử hộp trắng, trang 9)."
+  },
+  {
+    "Q": "Câu hỏi 62: Với đoạn mã ở câu 61, V(G) là bao nhiêu?",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 1,
+    "R": "V(G) = P + 1 = 1 + 1 = 2. (Kiểm thử hộp trắng, trang 18)."
+  },
+  {
+    "Q": "Câu hỏi 63: Cho đoạn mã:\n```cpp\nvoid process(int x) {\n  int y = 0; // DEF(y,1)\n  if (x > 0) { // P-USE(x,2)\n    y = x * 2; // DEF(y,3), C-USE(x,3)\n  }\n  cout << y; // C-USE(y,4)\n}\n```\nCặp DU (Definition-Use pair) nào sau đây là hợp lệ cho biến `y`?",
+    "A": [
+      "(DEF(y,1), C-USE(y,3))",
+      "(DEF(y,1), C-USE(y,4)) (nếu x <= 0)",
+      "(DEF(y,3), C-USE(y,4)) (nếu x > 0)",
+      "Cả B và C đều đúng."
+    ],
+    "C": 3,
+    "R": "Nếu x <= 0: luồng đi 1 -> 2 -> 4. Đường DC từ DEF(y,1) đến C-USE(y,4) là (1,2,4). Cặp DU: (DEF(y,1), C-USE(y,4)) hợp lệ. Nếu x > 0: luồng đi 1 -> 2 -> 3 -> 4. Đường DC từ DEF(y,3) đến C-USE(y,4) là (3,4). Cặp DU: (DEF(y,3), C-USE(y,4)) hợp lệ. Vậy cả B và C đều đúng. (Kiểm thử hộp trắng, trang 59, 61)."
+  },
+  {
+    "Q": "Câu hỏi 64: Để phủ nhánh (Branch Coverage) cho đoạn mã `if (A || B) { S1; } else { S2; }`, cần tối thiểu bao nhiêu test case?",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 1,
+    "R": "TC1: A=True (B bất kỳ) -> Nhánh `if` là TRUE (S1). TC2: A=False, B=False -> Nhánh `if` là FALSE (S2). Cần 2 test case. (Kiểm thử hộp trắng, trang 39)."
+  },
+  {
+    "Q": "Câu hỏi 65: Một vòng lặp `for (i=0; i<N; i++)`. Để kiểm thử vòng lặp này theo nguyên tắc kiểm thử vòng lặp đơn giản, giá trị nào của N KHÔNG phải là một trường hợp biên điển hình cần xem xét cho số lần lặp? (N là số lần lặp tối đa được thiết kế).",
+    "A": [
+      "0 (Không lặp)",
+      "1",
+      "N",
+      "N+1 (Nếu có thể)",
+      "2 (Thường được chọn để kiểm tra lặp nhiều hơn 1 lần)"
+    ],
+    "C": 4,
+    "R": "Các trường hợp điển hình: 0, 1, m (vài lần, ví dụ 2), N-1, N, N+1 (nếu có ý nghĩa). Số 2 không phải là giá trị biên đặc trưng như các giá trị khác trong danh sách kiểm thử vòng lặp. (Kiểm thử hộp trắng, trang 72). Câu trả lời E đúng hơn là D nếu N là số lần lặp tối đa, N+1 sẽ là vượt biên."
+  },
+  {
+    "Q": "Câu hỏi 66: \"Đường DC (definition-clear path) của biến x từ S đến S'\" có nghĩa là:",
+    "A": [
+      "Tồn tại một định nghĩa khác của x trên đường từ S đến S'.",
+      "Không tồn tại một định nghĩa nào khác của x trên đường từ S đến S'.",
+      "Biến x được sử dụng ngay sau khi được định nghĩa tại S.",
+      "Biến x không được sử dụng tại S'."
+    ],
+    "C": 1,
+    "R": "Đường DC (definition-clear path) của biến x từ một định nghĩa S đến một sử dụng S' là một đường đi mà trên đó không có định nghĩa nào khác của x nằm giữa S và S'. (Kiểm thử hộp trắng, trang 61)."
+  },
+  {
+    "Q": "Câu hỏi 67: Phủ điều kiện (Condition Coverage) cho `if (C1 && C2 && C3)` yêu cầu:",
+    "A": [
+      "Mỗi C1, C2, C3 phải nhận giá trị TRUE ít nhất một lần.",
+      "Mỗi C1, C2, C3 phải nhận giá trị FALSE ít nhất một lần.",
+      "Mỗi C1, C2, C3 phải nhận cả TRUE và FALSE ít nhất một lần.",
+      "Toàn bộ biểu thức `(C1 && C2 && C3)` phải nhận cả TRUE và FALSE ít nhất một lần."
+    ],
+    "C": 2,
+    "R": "Condition Coverage yêu cầu mỗi điều kiện con đơn lẻ (C1, C2, C3) phải nhận cả giá trị TRUE và FALSE ít nhất một lần qua các test case. (Kiểm thử hộp trắng, trang 44)."
+  },
+  {
+    "Q": "Câu hỏi 68: Cho đoạn mã:\n```cpp\nint a = 5; // S1\nint b = 10; // S2\nif (a < b) { // S3\n  b = a; // S4\n}\na = b + 1; // S5\n```\nTính V(G) của đoạn mã này.",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 1,
+    "R": "Có 1 nút vị từ là `if (a < b)`. Vậy P = 1. V(G) = P + 1 = 1 + 1 = 2. (Kiểm thử hộp trắng, trang 18)."
+  },
+  {
+    "Q": "Câu hỏi 69: Trong kiểm thử luồng dữ liệu, `All-defs coverage` yêu cầu:",
+    "A": [
+      "Mỗi định nghĩa của một biến phải được theo sau bởi ít nhất một lần sử dụng biến đó.",
+      "Mỗi lần sử dụng một biến phải được đi trước bởi đúng một định nghĩa của biến đó.",
+      "Tất cả các đường definition-clear từ mọi đỉnh định nghĩa biến v đến một đỉnh sử dụng biến v phải được thực thi.",
+      "Tất cả các biến phải được định nghĩa trước khi sử dụng."
+    ],
+    "C": 2,
+    "R": "`All-defs coverage` yêu cầu với mỗi định nghĩa của một biến v, tất cả các đường definition-clear từ định nghĩa đó đến MỌI lần sử dụng (use) của v phải được thực thi. (Kiểm thử hộp trắng, trang 64). Đáp án C gần nhất, tuy nhiên, nó nên là 'đến mọi đỉnh sử dụng'."
+  },
+  {
+    "Q": "Câu hỏi 70: Cho đoạn code:\n```cpp\nint i = 0, sum = 0;\nwhile (i < 3) { // P1\n  sum += i;      // L1\n  i++;           // L2\n}\n// L3 (giả sử là điểm thoát)\n```\nCần bao nhiêu test case để đạt Statement Coverage?",
+    "A": [
+      "1 (ví dụ i khởi tạo là 0)",
+      "2",
+      "3",
+      "0 (vì không có input)"
+    ],
+    "C": 0,
+    "R": "Một test case, ví dụ `i` được khởi tạo là 0, sẽ làm vòng lặp chạy và thoát, qua đó phủ tất cả các câu lệnh. (Kiểm thử hộp trắng, trang 36)."
+  },
+  {
+    "Q": "Câu hỏi 71: Với đoạn code ở câu 70, cần bao nhiêu test case để đạt Branch Coverage?",
+    "A": [
+      "1",
+      "2 (một cho i < 3 là true, một cho i < 3 là false)",
+      "3",
+      "4"
+    ],
+    "C": 1,
+    "R": "Điều kiện `while (i < 3)` có 2 nhánh: TRUE (vào lặp) và FALSE (thoát lặp). TC1: i=0 (điều kiện TRUE). TC2: i=3 (điều kiện FALSE). Cần 2 test cases. (Kiểm thử hộp trắng, trang 39)."
+  },
+  {
+    "Q": "Câu hỏi 72: Một hàm kiểm tra số nguyên tố có vòng lặp `for (int i = 2; i <= sqrt(n); i++)`. Nếu `n = 4`, vòng lặp thực thi bao nhiêu lần?",
+    "A": [
+      "0 lần",
+      "1 lần (`i=2`, `2 <= sqrt(4)` là true, `4%2==0` -> thoát sớm)",
+      "2 lần",
+      "Không xác định"
+    ],
+    "C": 1,
+    "R": "`n = 4`, `sqrt(n) = 2`. Lần 1: `i = 2`. `2 <= 2` (TRUE). Bên trong, `4 % 2 == 0` (TRUE), hàm sẽ `return false` (hoặc `break`). Vòng lặp chỉ thực thi 1 lần. (Bài tập logic vòng lặp)."
+  },
+  {
+    "Q": "Câu hỏi 73: Kỹ thuật kiểm thử nào tập trung vào việc kiểm tra các cặp định nghĩa-sử dụng (definition-use) của biến?",
+    "A": [
+      "Kiểm thử đường dẫn cơ sở",
+      "Kiểm thử cấu trúc điều khiển",
+      "Kiểm thử luồng dữ liệu (Data Flow Testing)",
+      "Kiểm thử vòng lặp"
+    ],
+    "C": 2,
+    "R": "Kiểm thử luồng dữ liệu (Data Flow Testing) tập trung vào việc theo dõi \"vòng đời\" của các biến, cụ thể là các cặp định nghĩa và sử dụng của chúng. (Kiểm thử hộp trắng, trang 56)."
+  },
+  {
+    "Q": "Câu hỏi 74: \"Vùng (Region)\" trong đồ thị luồng là gì?",
+    "A": [
+      "Một nút trong đồ thị.",
+      "Một cạnh trong đồ thị.",
+      "Một khu vực được bao quanh bởi các cạnh và nút, hoặc khu vực bên ngoài đồ thị.",
+      "Một đường đi từ nút bắt đầu đến nút kết thúc."
+    ],
+    "C": 2,
+    "R": "\"Vùng (Region)\" là một khu vực được bao quanh bởi các cạnh và nút. Khu vực bên ngoài đồ thị cũng được tính là một vùng. (Kiểm thử hộp trắng, trang 9, 18)."
+  },
+  {
+    "Q": "Câu hỏi 75: Phủ đa điều kiện (Multi-condition coverage) cho `if (C1 && C2)` yêu cầu kiểm thử các tổ hợp nào của (C1, C2)?",
+    "A": [
+      "(T,T), (F,F)",
+      "(T,T), (T,F), (F,T)",
+      "(T,T), (T,F), (F,T), (F,F)",
+      "(T,T) và một trường hợp bất kỳ làm biểu thức False."
+    ],
+    "C": 2,
+    "R": "Phủ đa điều kiện yêu cầu kiểm thử TẤT CẢ các tổ hợp có thể có của các giá trị TRUE/FALSE của các điều kiện con. Với 2 điều kiện C1, C2, có 2^2 = 4 tổ hợp: (T,T), (T,F), (F,T), (F,F). (Kiểm thử hộp trắng, trang 54)."
+  },
+  {
+    "Q": "Câu hỏi 76: Mục đích chính của kiểm thử tự động là gì?",
+    "A": [
+      "Thay thế hoàn toàn kiểm thử thủ công.",
+      "Giảm thời gian, chi phí, tăng độ tin cậy và hiệu suất cho các bài kiểm thử lặp đi lặp lại.",
+      "Tìm ra nhiều lỗi hơn so với kiểm thử thủ công.",
+      "Chỉ áp dụng cho kiểm thử hồi quy."
+    ],
+    "C": 1,
+    "R": "Mục đích chính của kiểm thử tự động là giảm thời gian, chi phí, tăng độ tin cậy (do loại bỏ lỗi con người) và nâng cao hiệu suất, đặc biệt cho các bài kiểm thử cần thực hiện lặp đi lặp lại. (Kiểm thử tự động, trang 3, 4)."
+  },
+  {
+    "Q": "Câu hỏi 77: Công cụ Selenium nào là một plugin trình duyệt (Firefox, Chrome) cho phép ghi lại và phát lại các hành động của người dùng?",
+    "A": [
+      "Selenium WebDriver",
+      "Selenium Grid",
+      "Selenium RC (Remote Control)",
+      "Selenium IDE"
+    ],
+    "C": 3,
+    "R": "Selenium IDE là một công cụ dạng plugin cho trình duyệt cho phép ghi lại và phát lại các hành động người dùng. (Kiểm thử tự động, trang 7, 10-12)."
+  },
+  {
+    "Q": "Câu hỏi 78: Trong Selenium WebDriver với Python, lệnh nào dùng để mở một URL trong trình duyệt?",
+    "A": [
+      "driver.open(\"url\")",
+      "driver.navigate(\"url\")",
+      "driver.get(\"url\")",
+      "driver.load(\"url\")"
+    ],
+    "C": 2,
+    "R": "Lệnh `driver.get(\"url\")` được sử dụng để điều hướng trình duyệt đến một URL cụ thể. (Kiểm thử tự động, trang 19)."
+  },
+  {
+    "Q": "Câu hỏi 79: Phương thức nào trong Selenium WebDriver dùng để tìm MỘT phần tử web đầu tiên khớp với bộ chọn (locator)?",
+    "A": [
+      "driver.find_elements_by_id(\"...\")",
+      "driver.find_element(By.ID, \"...\")",
+      "driver.get_element_by_name(\"...\")",
+      "driver.select_element_by_xpath(\"...\")"
+    ],
+    "C": 1,
+    "R": "Phương thức `driver.find_element(By.ID, \"...\")` (hoặc các biến thể với `By.NAME`, `By.XPATH`...) dùng để tìm một phần tử web đầu tiên khớp với locator. (Kiểm thử tự động, trang 21, 23, 25)."
+  },
+  {
+    "Q": "Câu hỏi 80: Lệnh nào sau đây trong Selenium Python dùng để nhập văn bản \"software testing\" vào một ô input đã được tìm thấy và gán cho biến `ele`?",
+    "A": [
+      "ele.type(\"software testing\")",
+      "ele.input_text(\"software testing\")",
+      "ele.send_keys(\"software testing\")",
+      "ele.fill(\"software testing\")"
+    ],
+    "C": 2,
+    "R": "Phương thức `send_keys(\"text_to_input\")` được dùng để mô phỏng việc gõ văn bản vào một phần tử input. (Kiểm thử tự động, trang 22, 27)."
+  },
+  {
+    "Q": "Câu hỏi 81: \"Implicit Wait\" trong Selenium WebDriver có tác dụng gì?",
+    "A": [
+      "Chờ một điều kiện cụ thể xảy ra trước khi thực hiện hành động tiếp theo.",
+      "Thiết lập thời gian chờ tối đa cho WebDriver khi cố gắng tìm một phần tử trên trang.",
+      "Chỉ chờ các phần tử AJAX load xong.",
+      "Dừng thực thi kịch bản trong một khoảng thời gian cố định."
+    ],
+    "C": 1,
+    "R": "\"Implicit Wait\" chỉ thị cho WebDriver chờ một khoảng thời gian nhất định (nếu phần tử không được tìm thấy ngay) trước khi ném lỗi `NoSuchElementException`. Nó áp dụng toàn cục. (Kiểm thử tự động, trang 31, 32)."
+  },
+  {
+    "Q": "Câu hỏi 82: Bộ chọn (locator) nào sau đây thường được coi là nhanh và ổn định nhất nếu có sẵn và duy nhất?",
+    "A": [
+      "XPath",
+      "CSS Selector",
+      "ID",
+      "Name"
+    ],
+    "C": 2,
+    "R": "ID của một phần tử web, nếu được thiết kế đúng, thường là duy nhất và không thay đổi, làm cho việc tìm kiếm bằng ID nhanh và ổn định. (Kiến thức chung Selenium)."
+  },
+  {
+    "Q": "Câu hỏi 83: Để chọn một option từ thẻ `<select>` trong Selenium Python, bạn thường sử dụng lớp nào?",
+    "A": [
+      "WebElement",
+      "WebDriver",
+      "Select (từ `selenium.webdriver.support.ui`)",
+      "Options"
+    ],
+    "C": 2,
+    "R": "Selenium cung cấp lớp `Select` trong module `selenium.webdriver.support.ui` để làm việc với các thẻ `<select>`. (Kiểm thử tự động, trang 28)."
+  },
+  {
+    "Q": "Câu hỏi 84: Lệnh `element.submit()` trong Selenium thường được dùng để làm gì?",
+    "A": [
+      "Gửi một form mà phần tử `element` đó thuộc về.",
+      "Click vào phần tử `element`.",
+      "Xóa nội dung của phần tử `element`.",
+      "Lấy giá trị của thuộc tính \"submit\" của `element`."
+    ],
+    "C": 0,
+    "R": "Nếu một phần tử nằm trong form, `element.submit()` sẽ kích hoạt sự kiện submit của form đó. (Kiểm thử tự động, trang 22, 27)."
+  },
+  {
+    "Q": "Câu hỏi 85: Sự khác biệt chính giữa `driver.close()` và `driver.quit()` trong Selenium WebDriver là gì?",
+    "A": [
+      "`close()` đóng tất cả cửa sổ trình duyệt, `quit()` chỉ đóng cửa sổ hiện tại.",
+      "`close()` chỉ đóng cửa sổ trình duyệt hiện tại, `quit()` đóng tất cả các cửa sổ và kết thúc session WebDriver.",
+      "Không có sự khác biệt đáng kể.",
+      "`quit()` nhanh hơn `close()`."
+    ],
+    "C": 1,
+    "R": "`driver.close()` đóng cửa sổ trình duyệt hiện tại. `driver.quit()` đóng tất cả cửa sổ và kết thúc session WebDriver. (Kiểm thử tự động, trang 20)."
+  },
+  {
+    "Q": "Câu hỏi 86: Nếu bạn muốn tìm TẤT CẢ các thẻ `<a>` trên một trang web bằng Selenium Python, bạn sẽ dùng lệnh nào?",
+    "A": [
+      "driver.find_element(By.TAG_NAME, \"a\")",
+      "driver.find_elements(By.TAG_NAME, \"a\")",
+      "driver.get_links(\"a\")",
+      "driver.find_all_by_tag(\"a\")"
+    ],
+    "C": 1,
+    "R": "Phương thức `driver.find_elements(By.TAG_NAME, \"a\")` (có 's') sẽ trả về một danh sách tất cả các phần tử có tên thẻ là \"a\". (Kiểm thử tự động, trang 23, 25)."
+  },
+  {
+    "Q": "Câu hỏi 87: \"Explicit Wait\" trong Selenium là gì?",
+    "A": [
+      "Một khoảng thời gian chờ cố định được đặt ở đầu kịch bản.",
+      "Chờ cho đến khi một điều kiện cụ thể (ExpectedCondition) được thỏa mãn hoặc hết thời gian chờ tối đa.",
+      "Tự động chờ cho các phần tử load xong mà không cần khai báo.",
+      "Chỉ dùng cho việc chờ trang load hoàn chỉnh."
+    ],
+    "C": 1,
+    "R": "\"Explicit Wait\" cho phép WebDriver chờ một khoảng thời gian nhất định cho đến khi một điều kiện cụ thể được thỏa mãn. (Kiểm thử tự động, trang 31, 33, 34)."
+  },
+  {
+    "Q": "Câu hỏi 88: Đoạn mã Selenium Python `driver.find_element(By.XPATH, \"//input[@name='username']\")` dùng để tìm phần tử nào?",
+    "A": [
+      "Một thẻ `input` bất kỳ.",
+      "Một thẻ `input` có thuộc tính `name` là `username`.",
+      "Một thẻ `username` có thuộc tính `name` là `input`.",
+      "Một thẻ `input` có id là `username`."
+    ],
+    "C": 1,
+    "R": "XPath `//input[@name='username']` chọn thẻ `input` có thuộc tính `name` bằng `username`. (Kiểm thử tự động, kiến thức XPath)."
+  },
+  {
+    "Q": "Câu hỏi 89: Để lấy giá trị của thuộc tính `href` của một thẻ `<a>` (đã được tìm và gán vào biến `link_element`), bạn dùng lệnh nào?",
+    "A": [
+      "link_element.text",
+      "link_element.get_value(\"href\")",
+      "link_element.get_attribute(\"href\")",
+      "link_element.href_value"
+    ],
+    "C": 2,
+    "R": "Phương thức `element.get_attribute(\"attribute_name\")` được dùng để lấy giá trị của một thuộc tính cụ thể. (Kiểm thử tự động, trang 29)."
+  },
+  {
+    "Q": "Câu hỏi 90: Công cụ Selenium Grid được sử dụng chủ yếu cho mục đích gì?",
+    "A": [
+      "Ghi lại và phát lại các test case đơn giản.",
+      "Chạy các test case song song trên nhiều máy và nhiều trình duyệt khác nhau.",
+      "Quản lý các test case và báo cáo kết quả.",
+      "Cung cấp một IDE để viết mã kiểm thử."
+    ],
+    "C": 1,
+    "R": "Selenium Grid cho phép thực thi test song song trên nhiều máy và trình duyệt, giúp giảm thời gian chạy bộ test lớn. (Kiểm thử tự động, trang 7, 9)."
+  },
+  {
+    "Q": "Câu hỏi 91: Lệnh `element.is_displayed()` trong Selenium Python trả về giá trị gì?",
+    "A": [
+      "Một chuỗi cho biết phần tử có hiển thị hay không.",
+      "Một giá trị boolean (True nếu phần tử hiển thị, False nếu không).",
+      "Tọa độ của phần tử trên trang.",
+      "Kích thước của phần tử."
+    ],
+    "C": 1,
+    "R": "Phương thức `element.is_displayed()` trả về `True` nếu phần tử đó hiển thị, `False` nếu không. (Kiểm thử tự động, trang 30)."
+  },
+  {
+    "Q": "Câu hỏi 92: Khi nào thì nên sử dụng `time.sleep()` trong kịch bản Selenium?",
+    "A": [
+      "Luôn luôn sử dụng để đảm bảo các phần tử đã load.",
+      "Chỉ khi các loại Wait khác (Implicit, Explicit) không hoạt động.",
+      "Nên hạn chế tối đa, chỉ dùng cho mục đích gỡ lỗi (debug) hoặc trong trường hợp đặc biệt không có cách nào khác.",
+      "Thay thế hoàn toàn cho Explicit Wait."
+    ],
+    "C": 2,
+    "R": "`time.sleep()` là \"hard wait\", nên hạn chế sử dụng. Ưu tiên Implicit/Explicit Wait. (Kiến thức chung Selenium)."
+  },
+  {
+    "Q": "Câu hỏi 93: Để tương tác với một checkbox và kiểm tra xem nó đã được chọn hay chưa, bạn có thể dùng phương thức nào của WebElement?",
+    "A": [
+      "is_selected()",
+      "is_checked()",
+      "get_status()",
+      "is_toggled()"
+    ],
+    "C": 0,
+    "R": "Phương thức `element.is_selected()` dùng để kiểm tra trạng thái của checkbox, radio button. (Kiểm thử tự động, trang 30)."
+  },
+  {
+    "Q": "Câu hỏi 94: `By.PARTIAL_LINK_TEXT` trong Selenium dùng để tìm phần tử `<a>` dựa trên:",
+    "A": [
+      "Toàn bộ nội dung text của link.",
+      "Một phần nội dung text của link.",
+      "Giá trị thuộc tính `href` của link.",
+      "Tên class của link."
+    ],
+    "C": 1,
+    "R": "`By.PARTIAL_LINK_TEXT` dùng để tìm link dựa trên một phần text hiển thị của nó. (Kiểm thử tự động, trang 21)."
+  },
+  {
+    "Q": "Câu hỏi 95: Kỹ năng nào sau đây KHÔNG thực sự cần thiết cho một Automation Tester chuyên nghiệp?",
+    "A": [
+      "Hiểu biết về các kỹ thuật kiểm thử phần mềm.",
+      "Khả năng lập trình tốt (ví dụ: Python, Java, C#).",
+      "Kiến thức sâu về quản trị cơ sở dữ liệu.",
+      "Hiểu biết về HTML, CSS, JavaScript và các bộ chọn (locators)."
+    ],
+    "C": 2,
+    "R": "Mặc dù kiến thức về CSDL có thể hữu ích, nó không phải là kỹ năng cốt lõi bắt buộc như các kỹ năng khác được liệt kê. (Kiểm thử tự động, trang 5)."
+  },
+  {
+    "Q": "Câu hỏi 96: Đoạn mã `from selenium.webdriver.common.by import By` có ý nghĩa gì?",
+    "A": [
+      "Import tất cả các hàm của Selenium.",
+      "Import lớp `By` để sử dụng các phương thức định vị phần tử chuẩn hóa (ví dụ: `By.ID`, `By.NAME`).",
+      "Import các hàm liên quan đến trình duyệt.",
+      "Import các hàm hỗ trợ việc chờ đợi."
+    ],
+    "C": 1,
+    "R": "Lệnh này import lớp `By` để sử dụng các hằng số định vị phần tử (ID, NAME, XPATH, etc.). (Kiểm thử tự động, trang 25)."
+  },
+  {
+    "Q": "Câu hỏi 97: Nếu một trang web có nhiều phần tử cùng class name là \"product-item\", lệnh `driver.find_element(By.CLASS_NAME, \"product-item\")` sẽ trả về:",
+    "A": [
+      "Một danh sách tất cả các phần tử có class name đó.",
+      "Phần tử đầu tiên tìm thấy có class name đó.",
+      "Gây ra lỗi vì có nhiều phần tử trùng khớp.",
+      "Trả về `None`."
+    ],
+    "C": 1,
+    "R": "`driver.find_element(...)` (không có 's') trả về phần tử đầu tiên khớp. (Kiểm thử tự động, trang 23)."
+  },
+  {
+    "Q": "Câu hỏi 98: Để lấy tiêu đề của trang web hiện tại, bạn dùng lệnh Selenium nào?",
+    "A": [
+      "driver.get_title()",
+      "driver.page_title",
+      "driver.title",
+      "driver.header_text"
+    ],
+    "C": 2,
+    "R": "Thuộc tính `driver.title` trả về tiêu đề của trang web hiện tại. (Kiểm thử tự động, trang 20)."
+  },
+  {
+    "Q": "Câu hỏi 99: Mục đích của việc sử dụng `WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, \"myDynamicElement\")))` là gì?",
+    "A": [
+      "Bắt WebDriver chờ đúng 10 giây rồi mới tìm phần tử.",
+      "Bắt WebDriver chờ tối đa 10 giây cho đến khi phần tử với ID \"myDynamicElement\" xuất hiện trong DOM.",
+      "Tìm phần tử \"myDynamicElement\" và sau đó chờ 10 giây.",
+      "Dừng kịch bản 10 giây nếu phần tử không tìm thấy."
+    ],
+    "C": 1,
+    "R": "Đây là Explicit Wait, chờ tối đa 10 giây cho đến khi phần tử `myDynamicElement` hiện diện trong DOM. (Kiểm thử tự động, trang 33, 34)."
+  },
+  {
+    "Q": "Câu hỏi 100: CSS Selector `div#main-content > p.intro` sẽ chọn phần tử nào?",
+    "A": [
+      "Bất kỳ thẻ `p` nào là con trực tiếp của thẻ `div` có class `main-content` và thẻ `p` đó có id `intro`.",
+      "Bất kỳ thẻ `p` nào có class `intro` là con trực tiếp của một thẻ `div` có ID `main-content`.",
+      "Bất kỳ thẻ `div` nào có ID `main-content` và bên trong nó có một thẻ `p` với class `intro`.",
+      "Một thẻ `div` có class `main-content` và là con của một thẻ `p` có class `intro`."
+    ],
+    "C": 1,
+    "R": "`div#main-content` chọn thẻ `div` có ID `main-content`. `>` chọn con trực tiếp. `p.intro` chọn thẻ `p` có class `intro`. Vậy, chọn thẻ `p` có class `intro` và là con trực tiếp của `div` có ID `main-content`. (Kiến thức CSS Selectors)."
+  },
+  {
+    "Q": "Câu hỏi 101: Selenium WebDriver được coi là một sự cải tiến so với Selenium RC chủ yếu vì:",
+    "A": [
+      "Nó hỗ trợ nhiều ngôn ngữ lập trình hơn.",
+      "Nó tương tác trực tiếp với trình duyệt thông qua API gốc, giúp kiểm thử nhanh hơn và ổn định hơn.",
+      "Nó có giao diện người dùng đồ họa (GUI) để tạo test case.",
+      "Nó chỉ hoạt động trên trình duyệt Firefox."
+    ],
+    "C": 1,
+    "R": "Selenium WebDriver tương tác trực tiếp với API gốc của trình duyệt, không cần server trung gian như Selenium RC, giúp test nhanh và ổn định hơn. (Kiểm thử tự động, trang 9, 16)."
+  }
+]
