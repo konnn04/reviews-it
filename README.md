@@ -82,7 +82,7 @@ review-it/
 1. Clone dự án:
 
 ```bash
-git clone https://github.com/yourusername/review-it.git
+git clone https://github.com/konnn04/review-it.git
 cd review-it
 ```
 
