@@ -39,6 +39,12 @@
                     "file": "tn1.json"
                 },
                 {
+                    "id": "tn2",
+                    "title": "Trắc nghiệm chương 2: Kiểm thử hộp đen",
+                    "description": "Bài trắc nghiệm này giúp đánh giá kiến thức về kiểm thử hộp đen. Được trích xuất từ chương 2 của sách 'Kiểm thử phần mềm'.",
+                    "file": "tn2.json"
+                },
+                {
                     "id": "tn1-ai",
                     "title": "Trắc nghiệm kiểm thử phần mềm 1 (AI)",
                     "description": "Bài trắc nghiệm này có sử dụng AI để đánh giá kiến thức về kiểm thử phần mềm.",

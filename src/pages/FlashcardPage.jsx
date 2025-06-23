@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { loadInitData, loadQuizData } from '../utils/dataLoader';
-import { Card, Button, Badge, Form } from 'react-bootstrap';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import rehypeRaw from 'rehype-raw';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
-import 'highlight.js/styles/github.css';
-import hljs from 'highlight.js';
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import { loadInitData, loadQuizData } from "../utils/dataLoader";
+import { Card, Button, Badge, Form } from "react-bootstrap";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import "highlight.js/styles/github.css";
+import hljs from "highlight.js";
 
 function FlashcardPage() {
   const { courseId, flashcardId } = useParams();
@@ -17,7 +17,7 @@ function FlashcardPage() {
   const [flipped, setFlipped] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [title, setTitle] = useState('');
+  const [title, setTitle] = useState("");
   const [settings, setSettings] = useState({
     cardCount: 20,
     randomize: true,
@@ -26,29 +26,31 @@ function FlashcardPage() {
 
   const frontCardRef = useState(null);
   const backCardRef = useState(null);
-  
+
   useEffect(() => {
     const fetchFlashcardData = async () => {
       try {
         const initData = await loadInitData();
-        const foundCourse = initData.courses.find(c => c.id === courseId);
-        
+        const foundCourse = initData.courses.find((c) => c.id === courseId);
+
         if (!foundCourse) {
           setError("Không tìm thấy khóa học");
           setLoading(false);
           return;
         }
-        
-        const foundFlashcard = foundCourse['choices-test'].find(q => q.id === flashcardId);
-        
+
+        const foundFlashcard = foundCourse["choices-test"].find(
+          (q) => q.id === flashcardId
+        );
+
         if (!foundFlashcard) {
           setError("Không tìm thấy bộ thẻ ghi nhớ");
           setLoading(false);
           return;
         }
-        
+
         setTitle(foundFlashcard.title);
-        
+
         const flashcardData = await loadQuizData(courseId, foundFlashcard.file);
         setFlashcards(flashcardData);
       } catch (error) {
@@ -64,16 +66,16 @@ function FlashcardPage() {
 
   useEffect(() => {
     if (flipped && backCardRef.current) {
-      const codeBlocks = backCardRef.current.querySelectorAll('pre code');
+      const codeBlocks = backCardRef.current.querySelectorAll("pre code");
       if (codeBlocks.length > 0) {
-        codeBlocks.forEach(block => {
+        codeBlocks.forEach((block) => {
           hljs.highlightElement(block);
         });
       }
     } else if (!flipped && frontCardRef.current) {
-      const codeBlocks = frontCardRef.current.querySelectorAll('pre code');
+      const codeBlocks = frontCardRef.current.querySelectorAll("pre code");
       if (codeBlocks.length > 0) {
-        codeBlocks.forEach(block => {
+        codeBlocks.forEach((block) => {
           hljs.highlightElement(block);
         });
       }
@@ -81,31 +83,29 @@ function FlashcardPage() {
   }, [flipped, currentIndex, backCardRef, frontCardRef]);
 
   const markdownComponents = {
-    code({node, inline, className, children, ...props}) {
-      const match = /language-(\w+)/.exec(className || '');
+    code({ node, inline, className, children, ...props }) {
+      const match = /language-(\w+)/.exec(className || "");
       return !inline && match ? (
         <pre>
           <code className={`language-${match[1]}`} {...props}>
-            {String(children).replace(/\n$/, '')}
+            {String(children).replace(/\n$/, "")}
           </code>
         </pre>
       ) : (
-        <code {...props}>
-          {children}
-        </code>
+        <code {...props}>{children}</code>
       );
     },
   };
 
   const startFlashcards = () => {
     let selectedCards = [...flashcards];
-    
+
     if (settings.randomize) {
       selectedCards.sort(() => Math.random() - 0.5);
     }
-    
+
     selectedCards = selectedCards.slice(0, settings.cardCount);
-    
+
     setFlashcards(selectedCards);
     setShowSettings(false);
   };
@@ -129,7 +129,11 @@ function FlashcardPage() {
   };
 
   if (loading) {
-    return <div className="text-center py-5"><div className="spinner-border"></div></div>;
+    return (
+      <div className="text-center py-5">
+        <div className="spinner-border"></div>
+      </div>
+    );
   }
 
   if (error) {
@@ -146,27 +150,37 @@ function FlashcardPage() {
           <Form>
             <Form.Group className="mb-3">
               <Form.Label>Số lượng thẻ</Form.Label>
-              <Form.Control 
-                type="number" 
-                min="1" 
+              <Form.Control
+                type="number"
+                min="1"
                 max={flashcards.length}
                 value={settings.cardCount}
-                onChange={(e) => setSettings({...settings, cardCount: Math.min(parseInt(e.target.value), flashcards.length)})}
+                onChange={(e) =>
+                  setSettings({
+                    ...settings,
+                    cardCount: Math.min(
+                      parseInt(e.target.value),
+                      flashcards.length
+                    ),
+                  })
+                }
               />
               <Form.Text className="text-muted">
                 Tổng số thẻ: {flashcards.length}
               </Form.Text>
             </Form.Group>
-            
+
             <Form.Group className="mb-3">
-              <Form.Check 
-                type="checkbox" 
-                label="Xáo trộn thẻ" 
+              <Form.Check
+                type="checkbox"
+                label="Xáo trộn thẻ"
                 checked={settings.randomize}
-                onChange={(e) => setSettings({...settings, randomize: e.target.checked})}
+                onChange={(e) =>
+                  setSettings({ ...settings, randomize: e.target.checked })
+                }
               />
             </Form.Group>
-            
+
             <Button variant="primary" onClick={startFlashcards}>
               Bắt đầu
             </Button>
@@ -185,64 +199,76 @@ function FlashcardPage() {
   return (
     <div className="flashcard-page">
       <h2 className="mb-4">{title}</h2>
-      
+
       <div className="d-flex justify-content-between align-items-center mb-3">
-        <Badge bg="primary">Thẻ {currentIndex + 1} / {flashcards.length}</Badge>
+        <Badge bg="primary">
+          Thẻ {currentIndex + 1} / {flashcards.length}
+        </Badge>
         <div>
-          <Button 
-            variant="outline-secondary" 
+          <Button
+            variant="outline-secondary"
             size="sm"
             onClick={() => setShowSettings(true)}
             className="me-2"
           >
             Cài đặt
           </Button>
-          <Link 
-            to={`/course/${courseId}`} 
+          <Link
+            to={`/course/${courseId}`}
             className="btn btn-outline-secondary btn-sm"
           >
             Về khóa học
           </Link>
         </div>
       </div>
-      
-      <div 
-        className={`flashcard mb-4 ${flipped ? 'flipped' : ''}`}
+
+      <div
+        className={`flashcard mb-4 ${flipped ? "flipped" : ""}`}
         onClick={toggleFlip}
         style={{
-          perspective: '1000px',
-          height: '400px',
-          cursor: 'pointer'
+          perspective: "1000px",
+          height: "400px",
+          cursor: "pointer",
         }}
       >
-        <div 
+        <div
           style={{
-            position: 'relative',
-            width: '100%',
-            height: '100%',
-            transition: 'transform 0.6s',
-            transformStyle: 'preserve-3d',
-            transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
+            position: "relative",
+            width: "100%",
+            height: "100%",
+            transition: "transform 0.6s",
+            transformStyle: "preserve-3d",
+            transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)",
           }}
         >
           {/* FRONT CARD - USE MARKDOWN */}
-          <Card 
+          <Card
             className="front"
             style={{
-              position: 'absolute',
-              width: '100%',
-              height: '100%',
-              backfaceVisibility: 'hidden',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              padding: '20px'
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              backfaceVisibility: "hidden",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              padding: "20px",
             }}
           >
             <Card.Body className="d-flex justify-content-center align-items-center">
               <div className="markdown-content w-100" ref={frontCardRef}>
-                <ReactMarkdown 
-                  remarkPlugins={[remarkGfm, remarkMath]} 
+                {currentCard.I && (
+                  <div className="mb-3 text-center">
+                    <img
+                      src={currentCard.I}
+                      alt="Hình minh họa câu hỏi"
+                      className="img-fluid rounded"
+                      style={{ maxWidth: "100%", maxHeight: "200px" }}
+                    />
+                  </div>
+                )}
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm, remarkMath]}
                   rehypePlugins={[rehypeRaw, rehypeKatex]}
                   components={markdownComponents}
                 >
@@ -252,20 +278,20 @@ function FlashcardPage() {
             </Card.Body>
             <div className="text-center text-muted small">Nhấp để lật thẻ</div>
           </Card>
-          
+
           {/* BACK CARD - USE MARKDOWN */}
-          <Card 
+          <Card
             className="back"
             style={{
-              position: 'absolute',
-              width: '100%',
-              height: '100%',
-              backfaceVisibility: 'hidden',
-              transform: 'rotateY(180deg)',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              padding: '20px'
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              backfaceVisibility: "hidden",
+              transform: "rotateY(180deg)",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              padding: "20px",
             }}
           >
             <Card.Body className="d-flex flex-column justify-content-center">
@@ -280,7 +306,7 @@ function FlashcardPage() {
                     {currentCard.A[currentCard.C]}
                   </ReactMarkdown>
                 </div>
-                
+
                 {currentCard.R && (
                   <div className="explanation mt-3">
                     <strong>Giải thích:</strong>
@@ -299,17 +325,17 @@ function FlashcardPage() {
           </Card>
         </div>
       </div>
-      
+
       <div className="d-flex justify-content-between">
-        <Button 
-          variant="secondary" 
+        <Button
+          variant="secondary"
           onClick={prevCard}
           disabled={currentIndex === 0}
         >
           Thẻ trước
         </Button>
-        <Button 
-          variant="primary" 
+        <Button
+          variant="primary"
           onClick={nextCard}
           disabled={currentIndex === flashcards.length - 1}
         >

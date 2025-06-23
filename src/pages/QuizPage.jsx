@@ -332,6 +332,16 @@ function QuizPage() {
                   Câu hỏi {index + 1}
                 </Card.Title>
                 <div className="question-markdown mb-3">
+                  {question.I && (
+                    <div className="mb-3 text-center">
+                      <img
+                        src={question.I}
+                        alt="Hình minh họa câu hỏi"
+                        className="img-fluid rounded"
+                        style={{ maxWidth: "100%", maxHeight: "300px" }}
+                      />
+                    </div>
+                  )}
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm, remarkMath]}
                     rehypePlugins={[rehypeRaw, rehypeKatex]}
@@ -439,6 +449,21 @@ function QuizPage() {
               </div>
 
               <div className="question-content mb-4" ref={questionRef}>
+                {currentQuestion.I && (
+                  <div className="question-image mb-3">
+                    <img
+                      src={currentQuestion.I}
+                      alt="Hình minh họa câu hỏi"
+                      className="img-fluid rounded"
+                      style={{
+                        maxWidth: "100%",
+                        maxHeight: "400px",
+                        display: "block",
+                        margin: "0 auto",
+                      }}
+                    />
+                  </div>
+                )}
                 <div className="markdown-question">
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm, remarkMath]}
