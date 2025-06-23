@@ -29,8 +29,8 @@
       "Chứng tỏ phần mềm không làm việc.",
       "Chứng minh phần mềm phát triển đúng."
     ],
-    "C": 2,
-    "R": "Mục tiêu của kiểm thử là tìm lỗi, đảm bảo chất lượng, xác nhận phần mềm đáp ứng yêu cầu. Việc \"chứng tỏ phần mềm không làm việc\" mang tính tiêu cực và không phải là mục tiêu xây dựng của kiểm thử. Mục tiêu là tìm lỗi để cải thiện, không phải để chứng minh sự thất bại. (Tổng quan kiểm thử phần mềm, trang 19, 26)."
+    "C": 3,
+    "R": "Mục tiêu của kiểm thử là tìm lỗi, đảm bảo chất lượng, xác nhận phần mềm đáp ứng yêu cầu. Việc \"Chứng minh phần mềm phát triển đúng.\" mang tính ngược và không phải là mục tiêu xây dựng của kiểm thử. Không có phần mềm nào đảm bảo 100% không lỗi. (Tổng quan kiểm thử phần mềm, trang 19, 26)."
   },
   {
     "Q": "Mục đích chính phân chia kiểm thử thành nhiều giai đoạn khác nhau là gì?",
@@ -242,25 +242,25 @@
     "R": "Việc cho phép người dùng tiềm năng (khách hàng bên ngoài) sử dụng thử sản phẩm trong môi trường thực của họ và thu thập phản hồi là đặc điểm của Beta Testing. (Tổng quan kiểm thử phần mềm, trang 59, 61)."
   },
   {
-    "Q": "Để kiểm thử việc hiện thực hóa thuật toán gốc sử dụng sản phẩm cho khách hàng của một trang web bán hàng trực tuyến thì loại kiểm thử nào nên được sử dụng?",
+    "Q": "[Không chắc chắn]Để kiểm thử việc hiện thực hóa thuật toán gốc sử dụng sản phẩm cho khách hàng của một trang web bán hàng trực tuyến thì loại kiểm thử nào nên được sử dụng?",
     "A": [
       "Structural Testing",
       "Regression Testing",
       "Load Testing",
       "Functional Testing"
     ],
-    "C": 3,
-    "R": "Việc kiểm tra xem thuật toán (ví dụ: thuật toán gợi ý sản phẩm, tính toán giá) có hoạt động đúng theo chức năng được yêu cầu hay không thuộc về Functional Testing (Kiểm thử chức năng). (Tổng quan kiểm thử phần mềm, trang 48)."
+    "C": 0,
+    "R": "**Theo sách thì Structural Testing đúng**. Khi câu hỏi nhấn mạnh vào \"việc hiện thực hóa thuật toán gốc\", điều này ngụ ý rằng chúng ta cần xem xét cách thuật toán đó được xây dựng và cấu trúc bên trong nó như thế nào. Tuy nhiên, việc kiểm tra xem thuật toán (ví dụ: thuật toán gợi ý sản phẩm, tính toán giá) có hoạt động đúng theo chức năng được yêu cầu hay không thuộc về Functional Testing (Kiểm thử chức năng). (Tổng quan kiểm thử phần mềm, trang 48)."
   },
   {
     "Q": "Phát biểu trong Cột A phù hợp với loại kiểm thử nào trong Cột B?\n\nCột A:\n\nI. Kiểm thử được thực hiện khi chương trình có thay đổi.\n\nII. Loại kiểm thử được thực hiện bởi khách hàng trong môi trường phát triển.\n\nIII. Kiểm thử tự động đặc biệt hiệu quả với loại kiểm thử này.\n\nCột B:\n\n1. Regression Testing\n\n2. Alpha Testing\n\n3. Beta Testing",
     "A": [
       "I-1, II-2, III-3",
-      "I-1, II-3, III-1",
-      "I-2, II-1, III-3",
+      "I-1, II-3, III-3",
+      "I-1, II-2, III-1",
       "I-2, II-3, III-1"
     ],
-    "C": 3,
+    "C": 2,
     "R": "I. Kiểm thử được thực hiện khi chương trình có thay đổi -> 1. Regression Testing. II. Loại kiểm thử được thực hiện bởi người dùng nội bộ hoặc khách hàng tiềm năng tại môi trường của nhà phát triển (hoặc giả lập) -> 2. Alpha Testing. III. Kiểm thử tự động đặc biệt hiệu quả với Regression Testing (1). (Tổng quan kiểm thử phần mềm, trang 8, 59, 61; Kiểm thử tự động, trang 3)."
   },
   {
@@ -271,8 +271,8 @@
       "User Testing > Development Testing > Release Testing",
       "Development Testing > User Testing > Development Testing"
     ],
-    "C": 0,
-    "R": "Thứ tự phổ biến: Development Testing (Unit, Integration), sau đó User Testing (System, Acceptance), rồi mới đến Release Testing. (Tổng quan các cấp độ kiểm thử)."
+    "C": 1,
+    "R": "Thứ tự phổ biến: Development Testing > Release Testing > User Testing (Tổng quan các cấp độ kiểm thử)."
   },
   {
     "Q": "Integration Testing nên được bắt đầu khi nào?",
@@ -315,7 +315,7 @@
       "Informal review của đặc tả chương trình",
       "Static analysis của các mô hình phần mềm"
     ],
-    "C": 0,
+    "C": 3,
     "R": "Lập trình viên thường tham gia Technical Review để đánh giá các khía cạnh kỹ thuật của tài liệu, bao gồm đặc tả chức năng. (Tổng quan kiểm thử phần mềm, trang 64)."
   },
   {
