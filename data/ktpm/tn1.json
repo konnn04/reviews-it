@@ -1,0 +1,332 @@
+[
+  {
+    "Q": "Phát biểu nào sau đây **đúng** về V-model?",
+    "A": [
+      "Các bước giống mô hình thác nước trong phát triển phần mềm.",
+      "Nó là mô hình theo chu kỳ (cyclical model) trong phát triển phần mềm.",
+      "Nó cho phép ra đời các phiên bản làm việc được của hệ thống sớm nhất có thể.",
+      "Nó cho phép kế hoạch kiểm thử bắt đầu sớm nhất có thể."
+    ],
+    "C": 3,
+    "R": "V-Model nhấn mạnh việc các hoạt động kiểm thử được lên kế hoạch và thiết kế song song với các giai đoạn phát triển tương ứng. Ví dụ, kế hoạch kiểm thử chấp nhận có thể bắt đầu ngay khi tài liệu yêu cầu hoàn tất. Điều này cho phép kế hoạch kiểm thử bắt đầu sớm. (Tổng quan kiểm thử phần mềm, trang 80-82)."
+  },
+  {
+    "Q": "Phát biểu nào sau đây đúng về quy trình phát triển phần mềm lặp (iterative development)?",
+    "A": [
+      "Áp dụng cho các dự án có đặc tả yêu cầu đầy đủ ngay từ lúc bắt đầu dự án.",
+      "Có người dùng tham gia trong quá trình kiểm thử.",
+      "Sự thay đổi của hệ thống không cần ghi nhận chính thức.",
+      "Nó không phù hợp với các dự án Web."
+    ],
+    "C": 1,
+    "R": "Một đặc trưng quan trọng của quy trình lặp là có sự tham gia của người dùng (hoặc đại diện người dùng) trong quá trình kiểm thử và cung cấp phản hồi sau mỗi vòng lặp, giúp định hình sản phẩm tốt hơn. (Tổng quan kiểm thử phần mềm, trang 8)."
+  },
+  {
+    "Q": "Phát biểu nào sau đây thường không phải mục tiêu của kiểm thử?",
+    "A": [
+      "Tìm lỗi của phần mềm.",
+      "Đánh giá phần mềm có sẵn sàng triển khai không.",
+      "Chứng tỏ phần mềm không làm việc.",
+      "Chứng minh phần mềm phát triển đúng."
+    ],
+    "C": 2,
+    "R": "Mục tiêu của kiểm thử là tìm lỗi, đảm bảo chất lượng, xác nhận phần mềm đáp ứng yêu cầu. Việc \"chứng tỏ phần mềm không làm việc\" mang tính tiêu cực và không phải là mục tiêu xây dựng của kiểm thử. Mục tiêu là tìm lỗi để cải thiện, không phải để chứng minh sự thất bại. (Tổng quan kiểm thử phần mềm, trang 19, 26)."
+  },
+  {
+    "Q": "Mục đích chính phân chia kiểm thử thành nhiều giai đoạn khác nhau là gì?",
+    "A": [
+      "Dễ dàng quản lý kiểm thử ở các giai đoạn.",
+      "Mỗi giai đoạn kiểm thử có mục đích khác nhau.",
+      "Có thể chạy test khác nhau trên các giai đoạn khác nhau.",
+      "Càng nhiều giai đoạn thì quá trình kiểm thử càng tốt hơn."
+    ],
+    "C": 1,
+    "R": "Mỗi cấp độ/giai đoạn kiểm thử (Unit, Integration, System, Acceptance) có mục tiêu, phạm vi và đối tượng kiểm thử riêng biệt, tập trung vào các khía cạnh khác nhau của phần mềm. (Tổng quan kiểm thử phần mềm, trang 39, 56)."
+  },
+  {
+    "Q": "Quá trình kiểm thử nên kết thúc khi nào?",
+    "A": [
+      "Tất cả các test case đã được chạy hết.",
+      "Hết thời gian thực hiện test.",
+      "Tất cả các bug đã được giải quyết.",
+      "Phụ thuộc rủi ro (risk) khi hệ thống được kiểm thử."
+    ],
+    "C": 3,
+    "R": "Việc kết thúc kiểm thử không chỉ dựa vào việc chạy hết test case hay hết thời gian, mà còn phụ thuộc vào nhiều yếu tố như mức độ rủi ro chấp nhận được, tỷ lệ lỗi cho phép, deadline. Không có phần mềm nào đảm bảo 100% không lỗi. (Tổng quan kiểm thử phần mềm, trang 22)."
+  },
+  {
+    "Q": "Thứ tự nên thực hiện chạy các test case là:",
+    "A": [
+      "Test case dễ nhất được chạy trước.",
+      "Test case khó nhất được chạy trước.",
+      "Test case quan trọng nhất được chạy trước.",
+      "Thực hiện theo bất kỳ thứ tự nào."
+    ],
+    "C": 2,
+    "R": "Ưu tiên thực hiện các test case quan trọng nhất (ví dụ: kiểm tra các chức năng cốt lõi, các kịch bản rủi ro cao) trước để đảm bảo các phần quan trọng của hệ thống hoạt động ổn định sớm nhất có thể, hoặc phát hiện lỗi nghiêm trọng sớm."
+  },
+  {
+    "Q": "Phát biểu nào sau đây KHÔNG đúng về kiểm thử hệ thống (System Testing)?",
+    "A": [
+      "Kiểm thử hệ thống được thực hiện bởi một nhóm độc lập.",
+      "Kiểm thử chức năng (functional testing) được ưu tiên thực hiện hơn so với kiểm tra cấu trúc (structural testing).",
+      "Lỗi tìm trong kiểm tra hệ thống tốn rất nhiều chi phí để sửa.",
+      "Người dùng cuối nên tham gia vào kiểm tra hệ thống."
+    ],
+    "C": 3,
+    "R": "Người dùng cuối (end-user) thường tham gia chủ yếu vào Kiểm thử chấp nhận (Acceptance Testing), đặc biệt là Beta Testing. Kiểm thử hệ thống thường được thực hiện bởi một nhóm kiểm thử riêng (có thể là độc lập) dựa trên đặc tả yêu cầu. (Tổng quan kiểm thử phần mềm, trang 47, 57)."
+  },
+  {
+    "Q": "Unit Test được thực hiện bởi ai?",
+    "A": [
+      "Tester",
+      "Developer",
+      "Leader",
+      "End-user"
+    ],
+    "C": 1,
+    "R": "Unit Test (Kiểm thử đơn vị) thường được thực hiện bởi chính developer (người phát triển) đã viết mã cho đơn vị đó. (Tổng quan kiểm thử phần mềm, trang 40)."
+  },
+  {
+    "Q": "System Test được thực hiện bởi ai?",
+    "A": [
+      "Developer",
+      "Tester",
+      "End-User",
+      "Developer và Tester"
+    ],
+    "C": 1,
+    "R": "System Test (Kiểm thử hệ thống) thường được thực hiện bởi một nhóm kiểm thử viên (Testers), có thể là một nhóm độc lập với nhóm phát triển, dựa trên đặc tả yêu cầu của toàn hệ thống. (Tổng quan kiểm thử phần mềm, trang 47)."
+  },
+  {
+    "Q": "Kiểm thử nào sau đây được thực hiện bởi khách hàng tại môi trường làm việc của họ?",
+    "A": [
+      "Alpha Testing",
+      "Beta Testing",
+      "Unit Testing",
+      "System Testing"
+    ],
+    "C": 1,
+    "R": "Beta Testing là loại kiểm thử chấp nhận được thực hiện bởi khách hàng (người dùng cuối) tại môi trường làm việc thực tế của họ. (Tổng quan kiểm thử phần mềm, trang 59, 61)."
+  },
+  {
+    "Q": " Phát biểu nào sau đây không đúng về tester kiểm thử hộp đen?",
+    "A": [
+      "Hiểu các đặc tả yêu cầu của hệ thống.",
+      "Hiểu mã nguồn của hệ thống.",
+      "Có khả năng tìm ra lỗi hệ thống.",
+      "Có đoản những điểm yếu của hệ thống."
+    ],
+    "C": 1,
+    "R": "Kiểm thử hộp đen (Black-box testing) tập trung vào chức năng của phần mềm dựa trên đặc tả yêu cầu, mà không cần biết đến cấu trúc mã nguồn bên trong. Do đó, tester không cần phải hiểu mã nguồn. (Kiểm thử hộp đen, trang 3)."
+  },
+  {
+    "Q": "Chiến lược phát triển top-down ảnh hưởng đến cấp độ (level) kiểm thử nào nhất?",
+    "A": [
+      "Unit Test",
+      "Integration Test",
+      "System Test",
+      "Acceptance Test"
+    ],
+    "C": 1,
+    "R": "Chiến lược top-down (từ trên xuống) là một cách tiếp cận trong Kiểm thử Tích hợp (Integration Test), nơi các module cấp cao được kiểm thử trước, và các module cấp thấp hơn được thay thế bằng các stub. (Tổng quan kiểm thử phần mềm, trang 46)."
+  },
+  {
+    "Q": " Lỗi có thể được tìm thấy bằng chiến lược kiểm thử tĩnh:\n\na. Biến khai báo nhưng không được sử dụng.\n\nb. Vi phạm chuẩn lập trình.\n\nc. Phát hiện các hàm hay thủ tục không được gọi.\n\nd. Chương trình thiếu tính an toàn.",
+    "A": [
+      "a, b, c đúng; d sai",
+      "a, b, d đúng; c sai",
+      "a, c đúng; b, d sai",
+      "a, b, c, d đúng"
+    ],
+    "C": 3,
+    "R": "Kiểm thử tĩnh (Static Analysis) có thể phát hiện: (a) biến không sử dụng, (b) vi phạm chuẩn lập trình, (c) mã không thể truy cập như hàm không gọi, và (d) một số vấn đề về tính an toàn của chương trình như các lỗ hổng tiềm ẩn. (Tổng quan kiểm thử phần mềm, trang 69)."
+  },
+  {
+    "Q": "Yêu cầu nào sau đây là yêu cầu phi chức năng?",
+    "A": [
+      "Hệ thống cho phép người dùng đặt mua sản phẩm.",
+      "Hệ thống cho phép người dùng tra cứu sách mượn.",
+      "Hệ thống đảm bảo an toàn thông tin chi tiết người dùng.",
+      "Hệ thống cho phép 100 người dùng đăng nhập cùng lúc."
+    ],
+    "C": 3,
+    "R": "Yêu cầu phi chức năng mô tả CÁCH hệ thống hoạt động, chứ không phải LÀM GÌ. A, B là yêu cầu chức năng. C là yêu cầu về bảo mật (phi chức năng). D (\"cho phép 100 người dùng đăng nhập cùng lúc\") là một yêu cầu về hiệu năng/khả năng chịu tải, thuộc về phi chức năng. (Tổng quan kiểm thử phần mềm, trang 49)."
+  },
+  {
+    "Q": "Phát biểu nào sau đây đúng?\n\na. Mỗi hoạt động trong phát triển phần mềm sẽ có một hoạt động kiểm thử tương ứng.\n\nb. Mỗi cấp độ kiểm thử đều có mục tiêu giống nhau.\n\nc. Việc phân tích và thiết kế kiểm thử ở mỗi cấp độ kiểm thử bắt đầu sau khi hoạt động phát triển tương ứng đã hoàn tất.\n\nd. Kiểm thử viên kiểm tra tài liệu (document review) ngay khi đã có bản thảo (draft) trong vòng đời phát triển.",
+    "A": [
+      "a và b",
+      "b và c",
+      "c và d",
+      "a và d"
+    ],
+    "C": 3,
+    "R": "Theo các mô hình phát triển hiện đại như V-Model hay W-Model, mỗi giai đoạn phát triển phần mềm đều có một giai đoạn kiểm thử tương ứng được lên kế hoạch và thiết kế song song. Lựa chọn D cũng là một phát biểu đúng về thực hành tốt.(Tổng quan kiểm thử phần mềm, trang 81, 84)."
+  },
+  {
+    "Q": "Loại kiểm thử nào phù hợp để phát hiện những vấn đề hoạt động của phần mềm trong môi trường thực tế nó được sử dụng?",
+    "A": [
+      "Unit Testing",
+      "Alpha Testing",
+      "Beta Testing",
+      "Regression Testing"
+    ],
+    "C": 2,
+    "R": "Beta Testing được thực hiện bởi người dùng cuối trong môi trường thực tế của họ, giúp phát hiện các vấn đề liên quan đến sự tương thích và hoạt động của phần mềm trong môi trường đó. (Tổng quan kiểm thử phần mềm, trang 59, 61)."
+  },
+  {
+    "Q": "Một hệ thống có chức năng thanh toán trực tuyến sử dụng Stripe đã được kiểm thử hoạt động ổn định. Một thời gian sau để tiết kiệm chi phí, công ty muốn thay thế Stripe bằng Pin Payment với các chức năng tương tự. Loại kiểm thử nào nên được thực hiện?",
+    "A": [
+      "Structural Testing",
+      "Load Testing",
+      "Regression Testing",
+      "Unit Testing"
+    ],
+    "C": 2,
+    "R": "Khi một phần của hệ thống được thay đổi (thay thế Stripe bằng Pin Payment), Regression Testing (Kiểm thử hồi quy) cần được thực hiện để đảm bảo rằng sự thay đổi này không gây ra lỗi mới ở các phần khác của hệ thống và các chức năng hiện có vẫn hoạt động đúng. (Kiểm thử hộp đen, trang 8)."
+  },
+  {
+    "Q": "Regression Testing được thực hiện trong khi nào?\n\n(A) Phần mềm có thay đổi.\n\n(B) Nhân sự trong dự án có thay đổi.\n\n(C) Đến định kỳ phải thực hiện.\n\n(D) Môi trường phần mềm thay đổi.",
+    "A": [
+      "(A) và (D)",
+      "(A), (B) và (C)",
+      "(A), (C) và (D)",
+      "(C) và (D)"
+    ],
+    "C": 0,
+    "R": "Regression Testing được thực hiện chủ yếu khi (A) Phần mềm có thay đổi (sửa lỗi, thêm chức năng) và khi (D) Môi trường phần mềm thay đổi, vì cả hai đều có thể gây ra lỗi không mong muốn ở các phần đã hoạt động tốt. (Kiểm thử hộp đen, trang 8)."
+  },
+  {
+    "Q": " Phát biểu nào sau đây sai về Unit Test?",
+    "A": [
+      "Unit Testing được thực hiện với developer.",
+      "Unit testing dùng kiểm tra sự tương tác của các component.",
+      "Unit Testing phải được thực hiện trước Integration Testing.",
+      "Unit Testing thực hiện trong suốt giai đoạn Implementation."
+    ],
+    "C": 1,
+    "R": "Unit Testing tập trung vào việc kiểm thử các đơn vị (unit) riêng lẻ một cách độc lập. Việc kiểm tra sự tương tác giữa các component (đơn vị) là mục tiêu của Integration Testing. (Tổng quan kiểm thử phần mềm, trang 40, 42)."
+  },
+  {
+    "Q": "Loại kiểm thử nào sau đây dùng để phát hiện những điểm gãy (breaking point) của hệ thống mà điều kiện không thường không thể phát hiện ra?",
+    "A": [
+      "Load Test",
+      "Stress Test",
+      "Regression Test",
+      "System Test"
+    ],
+    "C": 1,
+    "R": "Stress Test kiểm tra hệ thống dưới các điều kiện khắc nghiệt, vượt quá giới hạn hoạt động bình thường (abnormal conditions) để xác định các điểm gãy (breaking point) của phần mềm. (Tổng quan kiểm thử phần mềm, trang 55)."
+  },
+  {
+    "Q": "Xác định các cấp độ kiểm thử tương ứng từng giai đoạn trong vòng đời phát triển?\n\n1 - Unit Test\n\n2 - System Test\n\n3 - Integration Test\n\n4 - Acceptance Test\n\na – Design\n\nb – Specification\n\nc – Implementation\n\nd – Requirement",
+    "A": [
+      "1b – 2c – 3a – 4d",
+      "1c – 2b – 3a – 4d",
+      "1a – 2d – 3c – 4b",
+      "1c – 2d – 3b – 4a"
+    ],
+    "C": 1,
+    "R": "Theo mô hình V-Model: (1) Unit Test tương ứng với (c) Implementation. (3) Integration Test tương ứng với (a) Design (thiết kế chi tiết/module). (2) System Test tương ứng với (b) Specification (đặc tả hệ thống/thiết kế kiến trúc). (4) Acceptance Test tương ứng với (d) Requirement (yêu cầu nghiệp vụ/người dùng). (Tổng quan kiểm thử phần mềm, trang 81)."
+  },
+  {
+    "Q": "Một hệ thống học anh văn online vừa được phát triển hoàn tất và nhóm phát triển đã triển khai cho phép người dùng tiềm năng đăng ký sử dụng thử để nhận được phản hồi từ người dùng trong một tháng. Đó là kiểm thử nào sau đây?",
+    "A": [
+      "Alpha Testing",
+      "Beta Testing",
+      "Acceptance Testing",
+      "Regression Testing"
+    ],
+    "C": 1,
+    "R": "Việc cho phép người dùng tiềm năng (khách hàng bên ngoài) sử dụng thử sản phẩm trong môi trường thực của họ và thu thập phản hồi là đặc điểm của Beta Testing. (Tổng quan kiểm thử phần mềm, trang 59, 61)."
+  },
+  {
+    "Q": "Để kiểm thử việc hiện thực hóa thuật toán gốc sử dụng sản phẩm cho khách hàng của một trang web bán hàng trực tuyến thì loại kiểm thử nào nên được sử dụng?",
+    "A": [
+      "Structural Testing",
+      "Regression Testing",
+      "Load Testing",
+      "Functional Testing"
+    ],
+    "C": 3,
+    "R": "Việc kiểm tra xem thuật toán (ví dụ: thuật toán gợi ý sản phẩm, tính toán giá) có hoạt động đúng theo chức năng được yêu cầu hay không thuộc về Functional Testing (Kiểm thử chức năng). (Tổng quan kiểm thử phần mềm, trang 48)."
+  },
+  {
+    "Q": "Phát biểu trong Cột A phù hợp với loại kiểm thử nào trong Cột B?\n\nCột A:\n\nI. Kiểm thử được thực hiện khi chương trình có thay đổi.\n\nII. Loại kiểm thử được thực hiện bởi khách hàng trong môi trường phát triển.\n\nIII. Kiểm thử tự động đặc biệt hiệu quả với loại kiểm thử này.\n\nCột B:\n\n1. Regression Testing\n\n2. Alpha Testing\n\n3. Beta Testing",
+    "A": [
+      "I-1, II-2, III-3",
+      "I-1, II-3, III-1",
+      "I-2, II-1, III-3",
+      "I-2, II-3, III-1"
+    ],
+    "C": 3,
+    "R": "I. Kiểm thử được thực hiện khi chương trình có thay đổi -> 1. Regression Testing. II. Loại kiểm thử được thực hiện bởi người dùng nội bộ hoặc khách hàng tiềm năng tại môi trường của nhà phát triển (hoặc giả lập) -> 2. Alpha Testing. III. Kiểm thử tự động đặc biệt hiệu quả với Regression Testing (1). (Tổng quan kiểm thử phần mềm, trang 8, 59, 61; Kiểm thử tự động, trang 3)."
+  },
+  {
+    "Q": "Thứ tự đúng các giai đoạn kiểm thử phần mềm?",
+    "A": [
+      "Development Testing > User Testing > Release Testing",
+      "Development Testing > Release Testing > User Testing",
+      "User Testing > Development Testing > Release Testing",
+      "Development Testing > User Testing > Development Testing"
+    ],
+    "C": 0,
+    "R": "Thứ tự phổ biến: Development Testing (Unit, Integration), sau đó User Testing (System, Acceptance), rồi mới đến Release Testing. (Tổng quan các cấp độ kiểm thử)."
+  },
+  {
+    "Q": "Integration Testing nên được bắt đầu khi nào?",
+    "A": [
+      "Trong suốt quá trình thực hiện kiểm thử hộp đen.",
+      "Sau khi Unit Testing hoàn tất để kiểm tra tương tác các component.",
+      "Sớm nhất có thể trong quy trình phát triển phần mềm.",
+      "Tất cả đều đúng."
+    ],
+    "C": 1,
+    "R": "Integration Testing được thực hiện sau khi các Unit đã được kiểm thử (Unit Testing hoàn tất) để kiểm tra sự tương tác giữa các unit/component. (Tổng quan kiểm thử phần mềm, trang 42)."
+  },
+  {
+    "Q": "Phát biểu nào sau đây đúng?",
+    "A": [
+      "End-user cũng tham gia vào kiểm thử hệ thống (System Testing).",
+      "Phương pháp phân tích giá trị biên chỉ được sử dụng trong kiểm thử hộp trắng.",
+      "Kiểm thử tự động giảm bớt nhàm chán cho kiểm thử viên.",
+      "Unit Testing được thực hiện bởi một nhóm kiểm thử viên độc lập."
+    ],
+    "C": 2,
+    "R": "Một lợi ích của kiểm thử tự động là giảm sự nhàm chán cho kiểm thử viên. A sai (end-user tham gia Acceptance Test). B sai (BVA là hộp đen). D sai (Unit Test do developer). (Kiểm thử tự động, trang 4; Tổng quan)."
+  },
+  {
+    "Q": "Phát biểu nào sau đây đúng?\n\na. Lỗi được tìm thấy sớm trong quy trình phát triển khi sử dụng review hơn là phân tích tĩnh (static analysis).\n\nb. Walkthrough yêu cầu mã nguồn, nhưng phân tích tĩnh thì không yêu cầu mã nguồn.\n\nc. Informal review được thực hiện trên mã nguồn và đặc tả yêu cầu.\n\nd. Các kỹ thuật kiểm thử động được sử dụng trước các kỹ thuật kiểm thử tĩnh.\n\ne. Các kỹ thuật kiểm thử động chỉ được sử dụng sau khi mã nguồn đã được thực thi.",
+    "A": [
+      "a, b, e",
+      "b, c, e",
+      "a, d, e",
+      "a, c, e"
+    ],
+    "C": 3,
+    "R": "(a) Cả review và static analysis đều giúp tìm lỗi sớm. (c) Informal review có thể áp dụng cho nhiều loại tài liệu. (e) Kiểm thử động yêu cầu thực thi mã nguồn. (Tổng quan kiểm thử phần mềm, trang 63, 67, 70, 75)."
+  },
+  {
+    "Q": "Hoạt động nào sau đây được thực hiện bởi các lập trình viên (developer)?",
+    "A": [
+      "Technical review cho các đặc tả chức năng",
+      "Walkthrough cho tài liệu yêu cầu",
+      "Informal review của đặc tả chương trình",
+      "Static analysis của các mô hình phần mềm"
+    ],
+    "C": 0,
+    "R": "Lập trình viên thường tham gia Technical Review để đánh giá các khía cạnh kỹ thuật của tài liệu, bao gồm đặc tả chức năng. (Tổng quan kiểm thử phần mềm, trang 64)."
+  },
+  {
+    "Q": "Phát biểu nào sau đây đúng về walkthrough?\n\na. Thường được chủ trì bởi tác giả.\n\nb. Tất cả kết quả được xác định và tài liệu hoá.\n\nc. Tất cả những người tham gia có vai trò xác định.\n\nd. Được sử dụng học tập.\n\ne. Mục đích chính là tìm ra lỗi.",
+    "A": [
+      "a, e",
+      "b và c",
+      "a và d",
+      "c và d"
+    ],
+    "C": 2,
+    "R": "Walkthrough: (a) thường do tác giả chủ trì. (d) Là cơ hội tốt để học hỏi, chia sẻ kiến thức. (Tổng quan kiểm thử phần mềm, trang 66)."
+  }
+]
