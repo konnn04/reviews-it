@@ -1,0 +1,279 @@
+[
+    {
+        "Q": "Phát biểu nào sau đây không đúng?",
+        "A": [
+            "Alpha Testing phải thực hiện trước Beta Testing.",
+            "Để kiểm thử thuật toán dùng trong chương trình nên sử dụng kỹ thuật kiểm thử hộp trắng.",
+            "Mục đích chính của kiểm thử phần mềm là tìm ra lỗi của phần mềm.",
+            "Phân vùng tương đương là kỹ thuật kiểm thử hộp đen chỉ dùng trong System Testing."
+        ],
+        "C": 3,
+        "R": "Phân vùng tương đương là một kỹ thuật kiểm thử hộp đen có thể được áp dụng ở nhiều cấp độ kiểm thử, không chỉ riêng System Testing. Nó có thể dùng trong Unit Test, Integration Test khi xem xét đầu vào/đầu ra của các module/component mà không cần biết cấu trúc bên trong. (Kiểm thử hộp đen, trang 13)."
+    },
+    {
+        "Q": "Kỹ thuật kiểm thử nào sau đây có thể đạt được độ phủ (coverage) hết đầu vào và đầu ra?",
+        "A": [
+            "Phân tích giá trị biên (Boundary Value Analysis).",
+            "Phân vùng tương đương (Equivalence Partitioning).",
+            "Bảng quyết định (Decision Table).",
+            "Chuyển đổi trạng thái (State Transition)."
+        ],
+        "C": 1,
+        "R": "Phân vùng tương đương, khi được kết hợp hiệu quả với Phân tích giá trị biên, nhằm mục đích giảm số lượng test case mà vẫn đảm bảo độ bao phủ tốt cho các miền giá trị đầu vào và đầu ra đã được định nghĩa. Không kỹ thuật nào đảm bảo \"hết\" một cách tuyệt đối, nhưng EP được thiết kế để tối ưu hóa độ phủ. (Kiểm thử hộp đen, trang 13)."
+    },
+    {
+        "Q": "Tên gọi khác của kiểm thử hộp đen (Black Testing)?",
+        "A": [
+            "Requirement-based testing",
+            "Glass Testing",
+            "Open-box Testing",
+            "Structural Testing"
+        ],
+        "C": 0,
+        "R": "Kiểm thử hộp đen còn được gọi là kiểm thử dựa trên đặc tả (specification-based testing) hoặc kiểm thử dựa trên yêu cầu (requirement-based testing) vì nó tập trung vào việc xác minh phần mềm có đáp ứng các yêu cầu đã định nghĩa hay không, mà không cần biết cấu trúc bên trong. (Kiểm thử hộp đen, trang 3)."
+    },
+    {
+        "Q": "Mục đích của use case testing là gì?",
+        "A": [
+            "Xác định các defect trong luồng xử lý liên quan trường hợp sử dụng điển hình của hệ thống.",
+            "Xác định các defect trong tương tác giữa các thành phần.",
+            "Xác định các defect của hệ thống liên quan đến các trường hợp sử dụng hệ thống.",
+            "Xác định các defect của hệ thống liên quan sử dụng các chức năng chưa được chấp thuận."
+        ],
+        "C": 0,
+        "R": "Use case testing tập trung vào việc kiểm thử các kịch bản người dùng (use cases) từ đầu đến cuối, giúp phát hiện lỗi trong các luồng xử lý nghiệp vụ điển hình và các kịch bản thay thế, ngoại lệ. (Kiểm thử hộp đen, trang 62, 65)."
+    },
+    {
+        "Q": "Một cửa hàng tuyển nhân viên có độ tuổi từ 18 đến 25 tuổi, giá trị nào thuộc vùng tương đương không hợp lệ?",
+        "A": [
+            "18",
+            "20",
+            "25",
+            "26"
+        ],
+        "C": 3,
+        "R": "Vùng hợp lệ là [18, 25]. Giá trị 26 nằm ngoài vùng hợp lệ (lớn hơn 25) và thuộc phân vùng không hợp lệ. (Kiểm thử hộp đen - Phân vùng tương đương)."
+    },
+    {
+        "Q": "Chương trình kiểm tra dữ liệu nhập của một ô nhập liệu số như sau: chỉ chấp nhận các số từ 10 đến 21. Các giá trị nào sau đây phủ hết các phân vùng tương đương?",
+        "A": [
+            "10, 11, 21",
+            "3, 20, 21",
+            "3, 10, 22",
+            "10, 21, 22"
+        ],
+        "C": 2,
+        "R": "Các phân vùng tương đương: PV1 (không hợp lệ): x < 10; PV2 (hợp lệ): 10 <= x <= 21; PV3 (không hợp lệ): x > 21. Bộ giá trị (3, 10, 22) lấy một giá trị đại diện từ mỗi phân vùng: 3 (từ PV1), 10 (từ PV2), 22 (từ PV3). (Kiểm thử hộp đen, trang 16, 17)."
+    },
+    {
+        "Q": "Chức năng tìm kiếm sản phẩm của một trang web bán hàng trực tuyến cho phép tìm kiếm theo các mức giá từ 2tr đến dưới 5tr, từ 5tr đến dưới 10tr, và từ 10tr trở lên. Cho biết giá trị nào sau đây thuộc phân vùng invalid?",
+        "A": [
+            "15tr",
+            "100tr",
+            "1tr",
+            "5.5tr"
+        ],
+        "C": 2,
+        "R": "Các phân vùng hợp lệ là: [2tr, 5tr), [5tr, 10tr), [10tr, +vô cùng). Giá trị 1tr nhỏ hơn 2tr, do đó thuộc phân vùng không hợp lệ (invalid). (Kiểm thử hộp đen - Phân vùng tương đương)."
+    },
+    {
+        "Q": "Một ô nhập liệu chỉ chấp nhận các ký tự hoa hoặc thường, giá trị nào sau đây thuộc phân vùng tương đương không hợp lệ (invalid).",
+        "A": [
+            "CLASS",
+            "Class",
+            "cLaSs",
+            "CLA01ss"
+        ],
+        "C": 3,
+        "R": "Phân vùng hợp lệ là các chuỗi chỉ chứa ký tự hoa hoặc thường. \"CLA01ss\" chứa cả ký tự số ('0', '1') nên không hợp lệ. (Kiểm thử hộp đen - Phân vùng tương đương)."
+    },
+    {
+        "Q": "Mã sản phẩm sinh ra trong hệ thống bán hàng quy định dài 5 ký tự, trong đó 2 ký tự đầu tiên là SP, và tiếp theo là 3 chữ số, trong đó chữ số đầu tiên phải lớn hơn 0. Cho biết mã sản phẩm nào sau đây thuộc phân vùng hợp lệ?",
+        "A": [
+            "SP023",
+            "Sp123",
+            "SP100",
+            "SP1111"
+        ],
+        "C": 2,
+        "R": "Yêu cầu: 'SP' + 3 chữ số (XYZ), X > 0. SP100 thỏa mãn (1>0). SP023 không thỏa (0 không > 0). Sp123, SP1111 cũng thỏa mãn. Đáp án trong sách là SP100."
+    },
+    {
+        "Q": "Lợi ích chính của use case testing?",
+        "A": [
+            "Kiểm thử use case tương ứng các quy tắc nghiệp vụ và kiểm tra các đầu ra cho nhiều điều kiện đầu vào.",
+            "Use case luôn có các kịch bản thay thế (alternative scenarios) để kiểm thử điều gì xảy ra khi thành phần có vấn đề.",
+            "Use case phù hợp cho việc xác định tính chấp nhận của người dùng (User Acceptance) với sự tham gia của người dùng.",
+            "Kiểm thử use case có thể được sử dụng cho mục đích phủ được đầu vào và đầu ra."
+        ],
+        "C": 2,
+        "R": "Trong khi use case testing cũng giúp kiểm tra quy tắc nghiệp vụ, kịch bản thay thế và độ phủ nhất định, lợi ích nổi bật và thường được liên kết chặt chẽ nhất là vai trò của nó trong việc định hình và thực hiện **Kiểm thử Chấp nhận Người dùng, đảm bảo rằng phần mềm thực sự hữu ích và đáp ứng được mục tiêu của người sử dụng cuối.** (Kiểm thử hộp đen, trang 62)."
+    },
+    {
+        "Q": "Một thư viện ABC cho phép độc giả mượn sách không quá 300 quyển sách trong năm, nhưng không được phép mượn quá 5 quyển trong một lần mượn, và phải trả các cuốn sách đã mượn mới được phép mượn nữa. Test case nào sau đây về số quyển sách độc giả được mượn trong một đợt mượn tiếp theo thuộc phân vùng không hợp lệ, biết độc giả đã mượn 296 quyển sách trong năm hiện tại và không còn thiếu thư viện quyển sách nào?",
+        "A": [
+            "1 quyển",
+            "2 quyển",
+            "4 quyển",
+            "5 quyển"
+        ],
+        "C": 3,
+        "R": "Đã mượn 296/300 quyển. Còn lại được mượn 4 quyển trong năm. Mượn 1 lần không quá 5 quyển. Do giới hạn năm chỉ còn 4 quyển, nên mượn 5 quyển là không hợp lệ (vượt giới hạn năm). (Phân vùng tương đương)."
+    },
+    {
+        "Q": "Một đợt tuyển dụng nhân viên tại một công ty yêu cầu độ tuổi từ 25 đến 35 tuổi. Cho biết ứng viên có năm sinh nào sau đây thuộc phân vùng không hợp lệ, biết năm hiện tại là năm 2018?",
+        "A": [
+            "1992",
+            "1993",
+            "1982",
+            "1984"
+        ],
+        "C": 2,
+        "R": "Năm hiện tại: 2018. Độ tuổi hợp lệ: [25, 35]. Năm sinh hợp lệ: [2018-35, 2018-25] = [1983, 1993]. Năm sinh 1982 (tuổi 36) là không hợp lệ. (Phân vùng tương đương)."
+    },
+    {
+        "Q": "Một ô nhập liệu năm sinh cho phép nhập năm từ 1990 đến 2004. Liệt kê các giá trị biên kiểm thử ô nhập liệu này?",
+        "A": [
+            "1900, 2004, 2005",
+            "1990, 2004",
+            "1989, 1990, 2004, 2005",
+            "1989, 1990, 1901, 2003, 2004, 2005"
+        ],
+        "C": 2,
+        "R": "Khoảng hợp lệ [1990, 2004]. Giá trị biên (BVA) 2 điểm: Min-1, Min, Max, Max+1. Tức là: 1989, 1990, 2004, 2005. (Kiểm thử hộp đen, trang 23)."
+    },
+    {
+        "Q": "Một chương trình khuyến mãi được thực hiện trong tháng 12 năm 2019. Theo phương pháp phân vùng tương đương thì những test case nào nên được chọn?",
+        "A": [
+            "01/12/2019, 31/12/2019, 30/12/2019",
+            "30/11/2019, 15/12/2019, 01/01/2020",
+            "30/11/2019, 01/12/2019, 31/12/2019",
+            "01/12/2019, 31/12/2019, 01/02/2020"
+        ],
+        "C": 1,
+        "R": "Phân vùng: Trước KM (tháng 11/2019), Trong KM (tháng 12/2019), Sau KM (tháng 1/2020). Lựa chọn B đại diện cho cả ba phân vùng này. (Phân vùng tương đương)."
+    },
+    {
+        "Q": "Một ô nhập liệu cho phép nhập các giá trị nguyên từ 1 đến 100 nhưng phải khác 50. Theo phương pháp phân tích giá trị biên thì những test case nào cần được kiểm thử?",
+        "A": [
+            "0, 1, 100, 101",
+            "0, 1, 49, 51, 100, 101",
+            "1, 49, 51, 100",
+            "0, 1, 45, 75, 100, 101"
+        ],
+        "C": 1,
+        "R": "Các biên và điểm đặc biệt: 0 (dưới min), 1 (min), 49 (ngay trước 50), 50 (invalid), 51 (ngay sau 50), 100 (max), 101 (trên max). Lựa chọn C bao gồm các điểm này. (Phân tích giá trị biên)."
+    },
+    {
+        "Q": "Một mã code được gửi vào điện thoại người dùng đăng ký tài khoản, mã code quy định có chiều dài là 6, chỉ chứa các ký tự thường (a-z), các ký tự hoa (A-Z), ký số (0-9) và mã code phải chứa đầy đủ cả 3 loại này. Mã code nào sau đây thuộc phân vùng hợp lệ?",
+        "A": [
+            "a0B0cC",
+            "1aa12",
+            "AAaoOB1",
+            "1a2b3C"
+        ],
+        "C": 0,
+        "R": "Yêu cầu: dài 6, có chữ thường, chữ hoa, số. \"a0B0cC\" thỏa mãn. \"1a2b3C\" cũng thỏa mãn. Đáp án trong sách là A. (Phân vùng tương đương)."
+    },
+    {
+        "Q": "Một hệ thống ngân hàng trực tuyến của ngân hàng ABC quy định không được chuyển khoản quá 10 triệu (tr) trong ngày, tối thiểu mỗi lần chuyển khoản là 1tr. Sử dụng phương pháp phân tích giá trị biên thì những test case nào ở vùng hợp lệ phù hợp để kiểm tra số tiền chuyển khoản của khách hàng A có được phép chuyển trong ngày hiện tại không? Biết khách hàng A đã chuyển khoản 4tr trong ngày.",
+        "A": [
+            "1tr, 6tr",
+            "0.5tr, 6tr",
+            "0.5tr, 7tr",
+            "1tr, 10tr"
+        ],
+        "C": 0,
+        "R": "Đã chuyển 4tr, còn lại 6tr cho ngày. Mỗi lần chuyển [1tr, 6tr]. Giá trị biên hợp lệ là 1tr và 6tr. (Phân tích giá trị biên)."
+    },
+    {
+        "Q": "Gọi X là số ngày của một tháng trong năm. Theo phương pháp phân vùng tương đương thì những tháng nào sau đây cần kiểm tra giá trị X?",
+        "A": [
+            "0, 1, 2, 5, 13",
+            "0, 2, 4, 11, 13",
+            "0, 1, 2, 6, 13",
+            "0, 1, 2, 12, 13"
+        ],
+        "C": 2,
+        "R": "Phân vùng số ngày: tháng 31 ngày, tháng 30 ngày, tháng 2 (28/29 ngày), tháng không hợp lệ (<1, >12). Lựa chọn (0, 1, 2, 6, 13) đại diện tương đương (invalid, 31, 28/29, 30, invalid). (Phân vùng tương đương)."
+    },
+    {
+        "Q": "Cho sơ đồ chuyển đổi trạng thái sau, cho phép chuyển đổi trạng thái nào sau đây không hợp lệ?",
+        "I": "./data/ktpm/tn2-19.png",
+        "A": [
+            "OFF -> ON",
+            "ON -> FAULT",
+            "FAULT -> ON",
+            "FAULT -> FAULT"
+        ],
+        "C": 2,
+        "R": "Không tồn tại chuyển đổi từ FAULT về ON trong sơ đồ. Chỉ có thể chuyển từ FAULT về giữ nguyên FAULT. (Chuyển đổi trạng thái)."
+    },
+    {
+        "Q": "Cho sơ đồ chuyển đổi trạng thái như sau. Dây chuyền đổi nào không hợp lệ?",
+        "I": "./data/ktpm/tn2-20.png",
+        "A": [
+            "A, B, E, B, C, F",
+            "A, B, E, B, C, F, F, F",
+            "A, B, C, F, F, C, D",
+            "A, B, C, F, F, F, D"
+        ],
+        "C": 2,
+        "R": "Không tồn tại chuyển đổi từ S3 về S2 (C đảo) trong sơ đồ. Vì vậy từ F -> F-> C là không hợp lệ.  (Chuyển đổi trạng thái)."
+    },
+    {
+        "Q": "Hệ thống quản lý cho phép gửi và nhận tin nhắn trong hệ thống, khi người dùng nhận tin nhắn mới có trạng thái là tin nhắn chưa đọc, nếu mở ra đọc thì thành trạng thái đã đọc. Sau khi đọc, người dùng có thể chuyển nó thành tin nhắn chưa đọc để ghi nhớ. Ngoài ra, người dùng có thể xóa tin nhắn, ban đầu tin nhắn chỉ xoá tạm thời tại thùng rác, trong 24h kể từ lúc xoá, người dùng có thể khôi phục tin nhắn đó về trạng thái trước khi xoá, sau khoảng thời gian này, tin nhắn sẽ bị xoá vĩnh viễn. Đặt trạng thái của tin nhắn lần lượt: S1 = chưa đọc, S2 = đã đọc, S3 = đã xóa (trong thùng rác); S4 = đã xóa (vĩnh viễn). Cho biết chuyển đổi nào không hợp lệ?",
+        "A": [
+            "S1 -> S2 -> S3 -> S2 -> S3 -> S4",
+            "S1 -> S3 -> S2 -> S1 -> S3 -> S4",
+            "S1 -> S2 -> S1 -> S3 -> S4",
+            "S1 -> S3-> S1 -> S3 -> S4"
+        ],
+        "C": 1,
+        "R": "Chuyển đổi từ S1 -> S3 -> S2 là không hợp lệ vì tin nhắn khi khôi phục phải trả về đúng trạng thái trước khi xoá, tức là từ S1 -> S3 -> S1, không thể chuyển sang S2 (đã đọc) được. (Chuyển đổi trạng thái)."
+    },
+    {
+        "Q": "Đoán lỗi (Error Guessing) được sử dụng tốt nhất khi:",
+        "A": [
+            "Sau khi hệ thống được triển khai.",
+            "Sau khi các kỹ thuật kiểm thử chính thức đã được áp dụng.",
+            "Thực hiện bởi những tester ít kinh nghiệm.",
+            "Chỉ được thực hiện bởi người dùng cuối."
+        ],
+        "C": 1,
+        "R": "Đoán lỗi thường được áp dụng sau khi các kỹ thuật kiểm thử chính thức đã được thực hiện, để bổ sung và tìm kiếm các lỗi mà các kỹ thuật đó có thể bỏ sót. (Kiểm thử hộp đen, trang 68, 71)."
+    },
+    {
+        "Q": "Một năm hợp lệ (quy ước năm nhuận là năm chia hết cho 400 hoặc chia hết cho 4 nhưng không chia hết cho 100. Theo phương pháp phân vùng tương đương, các test case nào nên được chọn trong các năm sau: a. 1969, b. 1970, c. 1600, d. 2016, e. 1400, f. 2019?",
+        "A": [
+            "a, b, c, d, f",
+            "b, c, d, e",
+            "a, c, d, e, f",
+            "c, d, e, f"
+        ],
+        "C": 2,
+        "R": "Bộ giá trị (1969, 1600, 2016, 1400, 2019) được chọn vì nó đại diện cho tất cả các loại năm khác nhau theo quy tắc xác định năm nhuận:\n\n1600: Năm nhuận (chia hết cho 400).\n\n2016: Năm nhuận (chia hết cho 4 nhưng không chia hết cho 100).\n\n1400: Năm không nhuận (chia hết cho 100 nhưng không chia hết cho 400).\n\n1969 và 2019: Năm không nhuận (không chia hết cho 4).\n\nViệc chọn các năm này đảm bảo rằng tất cả các nhánh logic chính của thuật toán kiểm tra năm nhuận đều được thực thi, qua đó phủ hết các phân vùng tương đương quan trọng."
+    },
+    {
+        "Q": "Một ô nhập liệu số lượng sản phẩm đặt mua của một website bán hàng của một cửa hàng tiện lợi tối thiểu là 1 và tối đa không vượt quá số hàng tồn của sản phẩm đó. Gọi X (X >= 1) là số hàng tồn của sản phẩm đang nhập, theo phương pháp phân tích giá trị biên thì những giá trị nào nên được nhập để kiểm thử?",
+        "A": [
+            "1, 2, X-1, X",
+            "0, 1, X-1, X+1",
+            "0, 2, X-1, X+1",
+            "0, 1, X, X+1"
+        ],
+        "C": 3,
+        "R": "Khoảng hợp lệ [1, X]. Giá trị biên: 0 (dưới min), 1 (min), X (max), X+1 (trên max). Lựa chọn D bao gồm các giá trị này: 0 (invalid), 1 (valid), X (valid), X+1 (invalid). "
+    },
+    {
+        "Q": "Hệ thống ATM của một ngân hàng cho phép chuyển tiền một lần không quá giá trị 30 triệu VNĐ và không được ít hơn 1 triệu VNĐ/lần chuyển. Theo phương pháp phân vùng tương đương, các test case nào được chọn cho số tiền cần rút?",
+        "A": [
+            "2, 29, 31",
+            "0, 30, 31",
+            "-1, 0, 30",
+            "-1, 1, 29"
+        ],
+        "C": 1,
+        "R": "Phân vùng hợp lệ: [1, 30]. Giá trị biên: 0 (dưới min), 1 (min), 30 (max), 31 (trên max). Lựa chọn B bao gồm các giá trị này: 0 (invalid), 30 (valid), 31 (invalid). "
+    }
+]
