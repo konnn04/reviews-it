@@ -1,6 +1,8 @@
 # Review IT - Nền tảng học tập và ôn thi trực tuyến
 
-![Badge](https://img.shields.io/badge/version-1.0.0-blue) ![Badge](https://img.shields.io/badge/license-Apache%202.0-green) ![Badge](https://img.shields.io/badge/react-19.1.0-61DAFB)
+![Version](https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge)
+![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen?style=for-the-badge)
 
 ## Giới thiệu
 
