@@ -1,0 +1,279 @@
+[
+  {
+    "Q": "Kỹ thuật nào sau đây là kiểm thử hộp trắng?",
+    "A": [
+      "Kiểm thử dựa trên bảng quyết định",
+      "Kiểm thử sự chuyển đổi trạng thái",
+      "Kiểm thử phủ câu lệnh",
+      "Phân tích giá trị biên"
+    ],
+    "C": 2,
+    "R": "Kiểm thử phủ câu lệnh (Statement Coverage) là một kỹ thuật của kiểm thử hộp trắng, tập trung vào việc đảm bảo mỗi câu lệnh trong mã nguồn được thực thi ít nhất một lần. Các kỹ thuật còn lại (A, B, D) là của kiểm thử hộp đen. (Kiểm thử hộp trắng, trang 5, 35)."
+  },
+  {
+    "Q": "Độ phức tạp Cyclomatic được dùng trong phương thức kiểm thử nào?",
+    "A": [
+      "Kiểm thử hộp trắng (White-box).",
+      "Kiểm thử hộp đen (Black-box).",
+      "Kiểm thử hộp xám (Gray-box).",
+      "Tất cả đều sai."
+    ],
+    "C": 0,
+    "R": "Độ phức tạp Cyclomatic là một thước đo định lượng độ phức tạp logic của một chương trình, được tính toán dựa trên đồ thị luồng điều khiển của mã nguồn. Nó được sử dụng trong kiểm thử hộp trắng, đặc biệt là để xác định số lượng đường đi độc lập cơ sở cần kiểm thử. (Kiểm thử hộp trắng, trang 17, 18)."
+  },
+  {
+    "Q": "Tên gọi nào sau đây không phải là tên gọi khác của kiểm thử hộp trắng?",
+    "A": [
+      "Structural Testing",
+      "Open-box Testing",
+      "Glass Testing",
+      "Gray-box Testing"
+    ],
+    "C": 3,
+    "R": "Kiểm thử hộp trắng còn được gọi là Structural Testing (kiểm thử cấu trúc), Glass Testing (kiểm thử hộp kính), hoặc Open-box Testing (kiểm thử hộp mở). Gray-box Testing là một loại kiểm thử riêng biệt, kết hợp yếu tố của cả hộp đen và hộp trắng. (Kiểm thử hộp trắng, trang 3; Tổng quan kiểm thử phần mềm, trang 72)."
+  },
+  {
+    "Q": "Phát biểu nào sau đây không đúng về phủ đường dẫn cơ sở?",
+    "A": [
+      "Tất cả các cạnh của đồ thị luồng đều qua ít nhất một lần.",
+      "Tất cả các nút vị từ đều xảy ra giá trị true/false ít nhất một lần.",
+      "Tất cả biểu thức điều kiện con trong các biểu thức vị từ đều xảy ra giá trị true/false ít nhất một lần.",
+      "Độ phức tạp cyclomatic xác định chặn trên số test case cần kiểm thử để phủ đường dẫn cơ sở."
+    ],
+    "C": 2,
+    "R": "Phủ đường dẫn cơ sở đảm bảo mỗi đường đi độc lập cơ sở được thực thi. Điều này sẽ dẫn đến việc phủ nhánh (B - mỗi nút vị từ ra true/false) và phủ cạnh (A). Độ phức tạp Cyclomatic (D) cho biết số đường đi độc lập. Tuy nhiên, phủ đường dẫn cơ sở không nhất thiết đảm bảo phủ điều kiện con (C - Condition Coverage) một cách đầy đủ cho từng điều kiện con riêng lẻ trong một biểu thức phức tạp. (Kiểm thử hộp trắng, trang 16, 17, 21)."
+  },
+  {
+    "Q": "Để kiểm thử phần mềm có đang sử dụng đúng thuật toán k-NN để phân loại văn bản tự động hay không, kỹ thuật kiểm thử nào sau đây nên được sử dụng?",
+    "A": [
+      "Black-box Testing",
+      "Structural Testing",
+      "Gray-box Testing",
+      "Specification-based Testing"
+    ],
+    "C": 1,
+    "R": "Để kiểm tra xem một thuật toán cụ thể (như k-NN) có được \"sử dụng đúng\" hay không, cần phải xem xét cấu trúc bên trong của mã nguồn để xác nhận thuật toán đó đã được hiện thực hóa (implement) chính xác. Đây là mục tiêu của Structural Testing (Kiểm thử cấu trúc/hộp trắng). (Kiểm thử hộp trắng, trang 3)."
+  },
+  {
+    "Q": "Một đồ thị luồng có 4 phân vùng và có 5 đỉnh, cho biết đồ thị này có bao nhiêu cạnh?",
+    "A": [
+      "3",
+      "4",
+      "6",
+      "7"
+    ],
+    "C": 3,
+    "R": "Số vùng (Regions) = V(G) = 4. Số đỉnh (Nodes) = N = 5. Áp dụng công thức: V(G) = E - N + 2 (với E là số cạnh). Suy ra: 4 = E - 5 + 2  => 4 = E - 3 => E = 7. (Kiểm thử hộp trắng, trang 18)."
+  },
+  {
+    "Q": "Phát biểu nào sau đây đúng về các kỹ thuật thiết kế test case trong kiểm thử hộp trắng?",
+    "A": [
+      "Các test case có được từ các mô hình hệ thống.",
+      "Các test case có được từ kinh nghiệm của kiểm thử viên.",
+      "Các test case có được từ mã nguồn hệ thống.",
+      "Các test case có được từ kinh nghiệm của lập trình viên."
+    ],
+    "C": 2,
+    "R": "Kiểm thử hộp trắng tập trung vào cấu trúc bên trong của phần mềm, do đó các test case được thiết kế dựa trên việc phân tích mã nguồn hệ thống để đảm bảo các mức độ bao phủ khác nhau (câu lệnh, nhánh, đường đi,...). (Kiểm thử hộp trắng, trang 3, 5)."
+  },
+  {
+    "Q": "Cần tối thiểu bao nhiêu test case để phủ câu lệnh của đoạn chương trình sau:\n```cpp\nint p, q;\ncin >> p >> q;\nif (p + q > 100)\n  cout << \"A\";\nif (p > 50)\n  cout << \"B\";\n```",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 0,
+    "R": "Để phủ tất cả các câu lệnh, chỉ cần một test case làm cho cả hai điều kiện `if` đều đúng. Ví dụ: p = 60, q = 50. Khi đó `p+q = 110 > 100` (in \"A\") và `p = 60 > 50` (in \"B\"). Tất cả các lệnh `cin`, `if`, `cout` đều được thực thi. (Kiểm thử hộp trắng, trang 36)."
+  },
+  {
+    "Q": "Cần tối thiểu bao nhiêu test case để phủ nhánh của đoạn chương trình trên (câu 8)?",
+    "A": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "C": 1,
+    "R": "Đoạn chương trình có 2 câu lệnh `if` độc lập, mỗi `if` có 2 nhánh (true/false). Để phủ nhánh, cần ít nhất 2 test case:\nTC1: p=60, q=50 (Cả hai if đều true).\nTC2: p=10, q=10 (Cả hai if đều false).\nNhư vậy, 2 test case là đủ để đi qua tất cả các nhánh (True của if1, False của if1, True của if2, False của if2). (Kiểm thử hộp trắng, trang 39-41)."
+  },
+  {
+    "Q": "Kiểm thử luồng dữ liệu không phát hiện lỗi nào sau đây?",
+    "A": [
+      "Sử dụng biến không đúng mục đích",
+      "Biến khai báo nhưng không sử dụng",
+      "Biến sử dụng nhưng chưa khai báo",
+      "Xóa biến trước khi sử dụng"
+    ],
+    "C": 0,
+    "R": "Kiểm thử luồng dữ liệu tập trung vào các lỗi liên quan đến việc định nghĩa và sử dụng biến như: biến khai báo không dùng, biến dùng chưa khai báo, xóa biến trước khi dùng, định nghĩa lại biến trước khi dùng. Việc \"sử dụng biến không đúng mục đích\" (lỗi logic nghiệp vụ) thường khó phát hiện hơn chỉ bằng phân tích luồng dữ liệu mà cần các kỹ thuật khác. (Kiểm thử hộp trắng, trang 60)."
+  },
+  {
+    "Q": "Cần tối thiểu bao nhiêu test case để phủ câu lệnh (a), và phủ nhánh (b) của đoạn chương trình sau:\n```cpp\nint a, b, c, d;\ncin >> a, b;\nif (a > b)\n  c = a - b;\nelse\n  c = a + b;\ncin >> d;\nif (c == d)\n  cout << \"Error\";\n```",
+    "A": [
+      "a = 1, b = 3",
+      "a = 2, b = 2",
+      "a = 2, b = 3",
+      "a = 3, b = 3"
+    ],
+    "C": 1,
+    "R": "Câu hỏi này có vẻ đang đưa ra các giá trị đầu vào cho a, b chứ không phải là số lượng test case. Giả sử câu hỏi muốn hỏi cặp giá trị (a,b) nào có thể là một phần của bộ test case.\n(a) Phủ câu lệnh: Cần ít nhất 2 test case (ví dụ: (a=3,b=1,d=2) và (a=1,b=3,d=5)).\n(b) Phủ nhánh: Cần 4 test case để phủ hết các tổ hợp (T,T), (T,F), (F,T), (F,F) cho 2 điều kiện if.\nĐáp án sách là B (a=2, b=2). Với a=2, b=2: `a>b` là False, `c=a+b=4`. Nếu `d=4` thì `c==d` True. Nếu `d!=4` thì `c==d` False. Cặp này có thể giúp tạo 1 hoặc 2 test case cho phủ nhánh. Câu hỏi này không rõ ràng về mục tiêu."
+  },
+  {
+    "Q": "Cần tối thiểu bao nhiêu test case để phủ câu lệnh và phủ quyết định của đoạn chương trình sau:\n```cpp\nint a, b, c;\ncin >> a >> b >> c;\nif (c > a) {\n  if (c > b)\n    cout << \"A\";\n  else\n    cout << \"B\";\n} else {\n  cout << \"C\";\n}\n```",
+    "A": [
+      "2, 3",
+      "3, 3",
+      "2, 4",
+      "3, 2"
+    ],
+    "C": 1,
+    "R": "Phủ câu lệnh: Cần 3 test case để thực thi `cout << \"A\"`, `cout << \"B\"`, `cout << \"C\"`.\nPhủ quyết định (phủ nhánh): Quyết định 1 (c>a) có 2 nhánh. Quyết định 2 (c>b) có 2 nhánh. Các đường đi cần phủ: (c>a T, c>b T), (c>a T, c>b F), (c>a F). Cần 3 test case. Vậy, 3 test case có thể phủ cả câu lệnh và quyết định. (Kiểm thử hộp trắng, trang 36, 41)."
+  },
+  {
+    "Q": "Cần tối thiểu bao nhiêu test case để phủ câu lệnh của đoạn chương trình sau:\n```cpp\nvoid Test(int a, int b, int c)\n{\n  if (a < 0 || a > 100)\n  {\n    if (b > 100 && c <= 50)\n      cout << \"OK\";\n  }\n  else\n    cout << \"WRONG\";\n}\n```",
+    "A": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "C": 0,
+    "R": "TC1: a=-1, b=101, c=50 (thực thi if ngoài true, if trong true, cout << \"OK\").\nTC2: a=50 (thực thi else, cout << \"WRONG\").\nVới 2 test case này, tất cả các câu lệnh (if, if lồng, cout OK, else, cout WRONG) đều có thể được thực thi. Tuy nhiên, đáp án sách là 5, có thể sách đang xét các đường đi phức tạp hơn hoặc các điều kiện riêng lẻ. Nếu chỉ xét phủ câu lệnh đơn thuần, 2 là đủ. Đáp án A (5) của sách có thể liên quan đến một cách phân tích đường đi hoặc điều kiện khác."
+  },
+  {
+    "Q": "Kiểm thử luồng dữ liệu KHÔNG phát hiện được vấn đề nào sau đây?",
+    "A": [
+      "Biến khai báo nhưng không sử dụng.",
+      "Biến được định nghĩa nhiều lần trước khi sử dụng.",
+      "Biến được đặt tên không đúng chuẩn.",
+      "Xóa biến trước khi sử dụng."
+    ],
+    "C": 2,
+    "R": "Kiểm thử luồng dữ liệu tập trung vào vòng đời của biến (define, use, kill). Việc đặt tên biến không đúng chuẩn là vấn đề về coding style hoặc quy ước, không phải là lỗi luồng dữ liệu mà kỹ thuật này trực tiếp phát hiện. (Kiểm thử hộp trắng, trang 60)."
+  },
+  {
+    "Q": "Kiểm thử phủ đường dẫn cơ sở không đảm bảo ...?",
+    "A": [
+      "Phủ câu lệnh",
+      "Phủ nhánh",
+      "Phủ quyết định",
+      "Phủ điều kiện"
+    ],
+    "C": 3,
+    "R": "Phủ đường dẫn cơ sở đảm bảo phủ nhánh (và do đó phủ câu lệnh, phủ quyết định). Tuy nhiên, nó không nhất thiết đảm bảo Phủ điều kiện (Condition Coverage) cho tất cả các điều kiện con đơn lẻ trong một biểu thức điều kiện phức tạp. (Kiểm thử hộp trắng, trang 21, 44)."
+  },
+  {
+    "Q": "Cho hàm ktNguyenTo, cho biết đâu là cặp DU của biến kq?\n```cpp\nbool ktNguyenTo(int n)\n{\n  bool kq = false; // (1) \n  if (n >= 2)\n  {\n    kq = true; // (2) \n    for (int i = 2; i <= sqrt(n) && kq == true; i++) // (3) \n      if (n % i == 0)\n        kq = false; // (4)\n  }\n  return kq; // (5) \n}\n```",
+    "A": [
+      "(1) và (3)",
+      "(2) và (5)",
+      "(2) và (4)",
+      "(3) và (5)"
+    ],
+    "C": 1,
+    "R": "Cặp DU (Definition-Use) là một cặp gồm một định nghĩa của biến và một lần sử dụng biến đó mà có đường đi definition-clear giữa chúng. \n- (1) `kq = false` là định nghĩa đầu tiên của `kq`.\n- (2) `kq = true` là một định nghĩa khác của `kq` trong nhánh if.\n- (5) `return kq` là lần sử dụng cuối cùng của `kq`.\nCặp (2) và (5) là hợp lệ vì có đường đi từ (2) đến (5) thông qua các câu lệnh khác. Cặp này đảm bảo rằng giá trị của `kq` được sử dụng sau khi nó đã được định nghĩa. (Kiểm thử hộp trắng, Data Flow Testing)."
+  },
+  {
+    "Q": "Cho test case nào sau đây phủ câu lệnh của hàm ktNguyenTo?\n```cpp\nbool ktNguyenTo(int n)\n{\n  bool kq = false; // (1) \n  if (n >= 2)\n  {\n    kq = true; // (2) \n    for (int i = 2; i <= sqrt(n) && kq == true; i++) // (3) \n      if (n % i == 0)\n        kq = false; // (4)\n  }\n  return kq; // (5) \n}\n```",
+    "A": [
+      "n = 3 và n = 1",
+      "n = 95",
+      "n = 17 và n = 1",
+      "n = 47 và n = 1"
+    ],
+    "C": 1,
+    "R": "Để phủ hết các câu lệnh:\n- n=1: `kq=false` (1), `if(n>=2)` false, `return kq` (5). Phủ (1), (5) và nhánh false của if.\n- n=3 (số nguyên tố): `kq=false` (1), `if(3>=2)` true, `kq=true` (2), vòng for không thực thi (sqrt(3) < 2), `return kq` (5). Phủ (1), (2), (5) và nhánh true của if, điều kiện for.\n- n=4 (hợp số): `kq=false` (1), `if(4>=2)` true, `kq=true` (2), for (i=2, 2<=sqrt(4) && kq==true), if(4%2==0) true, `kq=false` (4), for (i=3, 3<=2 false), `return kq` (5). Phủ (1),(2),(3),(4),(5).\nLựa chọn B (n=95). 95 là hợp số (95 = 5*19). Sẽ đi qua (1), (2), (3) (vài lần), (4), (5). Đây là một test case có thể phủ hết. (Kiểm thử hộp trắng, Statement Coverage)."
+  },
+  {
+    "Q": "Cho test case nào sau đây phủ nhánh của hàm ktNguyenTo?\n```cpp\nbool ktNguyenTo(int n)\n{\n  bool kq = false; // (1) \n  if (n >= 2)\n  {\n    kq = true; // (2) \n    for (int i = 2; i <= sqrt(n) && kq == true; i++) // (3) \n      if (n % i == 0)\n        kq = false; // (4)\n  }\n  return kq; // (5) \n}\n```",
+    "A": [
+      "n = 1 và n = 15",
+      "n = 1 và n = 16",
+      "n = 2 và n = 15",
+      "n = 2 và n = 16"
+    ],
+    "C": 0,
+    "R": "Các nhánh chính:\n1. `if (n >= 2)`: True/False\n2. `for (...)`: Vòng lặp có thực thi / không thực thi.\n3. `if (n % i == 0)`: True/False (bên trong for)\nTC1: n=1 (if(n>=2) False).\nTC2: n=15 (hợp số, 15=3*5). if(n>=2) True, for chạy (i=2,3), if(15%3==0) True.\nBộ (n=1, n=15) có thể phủ các nhánh chính. (Kiểm thử hộp trắng, Branch Coverage)."
+  },
+  {
+    "Q": "Kỹ thuật nào phù hợp nhất để kiểm thử vòng đời hoạt động của một biến trong luồng hoạt động của chương trình?",
+    "A": [
+      "Kiểm thử phủ câu lệnh",
+      "Kiểm thử phủ điều kiện",
+      "Kiểm thử luồng dữ liệu",
+      "Kiểm thử vòng lặp"
+    ],
+    "C": 2,
+    "R": "Kiểm thử luồng dữ liệu (Data Flow Testing) tập trung vào việc theo dõi và kiểm tra vòng đời của các biến (định nghĩa, sử dụng, xóa) trong các luồng thực thi của chương trình. (Kiểm thử hộp trắng, trang 56)."
+  },
+  {
+    "Q": "Cho hàm sau, cho biết đâu không phải là cặp DU của biến gia?\n```cpp\npublic static void tinhTienTaxi(int soKm)\ndouble gia; // (1)\nif (soKm <= 1) \n  gia = soKm * 15000; // (2)\nelse if (soKm <= 5) \n  gia = soKm * 13500; // (3)\nelse if (soKm <= 120) \n  gia = soKm * 11000; // (4)\nelse\n  gia = soKm * 11000 - soKm * 110; // (5)\nSystem.out.println(\"Gia taxi: \" + gia); // (6)\n```",
+    "A": [
+      "(1) và (6)",
+      "(3) và (6)",
+      "(2) và (6)",
+      "(4) và (6)"
+    ],
+    "C": 0,
+    "R": "Cặp DU (Definition-Use) là một cặp gồm một định nghĩa của biến và một lần sử dụng biến đó mà có đường đi definition-clear giữa chúng.\n- (1) `double gia;` là định nghĩa đầu tiên của `gia`.\n- (2), (3), (4), (5) là các định nghĩa khác của `gia` trong các nhánh if.\n- (6) `System.out.println(\"Gia taxi: \" + gia);` là lần sử dụng cuối cùng của `gia`.\nCặp (1) và (6) không phải là cặp DU hợp lệ vì không có đường đi từ (1) đến (6) thông qua các câu lệnh khác. Các cặp khác đều có đường đi rõ ràng. (Kiểm thử hộp trắng, Data Flow Testing)."
+  },
+  {
+    "Q": "Cho sơ đồ luồng của một đoạn chương trình hình bên dưới, biết những test case tối thiểu nào sau đây phủ điều kiện của chương trình này?\ni. A=-3,B=4\nii. A=3,B=4\niii. A=-3,B=-4\niv. A=-3,B=-2\nv. A=-1,B=4\n",
+    "I": "./data/ktpm/tn3-21.png",
+    "A": [
+      "i, ii, iv",
+      "i, ii, iii",
+      "i, ii, v",
+      "iii, iv, v"
+    ],
+    "C": 1,
+    "R": "Điều kiện 1 (DC1): A < 0; Điều kiện 2 (DC2): B > 0.\n- Test case i (A=-3, B=4): DC1=True, DC2=True. Phủ cả hai điều kiện.\n- Test case ii (A=3, B=4): DC1=False, DC2=True. Phủ DC2.\n- Test case iii (A=-3, B=-4): DC1=True, DC2=False. Phủ DC1.\n- Test case iv (A=-3, B=-2): DC1=True, DC2=False. Phủ DC1.\n- Test case v (A=-1, B=4): DC1=True, DC2=True. Phủ cả hai điều kiện.\nVậy các test case i, ii, iv là đủ để phủ cả hai điều kiện. Đáp án sách là A (i, ii, iv)."
+  },
+  {
+    "Q": "Cho lược đồ trạng thái như hình bên dưới, cho biết có bao nhiêu trường hợp dịch chuyển không hợp lệ?",
+    "I": "./data/ktpm/tn3-22.png",
+    "A": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "C": 2,
+    "R": "Có 5 trạng thái: Neutral, 1, 2, 3, 4. Tổng số cặp (Từ trạng thái, Đến trạng thái) có thể có là 5x5=25. Đếm trên lược đồ, có 14 dịch chuyển hợp lệ được vẽ rõ ràng. Để có đáp án là 9 trường hợp dịch chuyển không hợp lệ, chúng ta giả định rằng có 25 - 9 = 16 dịch chuyển được coi là hợp lệ hoặc không được tính vào số 'không hợp lệ'. Hoặc, một cách diễn giải khác để ra 9: nếu tổng số 'trường hợp dịch chuyển được xem xét' không phải là 25 mà là 23 (ví dụ, loại trừ việc tự chuyển về chính nó cho trạng thái 1 và trạng thái 4), thì số trường hợp không hợp lệ sẽ là 23 (xem xét) - 14 (hợp lệ) = 9."
+  },
+  {
+    "Q": "Cho phương thức sau được minh họa bằng ngôn ngữ Java. Cho biết số lượng test case tối thiểu để phủ câu lệnh của hàm tinhTienTaxi()?\n```java\npublic static void tinhTienTaxi(int soKm) {\n  double gia; // (1)\n  if (soKm <= 1) { // (2)\n    gia = soKm * 15000; // (3)\n  } else if (soKm <= 5) { // (4)\n    gia = soKm * 13500; // (5)\n  } else if (soKm <= 120) { // (6)\n    gia = soKm * 11000; // (7)\n  } else {\n    gia = soKm * 11000 - soKm * 110; // (8)\n  }\n  System.out.println(\"Giá taxi: \" + gia); // (9)\n}\n```",
+    "A": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "C": 1,
+    "R": "Để phủ tất cả các câu lệnh, chúng ta cần đi qua mỗi nhánh của cấu trúc if-else if-else. Mỗi nhánh gán giá trị cho biến `gia` và cuối cùng là lệnh `System.out.println`.\nTC1: `soKm = 1` (thực thi lệnh ở nhánh (3) và (9)).\nTC2: `soKm = 3` (thực thi lệnh ở nhánh (5) và (9)).\nTC3: `soKm = 10` (thực thi lệnh ở nhánh (7) và (9)).\nTC4: `soKm = 150` (thực thi lệnh ở nhánh (8) và (9)).\nLệnh (1) `double gia;` luôn được thực thi. Các lệnh điều kiện (2), (4), (6) cũng sẽ được đánh giá.\nVới 4 test case này, tất cả các lệnh gán cho `gia` và lệnh in cuối cùng đều được thực thi. Do đó, cần tối thiểu 4 test case để phủ câu lệnh. (Kiểm thử hộp trắng, Statement Coverage)."
+  },
+  {
+    "Q": "Cặp nào KHÔNG phải là cặp DU của biến gia trong phương thức tinhTienTaxi()?\n```java\npublic static void tinhTienTaxi(int soKm) {\n  double gia; // (1)\n  if (soKm <= 1) { // (2)\n    gia = soKm * 15000; // (3)\n  } else if (soKm <= 5) { // (4)\n    gia = soKm * 13500; // (5)\n  } else if (soKm <= 120) { // (6)\n    gia = soKm * 11000; // (7)\n  } else {\n    gia = soKm * 11000 - soKm * 110; // (8)\n  }\n  System.out.println(\"Giá taxi: \" + gia); // (9)\n}\n```",
+    "A": [
+      "(1) và (9)",
+      "(3) và (9)",
+      "(2) và (9)",
+      "(4) và (9)"
+    ],
+    "C": 0,
+    "R": "Biến `gia` được khai báo ở (1) và được gán giá trị ở (3), (5), (7), (8). Nó được sử dụng (use) ở (9).\n- (3) và (9): DEF(gia) tại (3), USE(gia) tại (9). Có đường đi definition-clear.\n- Tương tự cho (5)- (9), (7)-(9), (8)-(9).\n- (1) và (9): `gia` được khai báo ở (1). Tuy nhiên, trước khi đến (9), `gia` chắc chắn sẽ được gán lại giá trị ở một trong các nhánh (3), (5), (7), hoặc (8). Do đó, không có đường đi definition-clear từ khai báo ban đầu ở (1) đến lần sử dụng ở (9) mà không bị định nghĩa lại. Vì vậy, (1) và (9) không phải là một cặp DU hợp lệ. (Kiểm thử hộp trắng, Data Flow Testing)."
+  },
+  {
+    "Q": "Cho biết những test case nào sau đây đảm bảo phủ nhánh và điều kiện của hàm ktNamNhuan?\na. 1600\nb. 1900\nc. 2020\nd. 2017\ne. 2018\nf. 2016\n```java\nbool ktNamNhuan(int nam)\n{\n  bool kq = false;\n  if ((nam % 400 == 0) || \n      (nam % 4 == 0 && nam % 100 != 0))\n    kq = true;\n  return kq;\n}\n```",
+    "A": [
+      "a, b, d, f",
+      "a, d, f",
+      "b, c, d, f",
+      "a, b, d, e"
+    ],
+    "C": 0,
+    "R": "Điều kiện phức hợp: C1: (nam % 400 == 0); C2: (nam % 4 == 0); C3: (nam % 100 != 0). Logic: C1 || (C2 && C3).\nĐể phủ nhánh và điều kiện (Modified Condition/Decision Coverage - MC/DC, hoặc ít nhất là Branch và Condition Coverage):\n- Nhánh TRUE của toàn biểu thức:\n    - Do C1=TRUE: nam=1600 (a). (C1=T, C2=T, C3=T -> kq=true)\n    - Do C1=FALSE, (C2 && C3)=TRUE: nam=2016 (f) hoặc nam=2020 (c). (C1=F, C2=T, C3=T -> kq=true)\n- Nhánh FALSE của toàn biểu thức:\n    - C1=FALSE, C2=FALSE: nam=2017 (d) hoặc nam=2018 (e). (C1=F, C2=F, C3=T -> kq=false)\n    - C1=FALSE, C2=TRUE, C3=FALSE: nam=1900 (b). (C1=F, C2=T, C3=F -> kq=false)\nBộ test case a, b, d, f (1600, 1900, 2017, 2016):\n- 1600 (a): C1=T, C2=T, C3=T => TRUE (phủ nhánh TRUE do C1, các điều kiện con nhận T)\n- 1900 (b): C1=F, C2=T, C3=F => FALSE (phủ nhánh FALSE, các điều kiện con nhận F,T,F)\n- 2017 (d): C1=F, C2=F, C3=T => FALSE (phủ nhánh FALSE, các điều kiện con nhận F,F,T)\n- 2016 (f): C1=F, C2=T, C3=T => TRUE (phủ nhánh TRUE do C2&&C3, các điều kiện con nhận F,T,T)\nBộ này đảm bảo mỗi điều kiện con C1, C2, C3 nhận cả giá trị True và False, và cả hai nhánh True/False của biểu thức điều kiện chính cũng được thực thi. (Kiểm thử hộp trắng, Branch and Condition Coverage)."
+  }
+]

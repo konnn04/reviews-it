@@ -30,7 +30,32 @@
                 "title": "Selenium - Công cụ kiểm thử tự động",
                 "description": "Hướng dẫn sử dụng Selenium để tự động hóa kiểm thử phần mềm.",
                 "file": "04-Selenium.pdf"
-            }],
+            },
+            {
+                "id": "btc2",
+                "title": "Bài tập chương 2: Kiểm thử hộp đen",
+                "description": "Các bài tập tự luận về kiểm thử hộp đen, bao gồm các bài tập thực hành và lý thuyết.",
+                "file": "btc2.md"
+            },
+            {
+                "id": "btc3",
+                "title": "Bài tập chương 3: Kiểm thử hộp trắng",
+                "description": "Các bài tập tự luận về kiểm thử hộp trắng, bao gồm các bài tập thực hành và lý thuyết.",
+                "file": "btc3.md"
+            },
+            {
+                "id": "dtm1",
+                "title": "Đề thi mẫu kiểm thử phần mềm",
+                "description": "Đề thi mẫu kiểm thử phần mềm, bao gồm các câu hỏi trắc nghiệm và tự luận.",
+                "file": "dtm1.md"
+            },
+            {
+                "id": "lms242",
+                "title": "Bài tập LMS242: Kiểm thử phần mềm",
+                "description": "Bài tập LMS242 về kiểm thử phần mềm, bao gồm các câu hỏi trắc nghiệm",
+                "file": "lms242.pdf"
+            }
+        ],
             "choices-test": [
                 {
                     "id": "tn1",
@@ -43,6 +68,12 @@
                     "title": "Trắc nghiệm chương 2: Kiểm thử hộp đen",
                     "description": "Bài trắc nghiệm này giúp đánh giá kiến thức về kiểm thử hộp đen. Được trích xuất từ chương 2 của sách 'Kiểm thử phần mềm'.",
                     "file": "tn2.json"
+                },
+                {
+                    "id": "tn3",
+                    "title": "Trắc nghiệm chương 3: Kiểm thử hộp trắng",
+                    "description": "Bài trắc nghiệm này giúp đánh giá kiến thức về kiểm thử hộp trắng. Được trích xuất từ chương 3 của sách 'Kiểm thử phần mềm'.",
+                    "file": "tn3.json"
                 },
                 {
                     "id": "tn1-ai",
