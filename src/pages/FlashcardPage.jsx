@@ -2,6 +2,13 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { loadInitData, loadQuizData } from '../utils/dataLoader';
 import { Card, Button, Badge, Form } from 'react-bootstrap';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'highlight.js/styles/github.css';
+import hljs from 'highlight.js';
 
 function FlashcardPage() {
   const { courseId, flashcardId } = useParams();
@@ -17,6 +24,9 @@ function FlashcardPage() {
   });
   const [showSettings, setShowSettings] = useState(true);
 
+  const frontCardRef = useState(null);
+  const backCardRef = useState(null);
+  
   useEffect(() => {
     const fetchFlashcardData = async () => {
       try {
@@ -52,15 +62,48 @@ function FlashcardPage() {
     fetchFlashcardData();
   }, [courseId, flashcardId]);
 
+  useEffect(() => {
+    if (flipped && backCardRef.current) {
+      const codeBlocks = backCardRef.current.querySelectorAll('pre code');
+      if (codeBlocks.length > 0) {
+        codeBlocks.forEach(block => {
+          hljs.highlightElement(block);
+        });
+      }
+    } else if (!flipped && frontCardRef.current) {
+      const codeBlocks = frontCardRef.current.querySelectorAll('pre code');
+      if (codeBlocks.length > 0) {
+        codeBlocks.forEach(block => {
+          hljs.highlightElement(block);
+        });
+      }
+    }
+  }, [flipped, currentIndex, backCardRef, frontCardRef]);
+
+  const markdownComponents = {
+    code({node, inline, className, children, ...props}) {
+      const match = /language-(\w+)/.exec(className || '');
+      return !inline && match ? (
+        <pre>
+          <code className={`language-${match[1]}`} {...props}>
+            {String(children).replace(/\n$/, '')}
+          </code>
+        </pre>
+      ) : (
+        <code {...props}>
+          {children}
+        </code>
+      );
+    },
+  };
+
   const startFlashcards = () => {
     let selectedCards = [...flashcards];
     
     if (settings.randomize) {
-      // Xáo trộn thẻ
       selectedCards.sort(() => Math.random() - 0.5);
     }
     
-    // Giới hạn số lượng thẻ
     selectedCards = selectedCards.slice(0, settings.cardCount);
     
     setFlashcards(selectedCards);
@@ -182,6 +225,7 @@ function FlashcardPage() {
             transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
           }}
         >
+          {/* FRONT CARD - USE MARKDOWN */}
           <Card 
             className="front"
             style={{
@@ -196,11 +240,20 @@ function FlashcardPage() {
             }}
           >
             <Card.Body className="d-flex justify-content-center align-items-center">
-              <Card.Title className="text-center">{currentCard.Q}</Card.Title>
+              <div className="markdown-content w-100" ref={frontCardRef}>
+                <ReactMarkdown 
+                  remarkPlugins={[remarkGfm, remarkMath]} 
+                  rehypePlugins={[rehypeRaw, rehypeKatex]}
+                  components={markdownComponents}
+                >
+                  {currentCard.Q}
+                </ReactMarkdown>
+              </div>
             </Card.Body>
             <div className="text-center text-muted small">Nhấp để lật thẻ</div>
           </Card>
           
+          {/* BACK CARD - USE MARKDOWN */}
           <Card 
             className="back"
             style={{
@@ -212,20 +265,32 @@ function FlashcardPage() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              padding: '20px',
-              // backgroundColor: '#f8f9fa'
+              padding: '20px'
             }}
           >
             <Card.Body className="d-flex flex-column justify-content-center">
               <Card.Title className="text-center mb-4">Đáp án:</Card.Title>
-              <div className="text-center">
-                <div className="bg-success text-white p-3 rounded mb-2">
-                  {currentCard.A[currentCard.C]}
+              <div className="text-center" ref={backCardRef}>
+                <div className="bg-success text-white p-3 rounded mb-2 markdown-content">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm, remarkMath]}
+                    rehypePlugins={[rehypeRaw, rehypeKatex]}
+                    components={markdownComponents}
+                  >
+                    {currentCard.A[currentCard.C]}
+                  </ReactMarkdown>
                 </div>
                 
                 {currentCard.R && (
-                  <div className="explanation mt-3 text-muted">
-                    <strong>Giải thích:</strong> {currentCard.R}
+                  <div className="explanation mt-3">
+                    <strong>Giải thích:</strong>
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm, remarkMath]}
+                      rehypePlugins={[rehypeRaw, rehypeKatex]}
+                      components={markdownComponents}
+                    >
+                      {currentCard.R}
+                    </ReactMarkdown>
                   </div>
                 )}
               </div>

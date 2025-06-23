@@ -1,6 +1,6 @@
 [
   {
-    "Q": "Câu hỏi 1: Quy trình phát triển phần mềm nào chia dự án thành nhiều vòng lặp phát triển, mỗi sprint thường kéo dài 2-4 tuần?",
+    "Q": "Quy trình phát triển phần mềm nào chia dự án thành nhiều vòng lặp phát triển, mỗi sprint thường kéo dài 2-4 tuần?",
     "A": [
       "Thác nước (Waterfall)",
       "Scrum",
@@ -11,7 +11,7 @@
     "R": "Scrum là một quy trình phát triển phần mềm linh hoạt (agile) chia dự án thành các sprint, mỗi sprint thường kéo dài 2-4 tuần. (Tổng quan kiểm thử phần mềm, trang 11)."
   },
   {
-    "Q": "Câu hỏi 2: \"Đảm bảo rằng sản phẩm phần mềm được xây dựng đúng cách, tuân theo các đặc tả và tiêu chuẩn đã định nghĩa\" là mục tiêu của hoạt động nào?",
+    "Q": "\"Đảm bảo rằng sản phẩm phần mềm được xây dựng đúng cách, tuân theo các đặc tả và tiêu chuẩn đã định nghĩa\" là mục tiêu của hoạt động nào?",
     "A": [
       "Validation (Kiểm định)",
       "Verification (Xác minh)",
@@ -22,7 +22,7 @@
     "R": "Verification (Xác minh) là quá trình đánh giá để đảm bảo rằng sản phẩm phần mềm được phát triển đúng cách, tuân thủ các đặc tả và tiêu chuẩn. (Tổng quan kiểm thử phần mềm, trang 78, 79)."
   },
   {
-    "Q": "Câu hỏi 3: Lỗi (Error) trong kiểm thử phần mềm thường được hiểu là:",
+    "Q": "Lỗi (Error) trong kiểm thử phần mềm thường được hiểu là:",
     "A": [
       "Hành vi không mong muốn của phần mềm khi thực thi.",
       "Sai sót trong mã nguồn hoặc thiết kế do con người gây ra.",
@@ -352,7 +352,7 @@
     "R": "Retesting (hay Confirmation Testing) là việc thực thi lại các test case đã từng phát hiện lỗi (failed) để xác nhận rằng các lỗi đó đã được sửa chữa một cách chính xác. (Kiểm thử hộp đen, trang 8)."
   },
   {
-    "Q": "Câu hỏi 33: Cho chức năng xếp loại học sinh dựa trên điểm trung bình (ĐTB) từ 0.0 đến 10.0, làm tròn 1 chữ số thập phân:\n0.0 <= ĐTB < 5.0: Yếu\n5.0 <= ĐTB < 7.0: Trung bình\n7.0 <= ĐTB < 8.0: Khá\n8.0 <= ĐTB < 9.0: Giỏi\n9.0 <= ĐTB <= 10.0: Xuất sắc\nSử dụng BVA 3 giá trị (Min, Min+, Max-, Max, Nom), giá trị nào KHÔNG cần thiết cho phân vùng \"Khá\" [7.0, 8.0)?",
+    "Q": "Câu hỏi 33: Cho chức năng xếp loại học sinh dựa trên điểm trung bình (ĐTB) từ 0.0 đến 10.0, làm tròn 1 chữ số thập phân:\n\n0.0 <= ĐTB < 5.0: Yếu\n\n5.0 <= ĐTB < 7.0: Trung bình\n\n7.0 <= ĐTB < 8.0: Khá\n\n8.0 <= ĐTB < 9.0: Giỏi\n\n9.0 <= ĐTB <= 10.0: Xuất sắc\n\nSử dụng BVA 3 giá trị (Min, Min+, Max-, Max, Nom), giá trị nào KHÔNG cần thiết cho phân vùng \"Khá\" [7.0, 8.0)?",
     "A": [
       "6.9",
       "7.0",
@@ -440,7 +440,7 @@
     "R": "Kiểm thử thăm dò (Exploratory Testing) là một kỹ thuật mà việc học hỏi về hệ thống, thiết kế test case và thực thi test case được thực hiện đồng thời, song song. (Kiểm thử hộp đen, trang 69, 70)."
   },
   {
-    "Q": "Câu hỏi 41: Một hệ thống quản lý thư viện cho phép mượn sách. Điều kiện: người dùng phải có thẻ hợp lệ (THV) VÀ không có sách quá hạn (SQH). Hành động: Cho mượn (CM) hoặc Từ chối (TC).\nNếu THV=TRUE và SQH=FALSE thì Action=CM.\nNếu THV=TRUE và SQH=TRUE thì Action=TC.\nNếu THV=FALSE thì Action=TC (không quan tâm SQH).\nCần bao nhiêu test case để kiểm tra tất cả các quy tắc trong bảng quyết định rút gọn?",
+    "Q": "Câu hỏi 41: Một hệ thống quản lý thư viện cho phép mượn sách. Điều kiện: người dùng phải có thẻ hợp lệ (THV) VÀ không có sách quá hạn (SQH). Hành động: Cho mượn (CM) hoặc Từ chối (TC).\n\nNếu THV=TRUE và SQH=FALSE thì Action=CM.\n\nNếu THV=TRUE và SQH=TRUE thì Action=TC.\n\nNếu THV=FALSE thì Action=TC (không quan tâm SQH).\n\nCần bao nhiêu test case để kiểm tra tất cả các quy tắc trong bảng quyết định rút gọn?",
     "A": [
       "2",
       "3",
@@ -448,10 +448,10 @@
       "5"
     ],
     "C": 1,
-    "R": "Điều kiện: THV, SQH. Hành động: Action (CM, TC).\nR1: THV=T, SQH=F -> CM\nR2: THV=T, SQH=T -> TC\nR3: THV=F, SQH=T -> TC\nR4: THV=F, SQH=F -> TC\nRút gọn: Rule 1: THV=T, SQH=F -> CM. Rule 2: THV=T, SQH=T -> TC. Rule 3: THV=F, SQH=(-) -> TC. Vậy cần 3 test case. (Kiểm thử hộp đen, trang 38-39)."
+    "R": "Điều kiện: THV, SQH. Hành động: Action (CM, TC).\n\nR1: THV=T, SQH=F -> CM\n\nR2: THV=T, SQH=T -> TC\n\nR3: THV=F, SQH=T -> TC\n\nR4: THV=F, SQH=F -> TC\n\nRút gọn: Rule 1: THV=T, SQH=F -> CM. Rule 2: THV=T, SQH=T -> TC. Rule 3: THV=F, SQH=(-) -> TC. Vậy cần 3 test case. (Kiểm thử hộp đen, trang 38-39)."
   },
   {
-    "Q": "Câu hỏi 42: Cho một ứng dụng web có chức năng upload file. Kích thước file tối đa là 5MB. Các loại file cho phép là .jpg, .png, .pdf.\nTest case nào sau đây thuộc phân vùng KHÔNG HỢP LỆ cho loại file?",
+    "Q": "Câu hỏi 42: Cho một ứng dụng web có chức năng upload file. Kích thước file tối đa là 5MB. Các loại file cho phép là .jpg, .png, .pdf.\n\nTest case nào sau đây thuộc phân vùng KHÔNG HỢP LỆ cho loại file?",
     "A": [
       "Upload file \"image.jpg\" kích thước 3MB.",
       "Upload file \"document.pdf\" kích thước 4MB.",
@@ -462,7 +462,7 @@
     "R": "\"archive.zip\" có phần mở rộng là .zip, không nằm trong danh sách các loại file cho phép (.jpg, .png, .pdf). Đây là một giá trị không hợp lệ cho thuộc tính loại file. (Bài tập áp dụng Phân vùng tương đương)."
   },
   {
-    "Q": "Câu hỏi 43: Hệ thống đăng nhập yêu cầu username và password.\nTrạng thái S1: Màn hình đăng nhập.\nSự kiện E1: Nhập username và password đúng -> Chuyển đến S2 (Trang chủ).\nSự kiện E2: Nhập username hoặc password sai -> Vẫn ở S1, hiển thị thông báo lỗi.\nSự kiện E3: Click link \"Quên mật khẩu\" -> Chuyển đến S3 (Trang lấy lại mật khẩu).\nTừ trạng thái S1, có bao nhiêu sự kiện có thể xảy ra?",
+    "Q": "Câu hỏi 43: Hệ thống đăng nhập yêu cầu username và password.\n\nTrạng thái S1: Màn hình đăng nhập.\n\nSự kiện E1: Nhập username và password đúng -> Chuyển đến S2 (Trang chủ).\n\nSự kiện E2: Nhập username hoặc password sai -> Vẫn ở S1, hiển thị thông báo lỗi.\n\nSự kiện E3: Click link \"Quên mật khẩu\" -> Chuyển đến S3 (Trang lấy lại mật khẩu).\n\nTừ trạng thái S1, có bao nhiêu sự kiện có thể xảy ra?",
     "A": [
       "1",
       "2",
@@ -473,7 +473,7 @@
     "R": "Từ trạng thái S1 (Màn hình đăng nhập), có 3 sự kiện được mô tả có thể xảy ra: E1 (Nhập đúng), E2 (Nhập sai), E3 (Click \"Quên mật khẩu\"). (Kiểm thử hộp đen, State Transition)."
   },
   {
-    "Q": "Câu hỏi 44: Một chương trình yêu cầu nhập vào một tháng (1-12) và một năm.\nĐầu vào: Tháng = 13, Năm = 2023. Đây là loại kiểm thử gì nếu tester cố tình nhập giá trị này?",
+    "Q": "Câu hỏi 44: Một chương trình yêu cầu nhập vào một tháng (1-12) và một năm.\n\nĐầu vào: Tháng = 13, Năm = 2023. Đây là loại kiểm thử gì nếu tester cố tình nhập giá trị này?",
     "A": [
       "Phân vùng tương đương (giá trị không hợp lệ).",
       "Phân tích giá trị biên.",
@@ -496,7 +496,7 @@
     "R": "Với giới hạn tối đa 255 ký tự, các giá trị biên điển hình theo BVA: 0, 1, 254, 255, 256. Giá trị 128 ký tự là một giá trị \"nominal\" (bên trong), không phải giá trị biên. (Kiểm thử hộp đen, trang 23)."
   },
   {
-    "Q": "Câu hỏi 46: Đặc tả yêu cầu: \"Nếu khách hàng là VIP VÀ tổng hóa đơn > 1.000.000 VNĐ THÌ giảm giá 10%\".\nTest case: Khách hàng không phải VIP, tổng hóa đơn 1.500.000 VNĐ, không giảm giá.\nTest case này kiểm tra điều gì?",
+    "Q": "Câu hỏi 46: Đặc tả yêu cầu: \"Nếu khách hàng là VIP VÀ tổng hóa đơn > 1.000.000 VNĐ THÌ giảm giá 10%\".\n\nTest case: Khách hàng không phải VIP, tổng hóa đơn 1.500.000 VNĐ, không giảm giá.\n\nTest case này kiểm tra điều gì?",
     "A": [
       "Nhánh TRUE của điều kiện \"khách hàng là VIP\".",
       "Nhánh FALSE của điều kiện \"khách hàng là VIP\".",
@@ -518,7 +518,7 @@
     "R": "Việc hủy giao dịch là một luồng xử lý nghiệp vụ, mặc dù là luồng không thành công (luồng ngoại lệ), nhưng nó vẫn thuộc về kiểm tra chức năng của hệ thống. (Kiểm thử hộp đen)."
   },
   {
-    "Q": "Câu hỏi 48: Cho đoạn mã kiểm tra năm nhuận: `if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))`. \nGiá trị `year = 1900` (không nhuận) sẽ làm cho nhánh nào của điều kiện `year % 4 == 0 && year % 100 != 0` được đánh giá là FALSE?",
+    "Q": "Câu hỏi 48: Cho đoạn mã kiểm tra năm nhuận: `if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))`. \n\nGiá trị `year = 1900` (không nhuận) sẽ làm cho nhánh nào của điều kiện `year % 4 == 0 && year % 100 != 0` được đánh giá là FALSE?",
     "A": [
       "`year % 4 == 0`",
       "`year % 100 != 0`",
@@ -661,7 +661,7 @@
     "R": "Độ phức tạp Cyclomatic V(G) chính là số lượng đường đi độc lập cơ sở trong chương trình. (Kiểm thử hộp trắng, trang 17)."
   },
   {
-    "Q": "Câu hỏi 61: Cho đoạn mã:\n```cpp\nint max(int a, int b) {\n  if (a > b) // P1\n    return a;\n  else\n    return b;\n}\n```\nSố nút vị từ (P) là bao nhiêu?",
+    "Q": "Câu hỏi 61: Cho đoạn mã:\n\n```cpp\nint max(int a, int b) {\n  if (a > b) // P1\n    return a;\n  else\n    return b;\n}\n```\nSố nút vị từ (P) là bao nhiêu?",
     "A": [
       "0",
       "1",
@@ -683,7 +683,7 @@
     "R": "V(G) = P + 1 = 1 + 1 = 2. (Kiểm thử hộp trắng, trang 18)."
   },
   {
-    "Q": "Câu hỏi 63: Cho đoạn mã:\n```cpp\nvoid process(int x) {\n  int y = 0; // DEF(y,1)\n  if (x > 0) { // P-USE(x,2)\n    y = x * 2; // DEF(y,3), C-USE(x,3)\n  }\n  cout << y; // C-USE(y,4)\n}\n```\nCặp DU (Definition-Use pair) nào sau đây là hợp lệ cho biến `y`?",
+    "Q": "Câu hỏi 63: Cho đoạn mã:\n\n```cpp\nvoid process(int x) {\n  int y = 0; // DEF(y,1)\n  if (x > 0) { // P-USE(x,2)\n    y = x * 2; // DEF(y,3), C-USE(x,3)\n  }\n  cout << y; // C-USE(y,4)\n}\n```\nCặp DU (Definition-Use pair) nào sau đây là hợp lệ cho biến `y`?",
     "A": [
       "(DEF(y,1), C-USE(y,3))",
       "(DEF(y,1), C-USE(y,4)) (nếu x <= 0)",

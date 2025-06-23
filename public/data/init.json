@@ -33,6 +33,12 @@
             }],
             "choices-test": [
                 {
+                    "id": "tn1",
+                    "title": "Trắc nghiệm chương 1: Tổng quan về kiểm thử phần mềm",
+                    "description": "Bài trắc nghiệm này giúp đánh giá kiến thức về tổng quan kiểm thử phần mềm. Được trích xuất từ chương 1 của sách 'Kiểm thử phần mềm'.",
+                    "file": "tn1.json"
+                },
+                {
                     "id": "tn1-ai",
                     "title": "Trắc nghiệm kiểm thử phần mềm 1 (AI)",
                     "description": "Bài trắc nghiệm này có sử dụng AI để đánh giá kiến thức về kiểm thử phần mềm.",
