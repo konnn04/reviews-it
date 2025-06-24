@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import CourseCard from '../components/CourseCard';
 
 function Home({ appData }) {
-  if (!appData) return <div>No data available</div>;
+  if (!appData) return <div>Không có dữ liệu</div>;
 
   return (
     <div className="home-page">
