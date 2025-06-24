@@ -1,6 +1,6 @@
 {
-    "name": "Ôn tập Lập trình",
-    "description": "Ôn tập các kiến thức cơ bản về lập trình, các môn học liên quan và các kỹ năng cần thiết để trở thành một lập trình viên.",
+    "name": "Yduts it",
+    "description": "Nơi lưu trữ và chia sẻ tài liệu học tập, trong lĩnh vực công nghệ thông tin, bao gồm các môn học như lập trình, cơ sở dữ liệu, kiểm thử phần mềm và trí tuệ nhân tạo.",
     "courses": [
         {
             "id": "ktpm",
