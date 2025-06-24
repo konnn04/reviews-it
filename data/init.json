@@ -9,25 +9,25 @@
             "thumbnail": "https://scrumpass.com/wp-content/uploads/2024/05/nghe-kiem-thu-phan-mem.jpg",
             "doc": [{
                 "id": "ktpm0",
-                "title": "Tổng quan về kiểm thử phần mềm",
+                "title": "[Slide] Tổng quan về kiểm thử phần mềm",
                 "description": "Tổng quan về kiểm thử phần mềm, các loại kiểm thử và quy trình kiểm thử.",
                 "file": "01-Tong-quan-kiem-thu.pdf"
             },
             {
                 "id": "ktpm1",
-                "title": "Kiểm thử hộp đen",
+                "title": "[Slide] Kiểm thử hộp đen",
                 "description": "Phương pháp kiểm thử hộp đen, bao gồm các kỹ thuật và chiến lược kiểm thử.",
                 "file": "02-Kiem-thu-hop-den.pdf"
             },
             {
                 "id": "ktpm2",
-                "title": "Kiểm thử hộp trắng",
+                "title": "[Slide] Kiểm thử hộp trắng",
                 "description": "Phương pháp kiểm thử hộp trắng, bao gồm các kỹ thuật và chiến lược kiểm thử.",
                 "file": "03-Kiem-thu-hop-trang.pdf"
             },
             {
                 "id": "ktpm3",
-                "title": "Selenium - Công cụ kiểm thử tự động",
+                "title": "[Slide] Selenium - Công cụ kiểm thử tự động",
                 "description": "Hướng dẫn sử dụng Selenium để tự động hóa kiểm thử phần mềm.",
                 "file": "04-Selenium.pdf"
             },
@@ -42,6 +42,24 @@
                 "title": "Bài tập chương 3: Kiểm thử hộp trắng",
                 "description": "Các bài tập tự luận về kiểm thử hộp trắng, bao gồm các bài tập thực hành và lý thuyết.",
                 "file": "btc3.md"
+            },
+            {
+                "id": "dethi19-20",
+                "title": "Đề thi mẫu kiểm thử phần mềm 2019-2020",
+                "description": "Đề thi mẫu kiểm thử phần mềm 2019-2020, bao gồm các câu hỏi trắc nghiệm và tự luận.",
+                "file": "HK07_KTPM_DKTTK_CuoiKy-TracNghiem-2019-2020.pdf"
+            },
+            {
+                "id": "dethi20-21",
+                "title": "Đề thi mẫu kiểm thử phần mềm 2020-2021",
+                "description": "Đề thi mẫu kiểm thử phần mềm 2020-2021, bao gồm các câu hỏi trắc nghiệm và tự luận.",
+                "file": "HK07_KTPM_DKTTK_CuoiKy-TracNghiem-2020-2021.pdf"
+            },
+            {
+                "id": "dethi21-22",
+                "title": "Đề thi mẫu kiểm thử phần mềm 2021-2022",
+                "description": "Đề thi mẫu kiểm thử phần mềm 2021-2022, bao gồm các câu hỏi trắc nghiệm và tự luận.",
+                "file": "dethi21-22.md"
             },
             {
                 "id": "dtm1",
