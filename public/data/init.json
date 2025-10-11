@@ -39,6 +39,111 @@
             ]
         },
         {
+            "id": "ktpm",
+            "title": "Kiểm thử phần mềm",
+            "description": "Khóa học này cung cấp kiến thức về kiểm thử phần mềm, bao gồm các phương pháp, kỹ thuật và công cụ kiểm thử.",
+            "thumbnail": "https://scrumpass.com/wp-content/uploads/2024/05/nghe-kiem-thu-phan-mem.jpg",
+            "doc": [{
+                "id": "ktpm0",
+                "title": "[Slide] Tổng quan về kiểm thử phần mềm",
+                "description": "Tổng quan về kiểm thử phần mềm, các loại kiểm thử và quy trình kiểm thử.",
+                "file": "01-Tong-quan-kiem-thu.pdf"
+            },
+            {
+                "id": "ktpm1",
+                "title": "[Slide] Kiểm thử hộp đen",
+                "description": "Phương pháp kiểm thử hộp đen, bao gồm các kỹ thuật và chiến lược kiểm thử.",
+                "file": "02-Kiem-thu-hop-den.pdf"
+            },
+            {
+                "id": "ktpm2",
+                "title": "[Slide] Kiểm thử hộp trắng",
+                "description": "Phương pháp kiểm thử hộp trắng, bao gồm các kỹ thuật và chiến lược kiểm thử.",
+                "file": "03-Kiem-thu-hop-trang.pdf"
+            },
+            {
+                "id": "ktpm3",
+                "title": "[Slide] Selenium - Công cụ kiểm thử tự động",
+                "description": "Hướng dẫn sử dụng Selenium để tự động hóa kiểm thử phần mềm.",
+                "file": "04-Selenium.pdf"
+            },
+            {
+                "id": "btc2",
+                "title": "Bài tập chương 2: Kiểm thử hộp đen",
+                "description": "Các bài tập tự luận về kiểm thử hộp đen, bao gồm các bài tập thực hành và lý thuyết.",
+                "file": "btc2.md"
+            },
+            {
+                "id": "btc3",
+                "title": "Bài tập chương 3: Kiểm thử hộp trắng",
+                "description": "Các bài tập tự luận về kiểm thử hộp trắng, bao gồm các bài tập thực hành và lý thuyết.",
+                "file": "btc3.md"
+            },
+            {
+                "id": "dethi19-20",
+                "title": "Đề thi mẫu kiểm thử phần mềm 2019-2020",
+                "description": "Đề thi mẫu kiểm thử phần mềm 2019-2020, bao gồm các câu hỏi trắc nghiệm và tự luận.",
+                "file": "HK07_KTPM_DKTTK_CuoiKy-TracNghiem-2019-2020.pdf"
+            },
+            {
+                "id": "dethi20-21",
+                "title": "Đề thi mẫu kiểm thử phần mềm 2020-2021",
+                "description": "Đề thi mẫu kiểm thử phần mềm 2020-2021, bao gồm các câu hỏi trắc nghiệm và tự luận.",
+                "file": "HK07_KTPM_DKTTK_CuoiKy-TracNghiem-2020-2021.pdf"
+            },
+            {
+                "id": "dethi21-22",
+                "title": "Đề thi mẫu kiểm thử phần mềm 2021-2022",
+                "description": "Đề thi mẫu kiểm thử phần mềm 2021-2022, bao gồm các câu hỏi trắc nghiệm và tự luận.",
+                "file": "dethi21-22.md"
+            },
+            {
+                "id": "dtm1",
+                "title": "Đề thi mẫu kiểm thử phần mềm",
+                "description": "Đề thi mẫu kiểm thử phần mềm, bao gồm các câu hỏi trắc nghiệm và tự luận.",
+                "file": "dtm1.md"
+            },
+            {
+                "id": "lms242",
+                "title": "Bài tập LMS242: Kiểm thử phần mềm",
+                "description": "Bài tập LMS242 về kiểm thử phần mềm, bao gồm các câu hỏi trắc nghiệm",
+                "file": "lms242.pdf"
+            }
+        ],
+            "choices-test": [
+                {
+                    "id": "tn1",
+                    "title": "Trắc nghiệm chương 1: Tổng quan về kiểm thử phần mềm",
+                    "description": "Bài trắc nghiệm này giúp đánh giá kiến thức về tổng quan kiểm thử phần mềm. Được trích xuất từ chương 1 của sách 'Kiểm thử phần mềm'.",
+                    "file": "tn1.json"
+                },
+                {
+                    "id": "tn2",
+                    "title": "Trắc nghiệm chương 2: Kiểm thử hộp đen",
+                    "description": "Bài trắc nghiệm này giúp đánh giá kiến thức về kiểm thử hộp đen. Được trích xuất từ chương 2 của sách 'Kiểm thử phần mềm'.",
+                    "file": "tn2.json"
+                },
+                {
+                    "id": "tn3",
+                    "title": "Trắc nghiệm chương 3: Kiểm thử hộp trắng",
+                    "description": "Bài trắc nghiệm này giúp đánh giá kiến thức về kiểm thử hộp trắng. Được trích xuất từ chương 3 của sách 'Kiểm thử phần mềm'.",
+                    "file": "tn3.json"
+                },
+                {
+                    "id": "tn1-ai",
+                    "title": "Trắc nghiệm kiểm thử phần mềm 1 (AI)",
+                    "description": "Bài trắc nghiệm này có sử dụng AI để đánh giá kiến thức về kiểm thử phần mềm.",
+                    "file": "tn1-ai.json"
+                },
+                {
+                    "id": "tn2-ai",
+                    "title": "Trắc nghiệm kiểm thử phần mềm 2 (AI)",
+                    "description": "Bài trắc nghiệm này có sử dụng AI để đánh giá kiến thức về kiểm thử phần mềm.",
+                    "file": "tn2-ai.json"
+                }
+            ]
+        },
+        {
             "id": "ai",
             "title": "Trí tuệ nhân tạo",
             "description": "Khóa học này cung cấp kiến thức về trí tuệ nhân tạo, bao gồm các thuật toán, mô hình và ứng dụng trong thực tế.",
