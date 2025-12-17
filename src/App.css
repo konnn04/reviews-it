@@ -79,8 +79,8 @@
   line-height: 1.6;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  background-color: unset!important;
-  color: unset!important;
+  background-color: transparent;
+  color: inherit;
 }
 
 .markdown-body img {
@@ -116,7 +116,7 @@
   line-height: 1.45;
   border-radius: 3px;
   margin-bottom: 16px;
-  background-color: unset!important;
+  background-color: transparent;
 }
 
 .markdown-body pre code {
@@ -173,6 +173,35 @@
 /* Styles cho hình ảnh trong dark mode */
 [data-bs-theme=dark] .markdown-body img {
   filter: brightness(0.8) contrast(1.2);
+}
+
+/* Dark mode overrides for markdown content and code highlighting */
+[data-bs-theme=dark] .markdown-body {
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme=dark] .markdown-body code {
+  background-color: rgba(255,255,255,0.03);
+  color: var(--bs-body-color);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+[data-bs-theme=dark] .markdown-body pre {
+  background-color: #0e1220;
+  color: var(--bs-body-color);
+  border: 1px solid #2b2b2b;
+}
+
+/* Ensure highlight.js styles don't override dark background */
+[data-bs-theme=dark] .markdown-body .hljs,
+[data-bs-theme=dark] .markdown-body pre code.hljs {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+[data-bs-theme=dark] .markdown-body table th,
+[data-bs-theme=dark] .markdown-body table td {
+  border-color: #444;
 }
 
 /* Styles cho blockquote */
