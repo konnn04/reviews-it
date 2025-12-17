@@ -181,6 +181,104 @@
                 }
             ],
             "choices-test": []
+        },
+        {
+            "id": "cslt",
+            "title": "Cơ sở lập trình",
+            "description": "Khóa học này cung cấp kiến thức về môn nhập môn - Cơ sở lập trình, bao gồm các khái niệm cơ bản và kỹ năng lập trình.",
+            "thumbnail": "https://laptrinhcuocsong.com/images/bei-zian-dzuein/bei-zian-dzuein-1.jpg",
+            "doc": [{
+                "id": "ck-2024",
+                "title": "Đề thi cuối kì năm 2024",
+                "description": "Đề thi cuối kì môn Cơ sở lập trình năm 2024",
+                "file": "ck2024.md"
+            },{
+                "id": "lt-1",
+                "title": "Lý thuyết Chương 1 - Giới thiệu về lập trình",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 1",
+                "file": "CSLT_Ch1_2122.pdf"
+            },{
+                "id": "lt-2",
+                "title": "Lý thuyết Chương 2 - Biến và kiểu dữ liệu",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 2",
+                "file": "CSLT_Ch2_2122.pdf"
+            },{
+                "id": "lt-3",
+                "title": "Lý thuyết Chương 3 - Các cấu trúc điều khiển",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 3",
+                "file": "CSLT_Ch3_2122.pdf"
+            },{
+                "id": "lt-4",
+                "title": "Lý thuyết Chương 4 - Hàm và thủ tục",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 4",
+                "file": "CSLT_Ch4_2122.pdf"
+            },{
+                "id": "lt-5",
+                "title": "Lý thuyết Chương 5 - Mảng ",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 5",
+                "file": "CSLT_Ch5_2122.pdf"
+            }
+        ],
+            "choices-test": [
+            
+            ]
+        },
+        {
+            "id": "oop",
+            "title": "Lập trình hướng đối tượng",
+            "description": "Khóa học này cung cấp kiến thức về Lập trình hướng đối tượng, bao gồm các khái niệm, nguyên tắc và kỹ thuật lập trình hướng đối tượng.",
+            "thumbnail": "https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fjnjgfl10cn4tm9qlztv1.png",
+            "doc": [{
+                "id": "ontap1",
+                "title": "Ôn tập cuối kỳ",
+                "description": "Tổng hợp các lý thuyết cần ôn tập cuối kỳ",
+                "file": "OOP-OnTapCK.pdf"
+            },{
+                "id": "lt-1",
+                "title": "Chương 1 - Giới thiệu về lập trình hướng đối tượng",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 1",
+                "file": "01-Gioi-thieu.pdf"
+            },{
+                "id": "lt-2",
+                "title": "Chương 2 - Nhập môn ngôn ngữ Java",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 2",
+                "file": "02-Java-can-ban.pdf"
+            },{
+                "id": "lt-3",
+                "title": "Chương 3 - Lớp và đối tượng",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 3",
+                "file": "03-Lop-va-doi-tuong.pdf"
+            },{
+                "id": "lt-4",
+                "title": "Chương 4 - Kế thừa",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 4",
+                "file": "04-Ke-thua.pdf"
+            },{
+                "id": "lt-5",
+                "title": "Chương 5 - Đa hình",
+                "description": "Tổng hợp các lý thuyết cần ôn tập Chương 5",
+                "file": "05-Da-hinh.pdf"
+            }
+        ],
+            "choices-test": [
+            
+            ]
+        },
+        {
+            "id": "thdc",
+            "title": "Tin học đại cương",
+            "description": "Khóa học này cung cấp kiến thức về Tin học đại cương, bao gồm các khái niệm cơ bản về máy tính, phần mềm và ứng dụng công nghệ thông tin.",
+            "thumbnail": "https://soict.daotao.ai/asset-v1:SoICT+THDC+VuongVD+type@asset+block@IT1130.jpg",
+            "doc": [{
+                "id": "ck1",
+                "title": "Đề thi cuối kì #1",
+                "description": "Đề thi cuối kì môn Tin học đại cương #1",
+                "file": "DeCK10.pdf"
+            }
+        ],
+            "choices-test": [
+            
+            ]
         }
     ]
 }
