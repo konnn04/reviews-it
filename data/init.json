@@ -187,7 +187,14 @@
             "title": "Cơ sở lập trình",
             "description": "Khóa học này cung cấp kiến thức về môn nhập môn - Cơ sở lập trình, bao gồm các khái niệm cơ bản và kỹ năng lập trình.",
             "thumbnail": "https://laptrinhcuocsong.com/images/bei-zian-dzuein/bei-zian-dzuein-1.jpg",
-            "doc": [{
+            "doc": [
+                {
+                "id": "ontap2312",
+                "title": "Nhật ký ôn tập cuối kì 23/12/2025",
+                "description": "Bài giải ôn tập cuối kì 23/12/2025",
+                "file": "ontap2312.md"
+            },
+                {
                 "id": "ck-2024",
                 "title": "Đề thi cuối kì năm 2024",
                 "description": "Đề thi cuối kì môn Cơ sở lập trình năm 2024",
