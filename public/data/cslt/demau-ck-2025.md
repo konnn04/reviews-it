@@ -1,6 +1,6 @@
 # Đề ôn CSLT của MPC 2026
 
-Các dạng ôn tập hàm [ở đây](https://hackmd.io/@GTGPiohhR_OTWLEqeYx_Lg/r127C6UV-g)
+Các dạng ôn tập hàm [ở đây](https://konnn04.is-a.dev/reviews-it/#/course/cslt/doc/common_func_cases)
 
 # Đề 1 - Con mèo cam
 
