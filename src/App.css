@@ -198,11 +198,99 @@
   border: 1px solid #30363d;
 }
 
-/* Ensure highlight.js styles don't override dark background */
-[data-bs-theme=dark] .markdown-body .hljs,
-[data-bs-theme=dark] .markdown-body pre code.hljs {
+/* Highlight.js theme switching */
+.hljs {
   background: transparent !important;
-  color: inherit !important;
+}
+
+/* Light mode - use dark colors for visibility */
+[data-bs-theme=light] .markdown-body pre code.hljs,
+[data-bs-theme=light] .markdown-body .hljs {
+  color: #24292e;
+}
+
+[data-bs-theme=light] .hljs-keyword,
+[data-bs-theme=light] .hljs-selector-tag,
+[data-bs-theme=light] .hljs-literal,
+[data-bs-theme=light] .hljs-section,
+[data-bs-theme=light] .hljs-link {
+  color: #d73a49;
+}
+
+[data-bs-theme=light] .hljs-string,
+[data-bs-theme=light] .hljs-attr,
+[data-bs-theme=light] .hljs-meta-string {
+  color: #032f62;
+}
+
+[data-bs-theme=light] .hljs-number,
+[data-bs-theme=light] .hljs-meta {
+  color: #005cc5;
+}
+
+[data-bs-theme=light] .hljs-title,
+[data-bs-theme=light] .hljs-title.class_,
+[data-bs-theme=light] .hljs-title.function_ {
+  color: #6f42c1;
+}
+
+[data-bs-theme=light] .hljs-comment {
+  color: #6a737d;
+}
+
+[data-bs-theme=light] .hljs-variable,
+[data-bs-theme=light] .hljs-template-variable {
+  color: #e36209;
+}
+
+[data-bs-theme=light] .hljs-built_in,
+[data-bs-theme=light] .hljs-type {
+  color: #005cc5;
+}
+
+/* Dark mode - use light colors for visibility */
+[data-bs-theme=dark] .markdown-body pre code.hljs,
+[data-bs-theme=dark] .markdown-body .hljs {
+  color: #e6edf3;
+}
+
+[data-bs-theme=dark] .hljs-keyword,
+[data-bs-theme=dark] .hljs-selector-tag,
+[data-bs-theme=dark] .hljs-literal,
+[data-bs-theme=dark] .hljs-section,
+[data-bs-theme=dark] .hljs-link {
+  color: #ff7b72;
+}
+
+[data-bs-theme=dark] .hljs-string,
+[data-bs-theme=dark] .hljs-attr,
+[data-bs-theme=dark] .hljs-meta-string {
+  color: #a5d6ff;
+}
+
+[data-bs-theme=dark] .hljs-number,
+[data-bs-theme=dark] .hljs-meta {
+  color: #79c0ff;
+}
+
+[data-bs-theme=dark] .hljs-title,
+[data-bs-theme=dark] .hljs-title.class_,
+[data-bs-theme=dark] .hljs-title.function_ {
+  color: #d2a8ff;
+}
+
+[data-bs-theme=dark] .hljs-comment {
+  color: #8b949e;
+}
+
+[data-bs-theme=dark] .hljs-variable,
+[data-bs-theme=dark] .hljs-template-variable {
+  color: #ffa657;
+}
+
+[data-bs-theme=dark] .hljs-built_in,
+[data-bs-theme=dark] .hljs-type {
+  color: #f69d50;
 }
 
 [data-bs-theme=dark] .markdown-body table th,

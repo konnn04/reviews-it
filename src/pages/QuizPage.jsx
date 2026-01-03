@@ -18,6 +18,7 @@ import rehypeRaw from "rehype-raw";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "highlight.js/styles/github.css";
+import "highlight.js/styles/github-dark.css";
 import hljs from "highlight.js";
 
 function QuizPage() {

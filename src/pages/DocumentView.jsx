@@ -11,6 +11,7 @@ import rehypeRaw from 'rehype-raw';
 import TableOfContents from '../components/TableOfContents';
 import 'katex/dist/katex.min.css';
 import 'highlight.js/styles/github.css';
+import 'highlight.js/styles/github-dark.css';
 import hljs from 'highlight.js';
 
 function DocumentView() {
