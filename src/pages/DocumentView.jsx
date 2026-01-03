@@ -8,6 +8,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import rehypeRaw from 'rehype-raw';
+import TableOfContents from '../components/TableOfContents';
 import 'katex/dist/katex.min.css';
 import 'highlight.js/styles/github.css';
 import hljs from 'highlight.js';
@@ -140,6 +141,15 @@ function DocumentView() {
         </code>
       );
     },
+    img({node, ...props}) {
+      // Transform srcset to srcSet for React
+      const newProps = { ...props };
+      if (newProps.srcset) {
+        newProps.srcSet = newProps.srcset;
+        delete newProps.srcset;
+      }
+      return <img {...newProps} />;
+    },
   };
 
   if (loading) {
@@ -152,6 +162,8 @@ function DocumentView() {
 
   return (
     <div className="document-view">
+      {!isPdf && <TableOfContents contentRef={markdownRef} />}
+      
       <Breadcrumb className="mb-4">
         <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }}>Trang chủ</Breadcrumb.Item>
         <Breadcrumb.Item linkAs={Link} linkProps={{ to: `/course/${courseId}` }}>

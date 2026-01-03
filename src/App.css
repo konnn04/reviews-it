@@ -105,24 +105,30 @@
 .markdown-body code {
   padding: 0.2em 0.4em;
   margin: 0;
-  font-size: 85%;
+  font-size: 90%;
   border-radius: 3px;
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  color: #24292f;
 }
 
 .markdown-body pre {
   padding: 16px;
   overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  border-radius: 3px;
+  font-size: 95%;
+  line-height: 1.5;
+  border-radius: 6px;
   margin-bottom: 16px;
-  background-color: transparent;
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
 }
 
 .markdown-body pre code {
   padding: 0;
   font-size: 100%;
   background-color: transparent;
+  border: none;
+  color: inherit;
 }
 
 .markdown-body table {
@@ -181,15 +187,15 @@
 }
 
 [data-bs-theme=dark] .markdown-body code {
-  background-color: rgba(255,255,255,0.03);
-  color: var(--bs-body-color);
-  border: 1px solid rgba(255,255,255,0.03);
+  background-color: #161b22;
+  color: #e6edf3;
+  border: 1px solid #30363d;
 }
 
 [data-bs-theme=dark] .markdown-body pre {
-  background-color: #0e1220;
-  color: var(--bs-body-color);
-  border: 1px solid #2b2b2b;
+  background-color: #0d1117;
+  color: #e6edf3;
+  border: 1px solid #30363d;
 }
 
 /* Ensure highlight.js styles don't override dark background */
@@ -268,4 +274,199 @@
 [data-bs-theme=dark] .back-to-top {
   background-color: var(--bs-primary);
   color: #fff;
+}
+
+/* Fixed Header */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+  padding-top: 70px; /* Account for fixed header */
+}
+
+/* Table of Contents */
+.table-of-contents {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  width: 280px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+[data-bs-theme=dark] .table-of-contents {
+  background-color: #242424;
+  border-color: #3a3a3a;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.toc-header {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--bs-primary);
+}
+
+.toc-header h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bs-primary);
+}
+
+.toc-nav {
+  margin: 0;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-item {
+  margin: 4px 0;
+}
+
+.toc-item a {
+  display: block;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: #555;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+[data-bs-theme=dark] .toc-item a {
+  color: #b0b0b0;
+}
+
+.toc-item a:hover {
+  background-color: #f0f0f0;
+  color: var(--bs-primary);
+}
+
+[data-bs-theme=dark] .toc-item a:hover {
+  background-color: #2a2a2a;
+  color: var(--bs-primary);
+}
+
+.toc-item.active a {
+  background-color: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary);
+  font-weight: 500;
+}
+
+[data-bs-theme=dark] .toc-item.active a {
+  background-color: rgba(20, 157, 231, 0.2);
+  color: var(--bs-primary);
+}
+
+/* Indent based on heading level */
+.toc-level-1 { padding-left: 0; }
+.toc-level-2 { padding-left: 12px; }
+.toc-level-3 { padding-left: 24px; }
+.toc-level-4 { padding-left: 36px; }
+.toc-level-5 { padding-left: 48px; }
+.toc-level-6 { padding-left: 60px; }
+
+/* Mobile TOC toggle button */
+.toc-toggle {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1001;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.toc-toggle i {
+  font-size: 1.2rem;
+}
+
+/* Mobile TOC */
+@media (max-width: 991.98px) {
+  .table-of-contents {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: calc(100vh - 70px);
+    max-height: calc(100vh - 70px);
+    transition: right 0.3s ease;
+    z-index: 1040;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  }
+
+  .table-of-contents.open {
+    right: 0;
+  }
+
+  .toc-overlay {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1035;
+  }
+}
+
+/* Hide TOC on mobile by default, show toggle button */
+@media (min-width: 992px) {
+  .toc-toggle {
+    display: none;
+  }
+  
+  /* Adjust document content width to accommodate TOC */
+  .document-view {
+    margin-right: 300px;
+  }
+}
+
+/* Custom scrollbar for TOC */
+.table-of-contents::-webkit-scrollbar {
+  width: 6px;
+}
+
+.table-of-contents::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-of-contents::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.table-of-contents::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+[data-bs-theme=dark] .table-of-contents::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+[data-bs-theme=dark] .table-of-contents::-webkit-scrollbar-thumb:hover {
+  background: #666;
 }

@@ -6,7 +6,7 @@ function Header({ title }) {
   const { darkMode, toggleTheme } = useTheme();
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
+    <Navbar bg="dark" variant="dark" expand="lg" className="mb-4" fixed="top">
       <Container>
         <Navbar.Brand as={Link} to="/">{title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
